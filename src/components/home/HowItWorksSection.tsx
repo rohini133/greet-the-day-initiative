@@ -30,11 +30,11 @@ export function HowItWorksSection() {
   ];
 
   return (
-    <section className="section-padding bg-[#0F1026]">
-      <div className="container mx-auto">
-        <div className="max-w-4xl mx-auto text-center mb-12 sm:mb-16 lg:mb-20">
+    <section className="py-16 md:py-32 bg-[#0F1026] ">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="max-w-4xl mx-auto text-center mb-16 md:mb-20">
           <motion.h2 
-            className="responsive-heading font-bold mb-4 text-white"
+            className="text-3xl md:text-4xl font-display font-bold mb-4"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -43,7 +43,7 @@ export function HowItWorksSection() {
             How It Works
           </motion.h2>
           <motion.p 
-            className="responsive-body text-white/70 text-balance max-w-2xl mx-auto"
+            className="text-lg text-foreground/70 text-balance"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -53,24 +53,24 @@ export function HowItWorksSection() {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, index) => (
             <motion.div 
               key={step.number}
-              className="text-center px-4"
+              className="text-center"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <div className="relative mb-6">
-                <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto rounded-full bg-primary text-primary-foreground text-lg sm:text-xl font-bold flex items-center justify-center mb-4">
+                <div className="w-16 h-16 mx-auto rounded-full bg-primary text-primary-foreground text-xl font-bold flex items-center justify-center mb-4">
                   {step.number}
                 </div>
               </div>
-              <h3 className="text-lg sm:text-xl font-bold mb-2 text-white">{step.title}</h3>
-              <p className="text-primary font-medium mb-3 text-sm sm:text-base">{step.description}</p>
-              <p className="text-white/70 text-xs sm:text-sm leading-relaxed">{step.details}</p>
+              <h3 className="text-xl font-display font-bold mb-2">{step.title}</h3>
+              <p className="text-primary font-medium mb-3">{step.description}</p>
+              <p className="text-foreground/70 text-sm">{step.details}</p>
             </motion.div>
           ))}
         </div>
