@@ -25,10 +25,10 @@ export function CTASection() {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              <h2 className="responsive-heading font-bold mb-4 text-balance bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-500">
+              <h2 className="responsive-heading font-bold mb-4 text-balance text-white">
                 Begin Your Learning Journey Today
               </h2>
-              <p className="responsive-body text-foreground/70 mb-6 sm:mb-8 lg:mb-10 text-balance max-w-2xl mx-auto">
+              <p className="responsive-body text-white/70 mb-6 sm:mb-8 lg:mb-10 text-balance max-w-2xl mx-auto">
                 Join thousands of students who are transforming their careers through our AI-powered platform and mentorship program.
               </p>
 
@@ -50,7 +50,7 @@ export function CTASection() {
                 </Button>
               </div>
 
-              <p className="mt-4 sm:mt-6 text-xs sm:text-sm text-foreground/60">
+              <p className="mt-4 sm:mt-6 text-xs sm:text-sm text-white/60">
                 No credit card required. Start with our free plan and upgrade anytime.
               </p>
             </motion.div>

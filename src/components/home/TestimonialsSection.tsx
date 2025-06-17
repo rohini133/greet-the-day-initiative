@@ -50,7 +50,7 @@ export function TestimonialsSection() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <h3 className="text-lg sm:text-xl font-semibold mb-2 text-white">{category.title}</h3>
-              <p className="text-foreground/70 text-sm sm:text-base">{category.description}</p>
+              <p className="text-white/70 text-sm sm:text-base">{category.description}</p>
             </motion.div>
           ))}
         </div>
@@ -67,12 +67,12 @@ export function TestimonialsSection() {
             <svg className="h-6 w-6 sm:h-8 sm:w-8 text-primary mb-4 sm:mb-6 mx-auto" fill="currentColor" viewBox="0 0 24 24">
               <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
             </svg>
-            <blockquote className="text-lg sm:text-xl lg:text-2xl font-medium text-foreground mb-4 sm:mb-6 leading-relaxed">
+            <blockquote className="text-lg sm:text-xl lg:text-2xl font-medium text-white mb-4 sm:mb-6 leading-relaxed">
               "{testimonial.content}"
             </blockquote>
             <div>
               <div className="font-semibold text-base sm:text-lg text-white">{testimonial.author}</div>
-              <div className="text-foreground/60 text-sm sm:text-base">{testimonial.role}</div>
+              <div className="text-white/60 text-sm sm:text-base">{testimonial.role}</div>
             </div>
           </div>
         </motion.div>
