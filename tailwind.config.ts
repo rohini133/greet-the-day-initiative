@@ -119,8 +119,8 @@ export default {
 				'pulse': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite'
 			},
 			fontFamily: {
-				sans: ['Inter', 'sans-serif'],
-				display: ['Cabinet Grotesk', 'Inter', 'sans-serif']
+				sans: ['Montserrat', 'sans-serif'],
+				display: ['Montserrat', 'sans-serif']
 			}
 		}
 	},
