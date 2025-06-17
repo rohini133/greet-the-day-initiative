@@ -7,7 +7,7 @@ export function HeaderLogo() {
       <img 
         src="/lovable-uploads/Logos-05-removebg-preview.png" 
         alt="Gurukul Code" 
-        className="h-20 w-auto"
+        className="h-12 w-auto sm:h-16 md:h-20 transition-all duration-300"
       />
     </Link>
   );

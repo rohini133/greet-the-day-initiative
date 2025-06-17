@@ -13,7 +13,13 @@ export default {
 	theme: {
 		container: {
 			center: true,
-			padding: '2rem',
+			padding: {
+				DEFAULT: '1rem',
+				sm: '2rem',
+				lg: '4rem',
+				xl: '5rem',
+				'2xl': '6rem',
+			},
 			screens: {
 				'2xl': '1400px'
 			}
@@ -119,9 +125,13 @@ export default {
 				'pulse': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite'
 			},
 			fontFamily: {
-				sans: ['Inter', 'sans-serif'],
-				display: ['Cabinet Grotesk', 'Inter', 'sans-serif']
-			}
+				'montserrat': ['Montserrat', 'sans-serif'],
+				'sans': ['Montserrat', 'sans-serif'],
+				'display': ['Montserrat', 'sans-serif']
+			},
+			screens: {
+				'xs': '475px',
+			},
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
