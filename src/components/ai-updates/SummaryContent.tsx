@@ -27,7 +27,10 @@ export function SummaryContent({ newsItems = [] }: SummaryContentProps) {
   return (
     <div className="space-y-8 font-sans">
       <div className="text-center mb-8">
-        <h1 className="text-3xl font-bold mb-2">AI Daily Update</h1>
+        <h1 className="text-3xl font-bold mb-2" style={{ color: "#036D9B" }}>
+  AI Daily Update
+</h1>
+
         {newsItems[0]?.date && (
           <div className="flex items-center justify-center gap-2">
             <Calendar className="h-4 w-4 text-muted-foreground" />

@@ -54,20 +54,21 @@ export function HeroSection() {
   };
 
   return (
-    <section className="relative overflow-hidden pt-32 pb-16 md:pt-40 md:pb-24 lg:pt-48 lg:pb-32 bg-[#0F1026]">
+   <section className="relative overflow-hidden pt-16 pb-4 md:pt-40 md:pb-12 lg:pt-48 lg:pb-16 bg-[#0F1026]">
+
       {/* Decorative background elements */}
       <div className="absolute inset-0 hero-pattern opacity-50"></div>
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-6xl">
-        <motion.div 
+        {/* <motion.div 
           className="absolute top-1/4 left-1/4 w-32 h-32 md:w-64 md:h-64 bg-primary/10 rounded-full filter blur-3xl"
           animate={{ scale: [1, 1.2, 1], opacity: [0.5, 0.8, 0.5] }}
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-        ></motion.div>
-        <motion.div 
+        ></motion.div> */}
+        {/* <motion.div 
           className="absolute bottom-1/4 right-1/4 w-32 h-32 md:w-64 md:h-64 bg-blue-500/10 rounded-full filter blur-3xl"
           animate={{ scale: [1.2, 1, 1.2], opacity: [0.5, 0.8, 0.5] }}
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-        ></motion.div>
+        ></motion.div> */}
       </div>
 
       <div className="container relative mx-auto px-4 md:px-6 z-10">
@@ -87,7 +88,7 @@ export function HeroSection() {
                 animate={{ scale: [1, 1.5, 1], opacity: [0.7, 1, 0.7] }}
                 transition={{ duration: 2, repeat: Infinity }}
               ></motion.span>
-              Transforming Education with AI
+              Transforming Career Paths With AI
             </motion.div>
           </motion.div>
 
@@ -103,10 +104,8 @@ export function HeroSection() {
   }}
   animate={gradientText}
 >
-  Blend Traditional Wisdom with AI-Powered Learning
+  Empowering Sustainable Career Growth  with AI
 </motion.h1>  
-
-
           <motion.p 
             className="text-lg md:text-xl text-foreground/70 mb-8 md:mb-10 max-w-2xl mx-auto text-balance"
             variants={fadeUpItem}

@@ -28,6 +28,7 @@ export const menuItems: MenuItem[] = [
       { title: "Career Awareness Hub", href: "/career-center" },
     ],
   },
+  
   {
     title: "About",
     href: "/about",
@@ -36,4 +37,9 @@ export const menuItems: MenuItem[] = [
     title: "Contact",
     href: "/contact",
   },
+  {
+title: "AI Updates",
+    href: "/ai-updates",
+
+  }, 
 ];

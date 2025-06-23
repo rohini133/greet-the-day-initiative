@@ -54,9 +54,9 @@ export default function Login() {
   };
 
   return (
-    <div className="flex min-h-[calc(100vh-12rem)] items-center justify-center px-4 py-12">
+    <div className="flex min-h-[calc(100vh-12rem)] items-center justify-center px-4 pt-32 py-12">
       <div className="w-full max-w-md">
-        <Button variant="ghost" className="mb-6" onClick={() => navigate("/")}>
+        <Button variant="ghost" className="mb-6 items-center justify-center"  onClick={() => navigate("/")}>
           <ArrowLeft className="mr-2 h-4 w-4" /> Back to home
         </Button>
 

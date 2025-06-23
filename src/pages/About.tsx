@@ -7,16 +7,17 @@ const About = () => {
   return (
     <div className="py-20 bg-[#0F1026] text-white">
       {/* Hero Section */}
-      <section className="container mx-auto px-4 md:px-6 pt-16 pb-20">
+      <section className="container mx-auto px-4 md:px-6 pt-16 pb-16">
         <motion.div
           className="max-w-4xl mx-auto text-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6">
-            About Gurukul Code
-          </h1>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-4 text-[#036D9B]">
+  About Gurukul Code
+</h1>
+
           <p className="text-lg md:text-xl text-white/70 mb-8">
             Reimagining career development through the timeless Gurukulam tradition
           </p>
@@ -27,13 +28,13 @@ const About = () => {
       <section className="py-16 bg-[ #0F1026] relative">
         <div className="container mx-auto px-4 md:px-6">
           <motion.h2
-            className="text-3xl md:text-4xl font-display font-bold text-center mb-12"
+            className="text-3xl md:text-4xl font-display font-bold text-center mb-12 text-[#036D9B]"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            Your Learning Journey
+            Sustainable Career Development-Aware-Explore-Prep
           </motion.h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -97,7 +98,8 @@ const About = () => {
               transition={{ duration: 0.5 }}
               className="rounded-xl p-8 md:p-12 bg-[#15162d]"
             >
-              <h2 className="text-3xl font-display font-bold mb-6">Our Vision</h2>
+             
+<h2 className="text-3xl font-display font-bold mb-6 text-[#036D9B]">Our Vision</h2>
               <motion.p
                 className="text-lg text-white/80 mb-6"
                 initial={{ opacity: 0, x: -50 }}
@@ -106,7 +108,7 @@ const About = () => {
               >
                 To redefine the journey toward sustainable career mastery by seamlessly integrating practical knowledge, mentorship, and AI-driven insights...
               </motion.p>
-              <h2 className="text-3xl font-display font-bold mt-12 mb-6">Our Mission</h2>
+             <h2 className="text-3xl font-display font-bold mt-12 mb-6 text-[#036D9B]">Our Mission</h2>
               <motion.p
                 className="text-lg text-white/80"
                 initial={{ opacity: 0, x: 50 }}
@@ -124,7 +126,7 @@ const About = () => {
       <section className="py-20 bg-[#0F1026]">
         <div className="container mx-auto px-4 md:px-6">
           <motion.h2
-            className="text-3xl md:text-4xl font-display font-bold text-center mb-16"
+            className="text-3xl md:text-4xl font-display font-bold text-center mb-16 text-[#036D9B]"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -165,7 +167,7 @@ const About = () => {
       <section className="py-20 bg-[ #0F1026 ]">
         <div className="container mx-auto px-4 md:px-6 text-center">
           <motion.h2
-            className="text-3xl md:text-4xl font-display font-bold mb-6"
+            className="text-3xl md:text-4xl font-display font-bold mb-6 text-[#036D9B]"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -187,7 +189,7 @@ const About = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <Button className="bg-[#F57E20] hover:bg-[#e86e10] text-white text-lg px-6 py-3 rounded-xl">
+            <Button className="bg-[#036D9B] text-white text-lg px-6 py-3 rounded-xl border-2 border-transparent hover:border-[#F57E20] transition-all duration-300 shadow-md hover:shadow-lg">
               Start Your Journey Today
             </Button>
           </motion.div>

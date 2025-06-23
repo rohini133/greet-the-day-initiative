@@ -39,7 +39,7 @@ export function DesktopNav({
       </nav>
 
       <div className="hidden lg:flex items-center space-x-4">
-        <AIAgentsButton />
+        {/* <AIAgentsButton /> */}
         
         {user ? (
           <UserProfileMenu user={user} />

@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 
 export function HowItWorksSection() {
@@ -10,7 +9,7 @@ export function HowItWorksSection() {
       details: "Get personalized insights into your strengths, interests, and career alignment through our comprehensive assessment."
     },
     {
-      number: "02", 
+      number: "02",
       title: "Explore & Experiment",
       description: "Role simulations, live briefs, peer pods",
       details: "Dive into real-world scenarios and collaborate with peers to understand different career paths and opportunities."
@@ -30,19 +29,20 @@ export function HowItWorksSection() {
   ];
 
   return (
-    <section className="py-16 md:py-32 bg-[#0F1026] ">
+    <section className="py-8 md:py-16 bg-[#0F1026]">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto text-center mb-16 md:mb-20">
-          <motion.h2 
-            className="text-3xl md:text-4xl font-display font-bold mb-4"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-          >
-            How It Works
-          </motion.h2>
-          <motion.p 
+          <motion.h2
+  className="text-3xl md:text-4xl font-display font-bold mb-4 text-[#036D9B]"
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.5, delay: 0.1 }}
+>
+  How It Works
+</motion.h2>
+
+          <motion.p
             className="text-lg text-foreground/70 text-balance"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -55,7 +55,7 @@ export function HowItWorksSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, index) => (
-            <motion.div 
+            <motion.div
               key={step.number}
               className="text-center"
               initial={{ opacity: 0, y: 20 }}
