@@ -133,7 +133,7 @@ export function HeroSection() {
                 className="w-full sm:w-auto px-8 py-6 text-base group"
                 onClick={() => navigate("/explore-courses")}
               >
-                Explore Courses 
+                Know More 
                 <motion.div animate={{ x: [0, 5, 0] }} transition={{ duration: 1.5, repeat: Infinity }}>
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </motion.div>
