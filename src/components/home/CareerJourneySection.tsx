@@ -65,7 +65,7 @@ export function CareerJourneySection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16 md:mb-20">
          <motion.h2 
-  className="text-3xl md:text-4xl font-display font-bold mb-4 text-[#036D9B]"
+  className="text-3xl md:text-4xl font-display font-bold mb-4 text-primary"
   initial={{ opacity: 0, y: 20 }}
   whileInView={{ opacity: 1, y: 0 }}
   viewport={{ once: true }}
@@ -73,6 +73,7 @@ export function CareerJourneySection() {
 >
   Empowering Sustainable Career Growth<br />Using AI Insights
 </motion.h2>
+
 
           <motion.p 
             className="text-lg text-foreground/70 max-w-2xl mx-auto text-balance"

@@ -14,9 +14,10 @@ const About = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-4 text-[#036D9B]">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-4 text-primary">
   About Gurukul Code
 </h1>
+
 
           <p className="text-lg md:text-xl text-white/70 mb-8">
             Reimagining career development through the timeless Gurukulam tradition
@@ -28,14 +29,15 @@ const About = () => {
       <section className="py-16 bg-[ #0F1026] relative">
         <div className="container mx-auto px-4 md:px-6">
           <motion.h2
-            className="text-3xl md:text-4xl font-display font-bold text-center mb-12 text-[#036D9B]"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
-            Sustainable Career Development-Aware-Explore-Prep
-          </motion.h2>
+  className="text-3xl md:text-4xl font-display font-bold text-center mb-12 text-primary"
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.5 }}
+>
+  Sustainable Career Development – Aware – Explore – Prep
+</motion.h2>
+
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {[
@@ -98,8 +100,8 @@ const About = () => {
               transition={{ duration: 0.5 }}
               className="rounded-xl p-8 md:p-12 bg-[#15162d]"
             >
-             
-<h2 className="text-3xl font-display font-bold mb-6 text-[#036D9B]">Our Vision</h2>
+             <h2 className="text-3xl font-display font-bold mb-6 text-primary">Our Vision</h2>
+
               <motion.p
                 className="text-lg text-white/80 mb-6"
                 initial={{ opacity: 0, x: -50 }}
@@ -108,8 +110,8 @@ const About = () => {
               >
                 To redefine the journey toward sustainable career mastery by seamlessly integrating practical knowledge, mentorship, and AI-driven insights...
               </motion.p>
-             <h2 className="text-3xl font-display font-bold mt-12 mb-6 text-[#036D9B]">Our Mission</h2>
-              <motion.p
+             <h2 className="text-3xl font-display font-bold mt-12 mb-6 text-primary">Our Mission</h2>
+  <motion.p
                 className="text-lg text-white/80"
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -126,14 +128,16 @@ const About = () => {
       <section className="py-20 bg-[#0F1026]">
         <div className="container mx-auto px-4 md:px-6">
           <motion.h2
-            className="text-3xl md:text-4xl font-display font-bold text-center mb-16 text-[#036D9B]"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
-            Our Core Values
-          </motion.h2>
+  className="text-3xl md:text-4xl font-display font-bold text-center mb-12 text-primary"
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.5 }}
+>
+  Sustainable Career Development – Aware – Explore – Prep
+</motion.h2>
+
+
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
@@ -153,7 +157,7 @@ const About = () => {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <div className="w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center mb-4">
-                  <value.icon className="h-6 w-6 text-[#F57E20]" />
+                  <value.icon className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">{value.title}</h3>
                 <p className="text-white/70">{value.description}</p>
@@ -166,14 +170,15 @@ const About = () => {
       {/* Join CTA */}
       <section className="py-20 bg-[ #0F1026 ]">
         <div className="container mx-auto px-4 md:px-6 text-center">
-          <motion.h2
-            className="text-3xl md:text-4xl font-display font-bold mb-6 text-[#036D9B]"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            Join Our Learning Community
-          </motion.h2>
+         <motion.h2
+  className="text-3xl md:text-4xl font-display font-bold mb-6 text-primary"
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5 }}
+>
+  Join Our Learning Community
+</motion.h2>
+
           <motion.p
             className="text-lg text-white/80 mb-8"
             initial={{ opacity: 0, y: 20 }}

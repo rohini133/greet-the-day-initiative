@@ -13,9 +13,10 @@ const AIAssessment = () => {
         <div className="inline-block p-2 bg-primary/10 rounded-full mb-4">
           <Brain className="w-8 h-8 text-primary" />
         </div>
-        <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-[#036D9B]">
+        <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-primary">
   AI-Powered Career Assessment
 </h1>
+
 
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
           Discover your ideal career path through our interactive AI assessment

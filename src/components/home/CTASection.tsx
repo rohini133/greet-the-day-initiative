@@ -20,7 +20,7 @@ export function CTASection() {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 text-balance text-[#036D9B]">
+              <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 text-balance text-primary">
   Begin Your Learning Journey Today
 </h2>
 

@@ -80,32 +80,26 @@ export function HeroSection() {
         >
           <motion.div variants={fadeUpItem}>
             <motion.div 
-              className="inline-flex items-center px-3 py-1 mb-6 text-sm font-medium rounded-full bg-primary/10 text-primary"
-              animate={floatAnimation}
-            >
-              <motion.span 
-                className="mr-2 h-2 w-2 rounded-full bg-primary"
-                animate={{ scale: [1, 1.5, 1], opacity: [0.7, 1, 0.7] }}
-                transition={{ duration: 2, repeat: Infinity }}
-              ></motion.span>
-              Transforming Career Paths With AI
-            </motion.div>
+  className="inline-flex items-center px-3 py-1 mb-6 text-sm font-medium rounded-full bg-primary/10 text-primary"
+  animate={floatAnimation}
+>
+  <motion.span 
+    className="mr-2 h-2 w-2 rounded-full bg-primary"
+    animate={{ scale: [1, 1.5, 1], opacity: [0.7, 1, 0.7] }}
+    transition={{ duration: 2, repeat: Infinity }}
+  ></motion.span>
+  Transforming Career Paths With AI
+</motion.div>
+
           </motion.div>
 
-          <motion.h1   
-  className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight mb-6 text-balance"
+          <motion.h1
+  className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight mb-6 text-balance text-primary"
   variants={fadeUpItem}
-  style={{
-    backgroundImage: "linear-gradient(45deg, #036D9B, #036D9B, #036D9B)",  // 👈 solid-color gradient
-    backgroundSize: "200% auto",
-    backgroundClip: "text",
-    WebkitBackgroundClip: "text",
-    WebkitTextFillColor: "transparent"
-  }}
-  animate={gradientText}
 >
-  Empowering Sustainable Career Growth  with AI
-</motion.h1>  
+  Empowering Sustainable Career Growth with AI
+</motion.h1>
+ 
           <motion.p 
             className="text-lg md:text-xl text-foreground/70 mb-8 md:mb-10 max-w-2xl mx-auto text-balance"
             variants={fadeUpItem}
@@ -118,26 +112,27 @@ export function HeroSection() {
             variants={fadeUpItem}
           >
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button 
-                size="lg" 
-                className="w-full sm:w-auto px-8 py-6 text-base bg-[#F57E20] hover:bg-[#e76c0f] text-white shadow-lg"
-                onClick={() => navigate("/get-started")}
-              >
-                Get Started for Free
-              </Button>
-            </motion.div>
+  <Button 
+    size="lg" 
+    className="w-full sm:w-auto px-8 py-6 text-base text-white bg-[#02567a] hover:bg-[#036D9B] border-2 border-transparent hover:border-[#F57E20] shadow-lg transition-colors duration-300"
+    onClick={() => navigate("/get-started")}  
+  >
+    Get Started for Free
+  </Button>
+</motion.div>
+
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Button 
-                variant="outline" 
-                size="lg" 
-                className="w-full sm:w-auto px-8 py-6 text-base group"
-                onClick={() => navigate("/explore-courses")}
-              >
-                Know More 
-                <motion.div animate={{ x: [0, 5, 0] }} transition={{ duration: 1.5, repeat: Infinity }}>
-                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </motion.div>
-              </Button>
+  variant="outline" 
+  size="lg" 
+  className="w-full sm:w-auto px-8 py-6 text-base group"
+  onClick={() => navigate("/ai-assessment")} // Changed route here
+>
+  Know More 
+  <motion.div animate={{ x: [0, 5, 0] }} transition={{ duration: 1.5, repeat: Infinity }}>
+    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+  </motion.div>
+</Button>
             </motion.div>
           </motion.div>
         </motion.div>

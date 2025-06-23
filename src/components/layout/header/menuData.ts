@@ -34,9 +34,9 @@ export const menuItems: MenuItem[] = [
     href: "/about",
   },
   {
-    title: "Contact",
-    href: "/contact",
-  },
+    title: "Pricing",
+    href: "/pricing-page",
+  } ,
   {
 title: "AI Updates",
     href: "/ai-updates",

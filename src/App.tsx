@@ -27,6 +27,7 @@ import LearningCenter from "./pages/LearningCenter";
 import CareerCenter from "./pages/CareerCenter";
 import ExploreCoursesPage from "./pages/ExploreCoursesPage";
 import GetStartedPage from "./pages/GetStartedPage";
+import PricingPage from "./pages/PricingPage";
 
 const queryClient = new QueryClient();
 
@@ -56,6 +57,7 @@ const App = () => {
                 <Route path="/about" element={<About />} />
                 <Route path="/ai-assessment" element={<AIAssessment />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/pricing-page" element={<PricingPage />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/signup" element={<Signup />} />
                 <Route path="/community" element={<Community />} />

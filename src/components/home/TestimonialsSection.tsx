@@ -27,7 +27,7 @@ export function TestimonialsSection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto text-center mb-16 md:mb-20">
           <motion.h2 
-  className="text-3xl md:text-4xl font-display font-bold mb-8 text-[#036D9B]"
+  className="text-3xl md:text-4xl font-display font-bold mb-8 text-primary"
   initial={{ opacity: 0, y: 20 }}
   whileInView={{ opacity: 1, y: 0 }}
   viewport={{ once: true }}
@@ -35,6 +35,7 @@ export function TestimonialsSection() {
 >
   Trusted By
 </motion.h2>
+
 
         </div>
 
