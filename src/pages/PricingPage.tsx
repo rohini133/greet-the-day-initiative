@@ -23,8 +23,10 @@ const PricingPage = () => {
     },
     {
       name: "Professional",
-      price: isAnnual ? "₹999/mo" : "₹999/mo",
-      description: "For serious career development",
+      price: isAnnual ? "₹799/mo" : "₹999/mo",
+      description: isAnnual 
+        ? "Billed annually (₹9,588 total)" 
+        : "Billed monthly",
       features: [
         "Advanced AI assessment",
         "Unlimited career suggestions",
@@ -206,7 +208,7 @@ const PricingPage = () => {
             },
             {
               question: "What payment methods do you accept?",
-              answer: "We accept all major credit cards, PayPal, and bank transfers for annual plans."
+              answer: "We accept all major credit cards, UPI, NetBanking, and PayPal for annual plans."
             }
           ].map((faq, idx) => (
             <div key={idx} className="bg-[#171934] rounded-lg p-6">
@@ -218,7 +220,7 @@ const PricingPage = () => {
       </section>
 
       {/* Enterprise CTA */}
-      <section className="bg-[ rounded-xl p-8 text-center">
+      <section className="bg-gradient-to-r from-primary/10 to-[#F57E20]/10 rounded-xl p-8 text-center">
         <Briefcase className="w-12 h-12 mx-auto text-primary mb-4" />
         <h2 className="text-3xl font-bold mb-4">Need a Custom Solution?</h2>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
