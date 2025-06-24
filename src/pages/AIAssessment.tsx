@@ -2,10 +2,20 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronRight, Brain } from "lucide-react";
 import { AIAssessmentModal } from "@/components/assessment/AIAssessmentModal";
+import { useEffect } from "react";
+
 
 const AIAssessment = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  useEffect(() => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}, []);
+
+  
   return (
     <div className="container mx-auto py-32  px-4 md:px-6 space-y-16 bg-[#0F1026]"> {/* ✅ Background color added here */}
       {/* Hero Section */}

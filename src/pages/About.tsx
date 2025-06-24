@@ -2,8 +2,16 @@ import { motion } from "framer-motion";
 import { Award, BookOpen, Code, Heart, Users, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { useEffect } from "react";
+import React from "react";
+
 
 const About = () => {
+  window.scrollTo({
+  top: 0,
+  behavior: 'smooth'
+});
+
   return (
     <div className="py-20 bg-[#0F1026] text-white">
       {/* Hero Section */}

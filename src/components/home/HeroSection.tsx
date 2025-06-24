@@ -2,9 +2,19 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+
 
 export function HeroSection() {
   const navigate = useNavigate();
+
+  useEffect(() => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}, []);
+
   
   const fadeUpItem = {
     hidden: { y: 30, opacity: 0 },
@@ -125,7 +135,7 @@ export function HeroSection() {
               <Button 
   variant="outline" 
   size="lg" 
-  className="w-full sm:w-auto px-8 py-6 text-base group"
+  className="w-full sm:w-auto px-8 py-6 text-base group hover:border-[#F57E20]"
   onClick={() => navigate("/ai-assessment")} // Changed route here
 >
   Know More 

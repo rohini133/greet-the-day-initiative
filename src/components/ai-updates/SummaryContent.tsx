@@ -25,9 +25,10 @@ export function SummaryContent({ newsItems = [] }: SummaryContentProps) {
   };
 
   return (
-    <div className="space-y-8 font-sans">
+    <div className="space-y-8 font-sans mt-16 ">
       <div className="text-center mb-8">
-        <h1 className="text-3xl font-bold mb-2" style={{ color: "#036D9B" }}>
+        <h1 className="text-3xl font-bold mb-2 text-primary
+         " >
   AI Daily Update
 </h1>
 

@@ -76,7 +76,7 @@ export default function AIUpdates() {
   return (
     <div className="bg-[#0F1026] min-h-screen py-12">
       <div className="container mx-auto px-4">
-        <AIUpdatesHeader />
+        {/* <AIUpdatesHeader /> */}
 
         <div className="flex justify-between mb-6">
           <div>

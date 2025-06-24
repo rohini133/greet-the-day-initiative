@@ -24,7 +24,7 @@ export function EmptyState({ onRefresh }: EmptyStateProps) {
           To see the AI summary here, add data to your Firebase Realtime Database under the 'summaries/latest' path.
           The data should include 'created_at' and 'summary' fields.
         </p>
-        <div className="bg-muted p-3 rounded-md mb-4 text-sm font-mono">
+        <div className="bg-muted p-3 rounded-md mb-4 text-sm font-mono mt-16">
           <p className="mb-1">Firebase Path: /summaries/latest</p>
           <p className="mb-1">Format:</p>
           <p>{`{`}</p>
