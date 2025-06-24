@@ -10,15 +10,7 @@ export const menuItems: MenuItem[] = [
     title: "AI Assessment",
     href: "/ai-assessment",
   },
-  {
-    title: "Learning Center",
-    href: "/learning-center",
-    submenu: [
-      { title: "Courses Catalog", href: "/learning-center" },
-      { title: "Certifications", href: "/learning-center" },
-      { title: "Learning Paths", href: "/learning-center" },
-    ],
-  },
+  
   {
     title: "Career Center",
     href: "/career-center",

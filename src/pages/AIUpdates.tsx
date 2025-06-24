@@ -90,7 +90,7 @@ export default function AIUpdates() {
               </Button>
             )}
           </div>
-          <FetchSummaryButton loading={loading} onFetch={fetchNews} />
+          {/* <FetchSummaryButton loading={loading} onFetch={fetchNews} /> */}
         </div>
 
         <div className="space-y-8">
