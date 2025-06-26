@@ -1,7 +1,6 @@
-
 import React from 'react';
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
+import { Header } from '@/components/layout/Header';
+import { Footer } from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
 import { Rocket, Users, Lightbulb, Target, ArrowRight, CheckCircle, Mic, Video, FileText, TrendingUp, BookOpen, Award } from 'lucide-react';
 
@@ -75,7 +74,7 @@ const LetsAdvance = () => {
 
   return (
     <div className="min-h-screen">
-      <Navigation />
+      <Header />
       
       {/* Hero Section */}
       <section className="pt-20 pb-16 bg-gradient-hero relative overflow-hidden">
