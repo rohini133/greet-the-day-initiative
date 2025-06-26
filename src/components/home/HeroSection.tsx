@@ -37,7 +37,7 @@ export function HeroSection() {
 
           {/* Main Tagline */}
           <div className="mb-8 animate-fade-in delay-200">
-            <h1 className="text-5xl md:text-7xl font-montserrat font-bold mb-6">
+            <h1 className="text-5xl md:text-7xl font-lexend font-bold mb-6">
               <span className="text-white">GURUKUL</span>
               <br />
               <span className="gradient-text animate-gradient-shift bg-[length:200%_200%]">CODE</span>
@@ -72,7 +72,7 @@ export function HeroSection() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-fade-in delay-600">
             <Button 
               size="lg" 
-              className="bg-brand-blue hover:bg-brand-cyan text-white font-montserrat font-semibold px-8 py-4 text-lg transition-all duration-300 hover-scale"
+              className="bg-brand-blue hover:bg-brand-cyan text-white font-lexend font-semibold px-8 py-4 text-lg transition-all duration-300 hover-scale"
               onClick={() => navigate('/coming-soon')}
             >
               Start My Journey
@@ -81,7 +81,7 @@ export function HeroSection() {
             <Button 
               size="lg" 
               variant="outline" 
-              className="border-white/30 text-white hover:bg-white/10 font-montserrat font-semibold px-8 py-4 text-lg backdrop-blur-sm"
+              className="border-white/30 text-white hover:bg-white/10 font-lexend font-semibold px-8 py-4 text-lg backdrop-blur-sm"
               onClick={() => navigate('/coming-soon')}
             >
               Explore Platform

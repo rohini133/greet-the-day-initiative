@@ -49,7 +49,7 @@ export function FeaturesSection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16 md:mb-20">
           <motion.h2 
-            className="text-3xl md:text-4xl font-display font-bold mb-4"
+            className="text-3xl md:text-4xl font-lexend font-bold mb-4"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -81,7 +81,7 @@ export function FeaturesSection() {
               <div className={cn("w-12 h-12 rounded-lg flex items-center justify-center mb-4", feature.colorClass)}>
                 <feature.icon className="h-6 w-6" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
+              <h3 className="text-xl font-semibold mb-3 font-lexend">{feature.title}</h3>
               <p className="text-foreground/70">{feature.description}</p>
             </motion.div>
           ))}

@@ -33,7 +33,7 @@ const ComingSoon = () => {
 
         {/* Main Content */}
         <motion.h1 
-          className="text-4xl md:text-6xl font-montserrat font-bold text-white mb-6"
+          className="text-4xl md:text-6xl font-lexend font-bold text-white mb-6"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
@@ -81,7 +81,7 @@ const ComingSoon = () => {
         >
           <Button 
             onClick={() => navigate(-1)} 
-            className="bg-brand-orange hover:bg-brand-orange/90 text-white font-montserrat font-semibold px-8 py-3 hover:scale-105 transition-all duration-300"
+            className="bg-brand-orange hover:bg-brand-orange/90 text-white font-lexend font-semibold px-8 py-3 hover:scale-105 transition-all duration-300"
           >
             <ArrowLeft className="mr-2 h-5 w-5" />
             Go Back
@@ -90,7 +90,7 @@ const ComingSoon = () => {
           <Button 
             onClick={() => navigate('/')} 
             variant="outline"
-            className="border-white/30 text-white hover:bg-white/10 font-montserrat font-semibold px-8 py-3 backdrop-blur-sm hover:scale-105 transition-all duration-300"
+            className="border-white/30 text-white hover:bg-white/10 font-lexend font-semibold px-8 py-3 backdrop-blur-sm hover:scale-105 transition-all duration-300"
           >
             Back to Home
           </Button>
