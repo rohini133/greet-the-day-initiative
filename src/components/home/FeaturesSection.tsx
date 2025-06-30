@@ -44,12 +44,11 @@ const features = [
 
 export function FeaturesSection() {
   return (
-    <section className="py-20 md:py-32 bg-[#0F1026]">
-
+    <section className="py-20 md:py-32 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16 md:mb-20">
           <motion.h2 
-            className="text-3xl md:text-4xl font-lexend font-bold mb-4"
+            className="text-3xl md:text-4xl font-lexend font-bold mb-4 text-gray-900"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -58,7 +57,7 @@ export function FeaturesSection() {
             Transforming Education with<br />Advanced Technology
           </motion.h2>
           <motion.p 
-            className="text-lg text-foreground/70 max-w-2xl mx-auto text-balance"
+            className="text-lg font-lexend text-gray-600 max-w-2xl mx-auto text-balance"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -72,7 +71,7 @@ export function FeaturesSection() {
           {features.map((feature, index) => (
             <motion.div
               key={feature.title}
-              className="bg-card rounded-xl p-6 hover-scale shadow-sm"
+              className="bg-white border border-gray-200 rounded-xl p-6 hover-scale shadow-sm hover:shadow-xl transition-all duration-300"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -81,8 +80,8 @@ export function FeaturesSection() {
               <div className={cn("w-12 h-12 rounded-lg flex items-center justify-center mb-4", feature.colorClass)}>
                 <feature.icon className="h-6 w-6" />
               </div>
-              <h3 className="text-xl font-semibold mb-3 font-lexend">{feature.title}</h3>
-              <p className="text-foreground/70">{feature.description}</p>
+              <h3 className="text-xl font-lexend font-semibold mb-3 text-gray-900">{feature.title}</h3>
+              <p className="font-lexend text-gray-600">{feature.description}</p>
             </motion.div>
           ))}
         </div>

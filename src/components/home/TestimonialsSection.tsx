@@ -1,19 +1,12 @@
 
 import { motion } from "framer-motion";
 import {
-  Quote,
-  User,
-  Briefcase,
   GraduationCap,
+  User,
   Building,
-  Users,
-  Lightbulb,
 } from "lucide-react";
-import { useNavigate } from "react-router-dom";
 
 export function TestimonialsSection() {
-  const navigate = useNavigate();
-
   const testimonials = [
     {
       icon: <GraduationCap className="h-6 w-6 text-white" />,
@@ -27,7 +20,7 @@ export function TestimonialsSection() {
         "Portfolio building & networking",
       ],
       color: "from-blue-500 to-cyan-400",
-      bgPattern: "bg-blue-50",
+      bgPattern: "bg-white",
     },
     {
       icon: <User className="h-6 w-6 text-white" />,
@@ -41,7 +34,7 @@ export function TestimonialsSection() {
         "Performance insights & market intelligence",
       ],
       color: "from-green-500 to-emerald-400",
-      bgPattern: "bg-green-50",
+      bgPattern: "bg-white",
     },
     {
       icon: <Building className="h-6 w-6 text-white" />,
@@ -55,7 +48,7 @@ export function TestimonialsSection() {
         "Investment analysis & talent evaluation",
       ],
       color: "from-purple-500 to-pink-400",
-      bgPattern: "bg-purple-50",
+      bgPattern: "bg-white",
     },
   ];
 
@@ -67,7 +60,7 @@ export function TestimonialsSection() {
           <h2 className="text-4xl md:text-5xl font-lexend font-bold text-gray-900 mb-6">
             Who Is It For?
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl font-lexend text-gray-600 max-w-3xl mx-auto">
             Gurukul Code serves diverse communities united by a shared vision:
             intelligent, purpose-driven growth in the age of AI
           </p>
@@ -78,7 +71,7 @@ export function TestimonialsSection() {
           {testimonials.map((persona, index) => (
             <div
               key={persona.title}
-              className={`group relative overflow-hidden rounded-2xl ${persona.bgPattern} p-8 hover:shadow-xl transition-all duration-500 animate-fade-in`}
+              className={`group relative overflow-hidden rounded-2xl ${persona.bgPattern} border border-gray-200 p-8 hover:shadow-xl transition-all duration-500 animate-fade-in`}
               style={{ animationDelay: `${index * 100}ms` }}
             >
               {/* Background Gradient */}
@@ -93,13 +86,13 @@ export function TestimonialsSection() {
                   <div className="h-12 w-12 flex items-center justify-center rounded-xl bg-[#036D9B]">
                     {persona.icon}
                   </div>
-                  <h3 className="text-lg md:text-xl font-lexend font-bold text-gray-900">
+                  <h3 className="text-xl font-lexend font-bold text-gray-900">
                     {persona.title}
                   </h3>
                 </div>
 
                 {/* Description */}
-                <p className="mb-6 leading-relaxed text-[#F57E20]">
+                <p className="mb-6 font-lexend leading-relaxed text-[#F57E20]">
                   {persona.description}
                 </p>
 
@@ -108,7 +101,7 @@ export function TestimonialsSection() {
                   {persona.benefits.map((benefit, benefitIndex) => (
                     <div
                       key={benefitIndex}
-                      className="flex items-center text-sm text-gray-700"
+                      className="flex items-center text-sm font-lexend text-gray-700"
                     >
                       <div
                         className={`w-2 h-2 rounded-full bg-gradient-to-r ${persona.color} mr-3`}

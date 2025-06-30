@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
@@ -19,26 +20,26 @@ export function CTASection() {
   };
 
   return (
-    <section className="py-20 bg-white  bg-gradient-to-r from-brand-orange/10 via-brand-cyan/10 to-brand-blue/10 w-full overflow-hidden">
+    <section className="py-20 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
           <motion.div
-            className="rounded-2xl p-6 sm:p-10 md:p-12 bg-white/20 backdrop-blur-lg shadow-2xl border border-white/30"
+            className="rounded-2xl p-6 sm:p-10 md:p-12 bg-gradient-to-r from-brand-orange/10 via-brand-cyan/10 to-brand-blue/10 shadow-2xl border border-gray-200"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
             <div className="text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-brand-dark">
+              <h2 className="text-3xl md:text-4xl font-lexend font-bold mb-4 text-brand-dark">
                 Stay Ahead of the Curve
               </h2>
 
-              <p className="text-lg text-gray-700 mb-8 md:mb-10 max-w-2xl mx-auto leading-relaxed">
+              <p className="text-lg font-lexend text-gray-700 mb-8 md:mb-10 max-w-2xl mx-auto leading-relaxed">
                 Get exclusive insights on AI trends, career intelligence, and platform updates — delivered to your inbox weekly.
               </p>
 
-              <div className="bg-white/50 backdrop-blur-md border border-white/30 rounded-2xl p-6 md:p-8 max-w-2xl mx-auto shadow-md">
+              <div className="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl p-6 md:p-8 max-w-2xl mx-auto shadow-md">
                 {!isSubscribed ? (
                   <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4">
                     <input
@@ -47,12 +48,12 @@ export function CTASection() {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       required
-                      className="flex-1 px-6 py-4 rounded-full bg-white border border-gray-300 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-orange/40"
+                      className="flex-1 px-6 py-4 rounded-full bg-white border border-gray-300 text-gray-700 placeholder-gray-400 font-lexend focus:outline-none focus:ring-2 focus:ring-brand-orange/40"
                     />
                     <Button
                       type="submit"
                       size="lg"
-                      className="bg-[#F57E20] hover:bg-[#e76c0f] text-white px-8 py-6 rounded-full font-medium transition-colors"
+                      className="bg-[#F57E20] hover:bg-[#e76c0f] text-white px-8 py-6 rounded-full font-lexend font-medium transition-colors"
                     >
                       Subscribe
                       <Send className="ml-2 h-4 w-4" />
@@ -61,12 +62,12 @@ export function CTASection() {
                 ) : (
                   <div className="flex items-center justify-center text-brand-dark py-4">
                     <CheckCircle className="h-6 w-6 mr-2 text-[#F57E20]" />
-                    <span className="font-semibold text-xl">Thank you for subscribing!</span>
+                    <span className="font-lexend font-semibold text-xl">Thank you for subscribing!</span>
                   </div>
                 )}
 
                 {/* Benefits Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8 text-gray-700 font-medium">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8 text-gray-700 font-lexend font-medium">
                   {[
                     "Weekly AI insights",
                     "Career intelligence",
@@ -86,12 +87,12 @@ export function CTASection() {
               </div>
 
               <motion.p
-                className="mt-8 text-gray-600"
+                className="mt-8 font-lexend text-gray-600"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5 }}
               >
-                Join <span className="text-brand-orange font-semibold">10+</span> professionals already growing with us.
+                Join thousands of professionals already growing with us.
               </motion.p>
             </div>
           </motion.div>
