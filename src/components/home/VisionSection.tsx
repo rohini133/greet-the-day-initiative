@@ -35,14 +35,14 @@ const VisionSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-white relative overflow-hidden">
+    <section className="py-20 bg-white relative overflow-hidden font-lexend">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-brand-dark mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-brand-dark mb-6">
             Comprehensive AI-Driven Career Ecosystem
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed">
             Three interconnected platforms designed to accelerate your professional journey through intelligent, personalized experiences
           </p>
           <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-brand-orange/10 to-brand-cyan/10 rounded-full text-brand-dark font-medium">
@@ -58,18 +58,21 @@ const VisionSection = () => {
               className="group bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover-scale animate-fade-in"
               style={{ animationDelay: `${index * 200}ms` }}
             >
-              {/* Icon */}
-              <div className="inline-flex p-4 rounded-xl bg-gradient-to-r from-brand-orange to-brand-cyan text-white mb-6 group-hover:scale-110 transition-transform">
-                {platform.icon}
+              {/* Icon + Title */}
+              <div className="flex items-center gap-4 mb-4">
+                <div className="p-2 bg-[#036D9B] rounded-xl">
+                  {platform.icon}
+                </div>
+                <h3 className="text-2xl font-bold text-brand-dark">
+                  {platform.title}
+                </h3>
               </div>
-
-              {/* Content */}
-              <h3 className="text-2xl font-montserrat font-bold text-brand-dark mb-2">
-                {platform.title}
-              </h3>
-              <p className="text-brand-blue font-medium mb-4">
+               {/* Subtitle */}
+              <p className="text-[#F57e20] font-bold mb-4">
                 {platform.subtitle}
               </p>
+
+              {/* Description */}
               <p className="text-gray-600 mb-6 leading-relaxed">
                 {platform.description}
               </p>
@@ -85,19 +88,20 @@ const VisionSection = () => {
               </div>
 
               {/* CTA */}
-              <button 
-                onClick={() => navigate(platform.href)}
-                className="inline-flex items-center text-brand-orange font-semibold hover:text-brand-cyan transition-colors group"
-              >
-                Explore Platform
-                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </button>
+              <button
+  onClick={() => navigate(platform.href)}
+  className="inline-flex items-center text-brand-orange font-semibold hover:text-brand-cyan transition-colors group"
+>
+  Explore Platform
+  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+</button>
+
             </div>
           ))}
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center bg-gradient-to-r from-brand-orange/10 via-brand-cyan/10 to-brand-blue/10 rounded-2xl p-12">
+        {/* <div className="text-center bg-gradient-to-r from-brand-orange/10 via-brand-cyan/10 to-brand-blue/10 rounded-2xl p-12">
           <h3 className="text-2xl md:text-3xl font-montserrat font-bold text-brand-dark mb-4">
             Ready to Transform Your Career?
           </h3>
@@ -105,21 +109,20 @@ const VisionSection = () => {
             Start your AI-powered journey today and discover personalized pathways to professional success
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              className="bg-brand-orange hover:bg-brand-orange/90 text-white font-montserrat font-medium px-8 py-3 hover-scale"
+              <Button className="bg-brand-orange hover:bg-brand-orange/90 text-white font-medium px-8 py-3 hover-scale"
               onClick={() => navigate('/coming-soon')}
             >
               Begin Your Assessment
             </Button>
             <Button 
               variant="outline" 
-              className="border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white font-montserrat font-medium px-8 py-3"
+              className="border-brand-blue bg-white text-brand-blue hover:bg-brand-blue hover:text-white font-montserrat font-medium px-8 py-3"
               onClick={() => navigate('/coming-soon')}
             >
               Schedule Demo
             </Button>
-          </div>
-        </div>
+          </div> 
+        </div>*/}
       </div>
     </section>
   );

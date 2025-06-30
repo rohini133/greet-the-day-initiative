@@ -9,11 +9,9 @@ export function CTASection() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Newsletter signup logic would go here
     console.log('Newsletter signup:', email);
     setIsSubscribed(true);
-    
-    // Reset after 3 seconds
+
     setTimeout(() => {
       setIsSubscribed(false);
       setEmail('');
@@ -21,27 +19,26 @@ export function CTASection() {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-r from-[#0F1026] via-[#1a1c3d] to-[#2d3185] relative overflow-hidden">
-      <div className="container relative mx-auto px-4 md:px-6">
+    <section className="py-20 bg-white  bg-gradient-to-r from-brand-orange/10 via-brand-cyan/10 to-brand-blue/10 w-full overflow-hidden">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
           <motion.div
-            className="glass-card rounded-2xl p-8 md:p-12 backdrop-blur-md border border-white/20 shadow-xl"
+            className="rounded-2xl p-6 sm:p-10 md:p-12 bg-white/20 backdrop-blur-lg shadow-2xl border border-white/30"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
             <div className="text-center">
-              <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 text-white">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-brand-dark">
                 Stay Ahead of the Curve
               </h2>
 
-              <p className="text-lg text-white/90 mb-8 md:mb-10 max-w-2xl mx-auto">
-                Get exclusive insights on AI trends, career intelligence, and platform updates 
-                delivered to your inbox every week.
+              <p className="text-lg text-gray-700 mb-8 md:mb-10 max-w-2xl mx-auto leading-relaxed">
+                Get exclusive insights on AI trends, career intelligence, and platform updates — delivered to your inbox weekly.
               </p>
 
-              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 md:p-8 max-w-2xl mx-auto">
+              <div className="bg-white/50 backdrop-blur-md border border-white/30 rounded-2xl p-6 md:p-8 max-w-2xl mx-auto shadow-md">
                 {!isSubscribed ? (
                   <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4">
                     <input
@@ -50,7 +47,7 @@ export function CTASection() {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       required
-                      className="flex-1 px-6 py-4 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/50"
+                      className="flex-1 px-6 py-4 rounded-full bg-white border border-gray-300 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-orange/40"
                     />
                     <Button
                       type="submit"
@@ -62,48 +59,39 @@ export function CTASection() {
                     </Button>
                   </form>
                 ) : (
-                  <div className="flex items-center justify-center text-white py-4">
+                  <div className="flex items-center justify-center text-brand-dark py-4">
                     <CheckCircle className="h-6 w-6 mr-2 text-[#F57E20]" />
-                    <span className="font-medium text-xl">Thank you for subscribing!</span>
+                    <span className="font-semibold text-xl">Thank you for subscribing!</span>
                   </div>
                 )}
 
                 {/* Benefits Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8 text-white/80">
-                  <motion.div 
-                    className="flex items-center justify-center"
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ type: "spring", stiffness: 400 }}
-                  >
-                    <div className="w-2 h-2 bg-[#F57E20] rounded-full mr-2"></div>
-                    Weekly AI insights
-                  </motion.div>
-                  <motion.div 
-                    className="flex items-center justify-center"
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ type: "spring", stiffness: 400 }}
-                  >
-                    <div className="w-2 h-2 bg-[#F57E20] rounded-full mr-2"></div>
-                    Career intelligence
-                  </motion.div>
-                  <motion.div 
-                    className="flex items-center justify-center"
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ type: "spring", stiffness: 400 }}
-                  >
-                    <div className="w-2 h-2 bg-[#F57E20] rounded-full mr-2"></div>
-                    Early access features
-                  </motion.div>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8 text-gray-700 font-medium">
+                  {[
+                    "Weekly AI insights",
+                    "Career intelligence",
+                    "Early access features",
+                  ].map((text, idx) => (
+                    <motion.div
+                      key={idx}
+                      className="flex items-center justify-center"
+                      whileHover={{ scale: 1.05 }}
+                      transition={{ type: "spring", stiffness: 400 }}
+                    >
+                      <div className="w-2 h-2 bg-[#F57E20] rounded-full mr-2"></div>
+                      {text}
+                    </motion.div>
+                  ))}
                 </div>
               </div>
 
-              <motion.p 
-                className="mt-8 text-white/60"
+              <motion.p
+                className="mt-8 text-gray-600"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5 }}
               >
-                Join 10,000+ professionals already growing with us
+                Join <span className="text-brand-orange font-semibold">10+</span> professionals already growing with us.
               </motion.p>
             </div>
           </motion.div>

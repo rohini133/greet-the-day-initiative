@@ -10,9 +10,6 @@ export function Footer() {
     {
       title: "Platform",
       links: [
-        { name: "Learning Center", href: "/learning-center" },
-        { name: "Career Assessment", href: "/coming-soon" },
-        { name: "Mentorship", href: "/coming-soon" },
         { name: "Knowledge Hub", href: "/coming-soon" },
         { name: "Community", href: "/community" },
       ]
@@ -33,7 +30,6 @@ export function Footer() {
         { name: "About Us", href: "/about" },
         { name: "Careers", href: "/coming-soon" },
         { name: "Contact", href: "/contact" },
-        { name: "Press", href: "/coming-soon" },
         { name: "Partners", href: "/coming-soon" },
       ]
     },
@@ -93,7 +89,7 @@ export function Footer() {
             <Link to="/" className="inline-block mb-6">
               <img 
                 alt="Gurukul Code" 
-                src="/lovable-uploads/1449ab10-12f7-4fcd-a994-eb2abf7960b0.png" 
+                src="/lovable-uploads/Logos-05-removebg-preview.png" 
                 className="h-12 w-auto"
               />
             </Link>
@@ -109,11 +105,11 @@ export function Footer() {
               </div>
               <div className="flex items-center">
                 <Phone className="h-4 w-4 mr-2" />
-                +1 (555) 123-4567
+                 +919922089689
               </div>
               <div className="flex items-center">
                 <MapPin className="h-4 w-4 mr-2" />
-                San Francisco, CA
+                Pune, India
               </div>
             </div>
             
@@ -168,14 +164,14 @@ export function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
         <div className="container mx-auto px-4 py-6">
-          <div className="flex flex-col md:flex-row items-center justify-between text-sm text-gray-300">
-            <div className="mb-4 md:mb-0">
+          <div className="flex flex-col md:flex-row items-center justify-center text-sm text-gray-300">
+            <div className="mb-4 md:mb-0 ">
               © {currentYear} Gurukul Code. All rights reserved.
             </div>
             <div className="flex items-center space-x-6">
-              <span>Built with 🤖 AI-Native Architecture</span>
+              {/* <span>Built with 🤖 AI-Native Architecture</span>
               <span>•</span>
-              <span>Ethical AI for Growth</span>
+              <span>Ethical AI for Growth</span> */}
             </div>
           </div>
         </div>
