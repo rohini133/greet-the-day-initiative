@@ -72,22 +72,22 @@ const About = () => {
   const ourApproach = [
     {
       step: "01",
-      title: "Deep Understanding",
+      title: "assessment",
       description: "We start by truly understanding you - your strengths, values, aspirations, and unique circumstances."
     },
     {
       step: "02",
-      title: "Intelligent Matching",
+      title: "awareness",
       description: "Our AI analyzes thousands of career paths to find opportunities perfectly aligned with your profile."
     },
     {
       step: "03",
-      title: "Personalized Roadmap",
+      title: "Exploration",
       description: "Receive a custom career plan with specific skills, experiences, and connections you need to succeed."
     },
     {
       step: "04",
-      title: "Continuous Support",
+      title: "preparation",
       description: "As you grow and the world evolves, our AI adapts your plan to keep you on the path to fulfillment."
     }
   ];
@@ -199,7 +199,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Impact Stats */}
+      {/* Impact Stats
       <section className="py-16 bg-gradient-to-r from-brand-orange/10 via-brand-cyan/10 to-brand-blue/10">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -221,7 +221,7 @@ const About = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Core Values */}
       <section className="py-20 bg-white">
@@ -352,7 +352,7 @@ const About = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button className="bg-brand-orange hover:bg-brand-orange/90 text-white font-montserrat font-medium px-8 py-3 hover-scale">
-                Begin Assessment
+                Begin Your Journey
               </Button>
               <Button variant="outline" className="border-white text-white hover:bg-white/10 font-montserrat font-medium px-8 py-3">
                 Schedule Consultation
@@ -378,7 +378,7 @@ const About = () => {
                   Enterprise-grade technology stack designed for scale, security, and performance
                 </p>
                 <div className="inline-flex items-center px-6 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-white font-medium">
-                  🔐 Your data. Your control. Your custom agents.
+                  Your data. Your control. Your custom agents.
                 </div>
               </div>
       
@@ -413,7 +413,7 @@ const About = () => {
               </div>
       
               {/* Features Grid */}
-              <div className="grid md:grid-cols-3 gap-8 text-center">
+              {/* <div className="grid md:grid-cols-3 gap-8 text-center">
                 <div className="text-white">
                   <div className="text-3xl font-bold font-montserrat mb-2">99.9%</div>
                   <div className="text-gray-300">Uptime Guarantee</div>
@@ -426,7 +426,7 @@ const About = () => {
                   <div className="text-3xl font-bold font-montserrat mb-2">SOC 2</div>
                   <div className="text-gray-300">Security Compliance</div>
                 </div>
-              </div>
+              </div> */}
       
               {/* CTA */}
               <div className="text-center mt-16">

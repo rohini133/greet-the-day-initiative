@@ -6,13 +6,13 @@ import { useNavigate } from "react-router-dom";
 const journeySteps = [
   {
     layer: "LLM Foundation",
-    stack: "Self-hosted GPT-4-class models",
+    stack: "Self-hosted LLama  models",
     icon: <Cpu className="h-6 w-6" />,
     color: "from-brand-blue to-brand-cyan"
   },
   {
     layer: "AI Agent System",
-    stack: "LangChain, LangGraph",
+    stack: "LangChain, LangGraph, n8n",
     icon: <Server className="h-6 w-6" />,
     color: "from-brand-cyan to-brand-blue"
   },
@@ -63,7 +63,7 @@ export function CareerJourneySection() {
             Enterprise-grade technology stack designed for scale, security, and performance
           </p>
           <div className="inline-flex items-center px-6 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-white font-medium">
-            🔐 Your data. Your control. Your custom agents.
+            Your data. Your control. Your custom agents.
           </div>
         </div>
 
@@ -98,10 +98,10 @@ export function CareerJourneySection() {
         </div>
 
         {/* Features Grid */}
-        <div className="grid md:grid-cols-3 gap-8 text-center">
+        {/* <div className="grid md:grid-cols-3 gap-8 text-center">
           <div className="text-white">
-            <div className="text-3xl font-bold font-montserrat mb-2">99.9%</div>
-            <div className="text-gray-300">Uptime Guarantee</div>
+            {/* <div className="text-3xl font-bold font-montserrat mb-2">99.9%</div> */}
+            {/* <div className="text-gray-300">Uptime Guarantee</div>
           </div>
           <div className="text-white">
             <div className="text-3xl font-bold font-montserrat mb-2">&lt; 200ms</div>
@@ -111,7 +111,7 @@ export function CareerJourneySection() {
             <div className="text-3xl font-bold font-montserrat mb-2">SOC 2</div>
             <div className="text-gray-300">Security Compliance</div>
           </div>
-        </div>
+        </div> */} 
 
         {/* CTA */}
         <div className="text-center mt-16">
