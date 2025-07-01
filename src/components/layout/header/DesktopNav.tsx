@@ -45,10 +45,19 @@ export function DesktopNav({
           <UserProfileMenu user={user} />
         ) : (
           <>
-            <Button variant="outline" size="sm" onClick={handleLogin}>
+            <Button 
+              variant="outline" 
+              size="sm" 
+              onClick={handleLogin}
+              className="bg-white text-blue-600 border-white hover:bg-gray-50 font-lexend"
+            >
               Log in
             </Button>
-            <Button size="sm" onClick={handleSignup}>
+            <Button 
+              size="sm" 
+              onClick={handleSignup}
+              className="bg-white text-blue-600 hover:bg-gray-50 font-lexend"
+            >
               Sign up
             </Button>
           </>

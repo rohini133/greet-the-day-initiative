@@ -16,12 +16,12 @@ export function HeroSection() {
   }, []);
 
   return (
-    <section className="min-h-screen bg-gradient-hero flex items-center justify-center relative overflow-hidden">
+    <section className="min-h-screen bg-white flex items-center justify-center relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-brand-cyan/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-brand-blue/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-blue/5 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-600/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-500/5 rounded-full blur-3xl"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -37,14 +37,14 @@ export function HeroSection() {
 
           {/* Main Tagline */}
           <div className="mb-8 animate-fade-in delay-200">
-            <p className="text-xl md:text-2xl font-lexend text-gray-300 font-light max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl font-lexend text-gray-600 font-light max-w-3xl mx-auto leading-relaxed">
               The AI-Powered Career & Domain Intelligence Ecosystem
             </p>
           </div>
 
           {/* Value Proposition */}
           <div className="mb-12 animate-fade-in delay-400">
-            <p className="text-lg font-lexend text-gray-400 max-w-2xl mx-auto mb-8">
+            <p className="text-lg font-lexend text-gray-500 max-w-2xl mx-auto mb-8">
               Equip every learner, professional, and institution with context-aware, adaptable, 
               and continuously intelligent systems to grow — meaningfully, ethically, and sustainably.
             </p>
@@ -54,7 +54,7 @@ export function HeroSection() {
               {['AI-Native', 'Hyper-Personalized', 'Future-Ready', 'Ethical'].map((feature) => (
                 <span 
                   key={feature}
-                  className="px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-white text-sm font-lexend font-bold"
+                  className="px-4 py-2 bg-blue-500/10 backdrop-blur-sm border border-blue-500/20 rounded-full text-blue-600 text-sm font-lexend font-bold"
                 >
                   <Sparkles className="inline w-4 h-4 mr-1" />
                   {feature}
@@ -67,7 +67,7 @@ export function HeroSection() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-fade-in delay-600">
             <Button 
               size="lg" 
-              className="bg-gradient-to-r from-brand-cyan to-brand-blue text-white px-8 py-3 rounded-full font-lexend font-medium hover-scale"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-lexend font-medium hover-scale"
               onClick={() => navigate('/coming-soon')}
             >
               Start Your Journey
@@ -76,7 +76,7 @@ export function HeroSection() {
             <Button 
               size="lg" 
               variant="outline" 
-              className="border-white/30 bg-transparent text-white hover:bg-white/10 font-lexend rounded-full font-semibold px-8 py-4 text-lg backdrop-blur-sm"
+              className="border-blue-600/30 bg-transparent text-blue-600 hover:bg-blue-50 font-lexend rounded-full font-semibold px-8 py-4 text-lg backdrop-blur-sm"
               onClick={() => navigate('/coming-soon')}
             >
               Explore Platform

@@ -51,13 +51,7 @@ export function Header() {
   };
 
   return (
-    <header 
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled 
-          ? "bg-white backdrop-blur-md shadow-sm py-3" 
-          : "bg-white backdrop-blur-sm py-5"
-      }`}
-    >
+    <header className="fixed w-full z-50 bg-blue-600 shadow-sm py-3 transition-all duration-300">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
           <HeaderLogo />

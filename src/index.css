@@ -87,7 +87,7 @@
   }
 
   * {
-    @apply border-border;
+    @apply border-border font-lexend;
   }
 
   body {
@@ -106,14 +106,18 @@
     @apply font-lexend;
   }
 
-  p, span, div, label {
+  p, span, div, label, a {
+    @apply font-lexend;
+  }
+
+  .btn, .card, .tooltip, .alert {
     @apply font-lexend;
   }
 }
 
 @layer components {
   .gradient-text {
-    @apply bg-gradient-to-r from-brand-cyan via-brand-blue to-brand-orange bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 bg-clip-text text-transparent;
   }
 
   .hover-scale {

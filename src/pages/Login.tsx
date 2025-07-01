@@ -54,16 +54,20 @@ export default function Login() {
   };
 
   return (
-    <div className="flex min-h-[calc(100vh-12rem)] items-center justify-center px-4 pt-32 py-12">
+    <div className="flex min-h-[calc(100vh-12rem)] items-center justify-center px-4 pt-32 py-12 bg-white">
       <div className="w-full max-w-md">
-        <Button variant="ghost" className="mb-6 items-center justify-center"  onClick={() => navigate("/")}>
+        <Button 
+          variant="ghost" 
+          className="mb-6 items-center justify-center font-lexend text-blue-600 hover:text-blue-700 hover:bg-blue-50"  
+          onClick={() => navigate("/")}
+        >
           <ArrowLeft className="mr-2 h-4 w-4" /> Back to home
         </Button>
 
-        <Card className="border-border/40 shadow-lg">
+        <Card className="border-border/40 shadow-lg bg-white">
           <CardHeader className="space-y-1">
-            <CardTitle className="text-2xl font-bold">Welcome back</CardTitle>
-            <CardDescription>
+            <CardTitle className="text-2xl font-bold font-lexend text-gray-900">Welcome back</CardTitle>
+            <CardDescription className="font-lexend text-gray-600">
               Enter your credentials to access your account
             </CardDescription>
           </CardHeader>
@@ -71,7 +75,7 @@ export default function Login() {
           <form onSubmit={handleSubmit}>
             <CardContent className="space-y-4">
               <div className="space-y-2">
-                <Label htmlFor="email">Email</Label>
+                <Label htmlFor="email" className="font-lexend text-gray-700">Email</Label>
                 <Input
                   id="email"
                   type="email"
@@ -79,15 +83,16 @@ export default function Login() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
+                  className="font-lexend"
                 />
               </div>
 
               <div className="space-y-2">
                 <div className="flex items-center justify-between">
-                  <Label htmlFor="password">Password</Label>
+                  <Label htmlFor="password" className="font-lexend text-gray-700">Password</Label>
                   <a
                     href="#"
-                    className="text-sm font-medium text-primary underline-offset-4 hover:underline"
+                    className="text-sm font-medium text-blue-600 underline-offset-4 hover:underline font-lexend"
                   >
                     Forgot password?
                   </a>
@@ -98,20 +103,25 @@ export default function Login() {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
+                  className="font-lexend"
                 />
               </div>
             </CardContent>
 
             <CardFooter className="flex flex-col space-y-4">
-              <Button type="submit" className="w-full" disabled={isLoading}>
+              <Button 
+                type="submit" 
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-lexend" 
+                disabled={isLoading}
+              >
                 {isLoading ? "Signing in..." : "Sign in"}
               </Button>
 
-              <div className="text-center text-sm">
+              <div className="text-center text-sm font-lexend text-gray-600">
                 Don't have an account?{" "}
                 <a
                   onClick={() => navigate("/signup")}
-                  className="font-medium text-primary underline-offset-4 hover:underline cursor-pointer"
+                  className="font-medium text-blue-600 underline-offset-4 hover:underline cursor-pointer font-lexend"
                 >
                   Sign up
                 </a>
