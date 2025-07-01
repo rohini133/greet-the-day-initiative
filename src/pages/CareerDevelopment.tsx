@@ -108,7 +108,7 @@ const CareerDevelopment = () => {
     {
       name: "Rohini Satale",
       role: "Software Developer at Gurukul Code",
-      quote: "Starting with Gurukul Code as a learner, I was guided through every step of my career journey — from discovering AI careers to landing a role within the same platform. It’s more than a learning space; it’s a launchpad",
+      quote: "Starting with Gurukul Code as a learner, I was guided through every step of my career journey — from discovering AI careers to landing a role within the same platform. It's more than a learning space; it's a launchpad",
       rating: 5
     },
     {
@@ -120,9 +120,7 @@ const CareerDevelopment = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
-      
-      
+    <div className="min-h-screen bg-white font-lexend">
       {/* Enhanced Hero Section */}
       <section className="pt-24 pb-20 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 relative overflow-hidden">
         {/* Background Effects */}
@@ -141,7 +139,7 @@ const CareerDevelopment = () => {
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-5xl md:text-7xl font-montserrat font-bold text-white mb-8 animate-fade-in" style={{ animationDelay: '200ms' }}>
+            <h1 className="text-5xl md:text-7xl font-lexend font-bold text-white mb-8 animate-fade-in" style={{ animationDelay: '200ms' }}>
               Transform Your
               <span className="block bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
                 Career Journey
@@ -165,11 +163,11 @@ const CareerDevelopment = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: '800ms' }}>
-              <Button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-4 text-lg font-montserrat font-semibold hover-scale shadow-2xl">
+              <Button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-4 text-lg font-lexend font-semibold hover-scale shadow-2xl">
                 Start Your journey
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button variant="outline" className="border-2 border-white/30 text-white hover:bg-white hover:text-slate-900 px-8 py-4 text-lg font-montserrat font-semibold backdrop-blur-sm">
+              <Button variant="outline" className="border-2 border-white/30 text-white hover:bg-white hover:text-slate-900 px-8 py-4 text-lg font-lexend font-semibold backdrop-blur-sm">
                 Watch Demo
               </Button>
             </div>
@@ -182,7 +180,7 @@ const CareerDevelopment = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-20">
             <Badge className="mb-4 bg-blue-100 text-blue-800 px-4 py-2">Core Platform Features</Badge>
-            <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-slate-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-lexend font-bold text-slate-900 mb-6">
               Your Complete Career Intelligence Suite
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -203,7 +201,7 @@ const CareerDevelopment = () => {
                   <div className={`inline-flex p-3 rounded-xl bg-gradient-to-br ${feature.color} text-white mb-4 group-hover:scale-110 transition-transform`}>
                     {feature.icon}
                   </div>
-                  <CardTitle className="text-2xl font-montserrat font-bold text-slate-900 mb-2">
+                  <CardTitle className="text-2xl font-lexend font-bold text-slate-900 mb-2">
                     {feature.title}
                   </CardTitle>
                   <div className="text-sm font-semibold text-blue-600 mb-4">
@@ -237,7 +235,7 @@ const CareerDevelopment = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-20">
             <Badge className="mb-4 bg-blue-500 text-white px-4 py-2">Our Process</Badge>
-            <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-white mb-6">
+            <h2 className="text-4xl md:text-5xl font-lexend font-bold text-white mb-6">
               Your Journey to Career Success
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
@@ -264,7 +262,7 @@ const CareerDevelopment = () => {
                       <div className="hidden md:block absolute top-10 left-full w-full h-0.5 bg-gradient-to-r from-white/30 to-transparent"></div>
                     )}
                   </div>
-                  <h3 className="text-xl font-montserrat font-bold text-white mb-3">{step.title}</h3>
+                  <h3 className="text-xl font-lexend font-bold text-white mb-3">{step.title}</h3>
                   <p className="text-gray-300 text-sm leading-relaxed">{step.description}</p>
                 </div>
               ))}
@@ -279,7 +277,7 @@ const CareerDevelopment = () => {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-20">
               <Badge className="mb-4 bg-green-100 text-green-800 px-4 py-2">Proven Results</Badge>
-              <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-slate-900 mb-6">
+              <h2 className="text-4xl md:text-5xl font-lexend font-bold text-slate-900 mb-6">
                 Real Impact, Real Results
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -297,7 +295,7 @@ const CareerDevelopment = () => {
                   <div className="inline-flex p-4 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 text-white mb-6">
                     {outcome.icon}
                   </div>
-                  <h3 className="text-2xl font-montserrat font-bold text-slate-900 mb-3">
+                  <h3 className="text-2xl font-lexend font-bold text-slate-900 mb-3">
                     {outcome.title}
                   </h3>
                   <p className="text-gray-600">{outcome.description}</p>
@@ -331,53 +329,6 @@ const CareerDevelopment = () => {
           </div>
         </div>
       </section>
-
-      {/* //Final CTA Section */}
-     {/* // /* <section className="py-24 bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900 relative overflow-hidden"> */}
-        {/* <div className="absolute inset-0">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl"></div>
-        </div> */}
-        
-        {/* <div className="container mx-auto px-4 relative z-10"> */
-          // <div className="max-w-4xl mx-auto text-center">
-          //   <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-white mb-8">
-          //     Ready to Transform Your Career?
-          //   </h2>
-          //   <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
-          //     Join thousands of professionals who've accelerated their careers with our AI-powered platform. Your transformation starts today.
-          //   </p>
-            
-          //   <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
-          //     <Button className="bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-500 hover:to-blue-600 text-white px-10 py-4 text-lg font-montserrat font-semibold hover-scale shadow-2xl">
-          //       Start Your journey
-          //       <ArrowRight className="ml-2 h-5 w-5" />
-          //     </Button>
-          //     <Button variant="outline" className="border-2 border-white/30 text-white hover:bg-white hover:text-slate-900 px-10 py-4 text-lg font-montserrat font-semibold backdrop-blur-sm">
-          //       Schedule Personal Demo
-          //     </Button>
-          //   </div> */}
-
-          //   <div className="flex flex-wrap justify-center gap-8 text-sm text-gray-300">
-          //     <div className="flex items-center">
-          //       <Shield className="h-4 w-4 mr-2" />
-          //       Free to start
-          //     </div>
-          //     <div className="flex items-center">
-          //       <Clock className="h-4 w-4 mr-2" />
-          //       Results in 30 days
-          //     </div>
-          //     <div className="flex items-center">
-          //       <Award className="h-4 w-4 mr-2" />
-          //       Money-back guarantee
-          //     </div>
-          //   </div>
-          // </div>
-  
-      //   </div>
-      // </section>
-
-     
     </div>
   );
 };
