@@ -36,7 +36,7 @@ const CareerDevelopment = () => {
       icon: <Users className="h-12 w-12" />,
       title: "Self-Discovery Engine",
       subtitle: "Know Yourself Deeply",
-      description: "Advanced AI-powered personality assessments, strengths analysis, and interest profiling to uncover your unique professional DNA and hidden potential.",
+      description: "Advanced AI-powered hyper personalized  assessments system, strengths analysis, and interest profiling to uncover your unique professional DNA and hidden potential.",
       features: ["Personality Deep-Dive", "Strengths Mapping", "Interest Profiling", "Values Assessment"],
       color: "from-blue-500 to-cyan-500"
     },
@@ -69,21 +69,21 @@ const CareerDevelopment = () => {
   const processSteps = [
     {
       step: "01",
-      title: "Discover",
+      title: "assessment",
       description: "Complete comprehensive assessments to understand your unique profile",
       icon: <UserCheck className="h-8 w-8" />,
       color: "bg-blue-500"
     },
     {
       step: "02", 
-      title: "Match",
+      title: "awareness",
       description: "AI algorithms identify your optimal career paths and opportunities",
       icon: <Target className="h-8 w-8" />,
       color: "bg-purple-500"
     },
     {
       step: "03",
-      title: "Learn",
+      title: "preparation",
       description: "Follow personalized learning pathways to build required skills",
       icon: <BookOpen className="h-8 w-8" />,
       color: "bg-green-500"
@@ -106,9 +106,9 @@ const CareerDevelopment = () => {
 
   const testimonials = [
     {
-      name: "Sarah Chen",
-      role: "Data Scientist at Google",
-      quote: "The AI-powered insights revealed career paths I never considered. Within 8 months, I transitioned from marketing to data science.",
+      name: "Rohini Satale",
+      role: "Software Developer at Gurukul Code",
+      quote: "Starting with Gurukul Code as a learner, I was guided through every step of my career journey — from discovering AI careers to landing a role within the same platform. It’s more than a learning space; it’s a launchpad",
       rating: 5
     },
     {
@@ -137,7 +137,7 @@ const CareerDevelopment = () => {
             {/* Hero Badge */}
             <div className="inline-flex items-center px-6 py-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white mb-8 animate-fade-in">
               <Zap className="h-5 w-5 mr-2 text-yellow-400" />
-              <span className="text-sm font-medium">AI-Powered Career Operating System</span>
+              <span className="text-sm font-medium">AI-Powered hyper personalized Career Operating System</span>
             </div>
 
             {/* Main Headline */}
@@ -166,7 +166,7 @@ const CareerDevelopment = () => {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: '800ms' }}>
               <Button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-4 text-lg font-montserrat font-semibold hover-scale shadow-2xl">
-                Start Your Assessment
+                Start Your journey
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <Button variant="outline" className="border-2 border-white/30 text-white hover:bg-white hover:text-slate-900 px-8 py-4 text-lg font-montserrat font-semibold backdrop-blur-sm">
@@ -332,49 +332,50 @@ const CareerDevelopment = () => {
         </div>
       </section>
 
-      {/* Final CTA Section */}
-      <section className="py-24 bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900 relative overflow-hidden">
-        <div className="absolute inset-0">
+      {/* //Final CTA Section */}
+     {/* // /* <section className="py-24 bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900 relative overflow-hidden"> */}
+        {/* <div className="absolute inset-0">
           <div className="absolute top-0 right-0 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl"></div>
-        </div>
+        </div> */}
         
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-white mb-8">
-              Ready to Transform Your Career?
-            </h2>
-            <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
-              Join thousands of professionals who've accelerated their careers with our AI-powered platform. Your transformation starts today.
-            </p>
+        {/* <div className="container mx-auto px-4 relative z-10"> */
+          // <div className="max-w-4xl mx-auto text-center">
+          //   <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-white mb-8">
+          //     Ready to Transform Your Career?
+          //   </h2>
+          //   <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
+          //     Join thousands of professionals who've accelerated their careers with our AI-powered platform. Your transformation starts today.
+          //   </p>
             
-            <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
-              <Button className="bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-500 hover:to-blue-600 text-white px-10 py-4 text-lg font-montserrat font-semibold hover-scale shadow-2xl">
-                Start Free Assessment
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button variant="outline" className="border-2 border-white/30 text-white hover:bg-white hover:text-slate-900 px-10 py-4 text-lg font-montserrat font-semibold backdrop-blur-sm">
-                Schedule Personal Demo
-              </Button>
-            </div>
+          //   <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
+          //     <Button className="bg-gradient-to-r from-cyan-400 to-blue-500 hover:from-cyan-500 hover:to-blue-600 text-white px-10 py-4 text-lg font-montserrat font-semibold hover-scale shadow-2xl">
+          //       Start Your journey
+          //       <ArrowRight className="ml-2 h-5 w-5" />
+          //     </Button>
+          //     <Button variant="outline" className="border-2 border-white/30 text-white hover:bg-white hover:text-slate-900 px-10 py-4 text-lg font-montserrat font-semibold backdrop-blur-sm">
+          //       Schedule Personal Demo
+          //     </Button>
+          //   </div> */}
 
-            <div className="flex flex-wrap justify-center gap-8 text-sm text-gray-300">
-              <div className="flex items-center">
-                <Shield className="h-4 w-4 mr-2" />
-                Free to start
-              </div>
-              <div className="flex items-center">
-                <Clock className="h-4 w-4 mr-2" />
-                Results in 30 days
-              </div>
-              <div className="flex items-center">
-                <Award className="h-4 w-4 mr-2" />
-                Money-back guarantee
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+          //   <div className="flex flex-wrap justify-center gap-8 text-sm text-gray-300">
+          //     <div className="flex items-center">
+          //       <Shield className="h-4 w-4 mr-2" />
+          //       Free to start
+          //     </div>
+          //     <div className="flex items-center">
+          //       <Clock className="h-4 w-4 mr-2" />
+          //       Results in 30 days
+          //     </div>
+          //     <div className="flex items-center">
+          //       <Award className="h-4 w-4 mr-2" />
+          //       Money-back guarantee
+          //     </div>
+          //   </div>
+          // </div>
+  
+      //   </div>
+      // </section>
 
      
     </div>
