@@ -44,7 +44,7 @@ const features = [
 
 export function FeaturesSection() {
   return (
-    <section className="py-20 md:py-32 bg-white">
+    <section className="py-20 md:py-32 bg-gradient-to-br from-brand-orange/5 via-brand-cyan/5 to-brand-blue/5">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16 md:mb-20">
           <motion.h2 
@@ -71,7 +71,7 @@ export function FeaturesSection() {
           {features.map((feature, index) => (
             <motion.div
               key={feature.title}
-              className="bg-white border border-gray-200 rounded-xl p-6 hover-scale shadow-sm hover:shadow-xl transition-all duration-300"
+              className="bg-white/80 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover-scale shadow-sm hover:shadow-xl transition-all duration-300"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

@@ -34,7 +34,7 @@ const VisionSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-white relative overflow-hidden font-lexend">
+    <section className="py-20 bg-gradient-to-br from-brand-orange/5 via-brand-cyan/5 to-brand-blue/5 relative overflow-hidden font-lexend">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -44,7 +44,7 @@ const VisionSection = () => {
           <p className="text-xl font-lexend text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed">
             Three interconnected platforms designed to accelerate your professional journey through intelligent, personalized experiences
           </p>
-          <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-brand-orange/10 to-brand-cyan/10 rounded-full text-brand-dark font-lexend font-medium">
+          <div className="inline-flex items-center px-6 py-3 bg-white/60 backdrop-blur-sm border border-white/20 rounded-full text-brand-dark font-lexend font-medium shadow-sm">
             🚀 Purpose-driven growth powered by ethical AI
           </div>
         </div>
@@ -54,7 +54,7 @@ const VisionSection = () => {
           {platforms.map((platform, index) => (
             <div 
               key={platform.title}
-              className="group bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover-scale animate-fade-in"
+              className="group bg-white/80 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover-scale animate-fade-in shadow-sm"
               style={{ animationDelay: `${index * 200}ms` }}
             >
               {/* Icon + Title */}

@@ -11,7 +11,7 @@ const PricingPage = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+    <div className="min-h-screen bg-gradient-to-br from-brand-orange/5 via-brand-cyan/5 to-brand-blue/5">
       {/* Header spacing to match site layout */}
       <div className="pt-20">
         <div className="container mx-auto px-4 py-20">
