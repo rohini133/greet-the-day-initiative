@@ -45,26 +45,26 @@ const Enterprise = () => {
      
       
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-hero relative overflow-hidden">
+      <section className="pt-32 pb-16 bg-gradient-to-br from-blue-50 to-white relative overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_30%,rgba(86,199,223,0.1),transparent_50%)]"></div>
-          <div className="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(circle_at_70%_70%,rgba(245,126,32,0.1),transparent_50%)]"></div>
+          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_30%,rgba(12,125,167,0.1),transparent_50%)]"></div>
+          <div className="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(circle_at_70%_70%,rgba(12,125,167,0.1),transparent_50%)]"></div>
         </div>
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-montserrat font-bold text-white mb-6 animate-fade-in">
-              <span className="gradient-text">Enterprise AI</span> Solutions
+            <h1 className="text-4xl md:text-6xl font-lexend font-bold mb-6 animate-fade-in" style={{ color: '#0C7DA7' }}>
+              <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">Enterprise AI</span> Solutions
             </h1>
-            <p className="text-xl md:text-2xl text-gray-300 mb-8 animate-fade-in" style={{ animationDelay: '200ms' }}>
+            <p className="text-xl md:text-2xl text-gray-600 font-lexend mb-8 animate-fade-in" style={{ animationDelay: '200ms' }}>
               Scale your business with enterprise-grade AI solutions built for security, compliance, and performance
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: '400ms' }}>
-              <Button className="bg-gradient-to-r from-brand-blue to-brand-orange text-white px-8 py-3 font-montserrat font-medium hover-scale">
+              <Button className="text-white px-8 py-3 font-lexend font-medium hover:scale-105 transition-all duration-300" style={{ backgroundColor: '#0C7DA7' }}>
                 Schedule Demo
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button variant="outline" className="border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white px-8 py-3 font-montserrat font-medium">
+              <Button variant="outline" className="px-8 py-3 font-lexend font-medium border-2 hover:text-white transition-all duration-300" style={{ borderColor: '#0C7DA7', color: '#0C7DA7' }} onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#0C7DA7'} onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}>
                 Contact Sales
               </Button>
             </div>
@@ -76,10 +76,10 @@ const Enterprise = () => {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-brand-dark mb-6">
+            <h2 className="text-3xl md:text-4xl font-lexend font-bold mb-6" style={{ color: '#0C7DA7' }}>
               Enterprise-Grade Solutions
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 font-lexend max-w-3xl mx-auto">
               Comprehensive AI platform designed to meet the complex needs of large organizations
             </p>
           </div>
@@ -88,16 +88,16 @@ const Enterprise = () => {
             {solutions.map((solution, index) => (
               <div 
                 key={solution.title}
-                className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover-scale animate-fade-in"
+                className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="inline-flex p-4 rounded-lg bg-gradient-to-r from-brand-blue to-brand-cyan text-white mb-6">
+                <div className="inline-flex p-4 rounded-lg text-white mb-6" style={{ backgroundColor: '#0C7DA7' }}>
                   {solution.icon}
                 </div>
-                <h3 className="text-xl font-montserrat font-semibold text-brand-dark mb-4">
+                <h3 className="text-xl font-lexend font-semibold mb-4" style={{ color: '#0C7DA7' }}>
                   {solution.title}
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-gray-600 font-lexend">
                   {solution.description}
                 </p>
               </div>
@@ -107,12 +107,12 @@ const Enterprise = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-gradient-to-br from-brand-dark/5 to-brand-blue/5">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-brand-dark mb-8">
+                <h2 className="text-3xl md:text-4xl font-lexend font-bold mb-8" style={{ color: '#0C7DA7' }}>
                   Enterprise Benefits
                 </h2>
                 <div className="space-y-6">
@@ -122,21 +122,21 @@ const Enterprise = () => {
                       className="flex items-start space-x-4 animate-fade-in"
                       style={{ animationDelay: `${index * 100}ms` }}
                     >
-                      <CheckCircle className="h-6 w-6 text-brand-blue flex-shrink-0 mt-1" />
-                      <p className="text-gray-700 text-lg">{benefit}</p>
+                      <CheckCircle className="h-6 w-6 flex-shrink-0 mt-1" style={{ color: '#0C7DA7' }} />
+                      <p className="text-gray-700 font-lexend text-lg">{benefit}</p>
                     </div>
                   ))}
                 </div>
               </div>
               
-              <div className="bg-gradient-to-br from-brand-blue to-brand-cyan p-8 rounded-2xl text-white">
-                <h3 className="text-2xl font-montserrat font-bold mb-6">
+              <div className="p-8 rounded-2xl text-white" style={{ backgroundColor: '#0C7DA7' }}>
+                <h3 className="text-2xl font-lexend font-bold mb-6">
                   Ready to Transform Your Enterprise?
                 </h3>
-                <p className="text-lg mb-6 opacity-90">
+                <p className="text-lg font-lexend mb-6 opacity-90">
                   Let's discuss how our AI solutions can revolutionize your business operations and drive growth.
                 </p>
-                <Button className="bg-white text-brand-blue hover:bg-gray-100 font-montserrat font-medium px-6 py-3 hover-scale">
+                <Button className="bg-white text-white font-lexend font-medium px-6 py-3 hover:scale-105 transition-all duration-300 hover:bg-gray-100" style={{ color: '#0C7DA7' }}>
                   Get Enterprise Quote
                 </Button>
               </div>

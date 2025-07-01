@@ -113,6 +113,11 @@
   .btn, .card, .tooltip, .alert {
     @apply font-lexend;
   }
+
+  /* Ensure all text elements use Lexend font */
+  * {
+    font-family: 'Lexend', sans-serif !important;
+  }
 }
 
 @layer components {

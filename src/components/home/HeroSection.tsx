@@ -1,12 +1,12 @@
 
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
-import { ArrowRight, Sparkles } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { ChevronRight, Brain } from "lucide-react";
+import { AIAssessmentModal } from "@/components/assessment/AIAssessmentModal";
 import { useEffect } from "react";
 
 export function HeroSection() {
-  const navigate = useNavigate();
+  const [isAssessmentOpen, setIsAssessmentOpen] = useState(false);
 
   useEffect(() => {
     window.scrollTo({
@@ -16,74 +16,70 @@ export function HeroSection() {
   }, []);
 
   return (
-    <section className="min-h-screen bg-white flex items-center justify-center relative overflow-hidden">
-      {/* Background Elements */}
-      <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-600/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-500/5 rounded-full blur-3xl"></div>
-      </div>
+    <>
+      <section className="relative bg-white min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_30%,rgba(12,125,167,0.1),transparent_50%)]"></div>
+          <div className="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(circle_at_70%_70%,rgba(12,125,167,0.1),transparent_50%)]"></div>
+        </div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center max-w-4xl mx-auto">
-          {/* Logo */}
-          <div className="mb-8 animate-fade-in">
-            <img 
-              src="/lovable-uploads/730a27c8-03d0-4172-b773-f840a4c9c7e1.png" 
-              alt="" 
-              className="h-20 w-auto mx-auto mb-6"
-            />
-          </div>
+        <div className="container mx-auto px-4 py-20 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="mb-8">
+              <div className="inline-flex items-center px-4 py-2 bg-blue-50 border border-blue-200 rounded-full text-sm font-lexend font-medium mb-6" style={{ color: '#0C7DA7' }}>
+                <Brain className="mr-2 h-4 w-4" />
+                AI-Powered Career Intelligence
+              </div>
+              
+              <h1 className="text-4xl md:text-6xl font-bold font-lexend mb-6" style={{ color: '#0C7DA7' }}>
+                Your <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">AI Career</span> Journey Starts Here
+              </h1>
+              <p className="text-xl md:text-2xl text-gray-600 font-lexend mb-8 max-w-3xl mx-auto">
+                Discover your ideal career path with personalized AI guidance, skill assessments, and intelligent mentorship matching
+              </p>
+            </div>
 
-          {/* Main Tagline */}
-          <div className="mb-8 animate-fade-in delay-200">
-            <p className="text-xl md:text-2xl font-lexend text-gray-600 font-light max-w-3xl mx-auto leading-relaxed">
-              The AI-Powered Career & Domain Intelligence Ecosystem
-            </p>
-          </div>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+              <Button 
+                className="px-8 py-3 text-lg font-lexend font-medium hover:scale-105 transition-all duration-300 text-white"
+                style={{ backgroundColor: '#0C7DA7' }}
+                onClick={() => setIsAssessmentOpen(true)}
+              >
+                Start Free Assessment
+                <ChevronRight className="ml-2 h-5 w-5" />
+              </Button>
+              <Button 
+                variant="outline" 
+                className="px-8 py-3 text-lg font-lexend font-medium hover:scale-105 transition-all duration-300 border-2"
+                style={{ borderColor: '#0C7DA7', color: '#0C7DA7' }}
+              >
+                Explore Platform
+              </Button>
+            </div>
 
-          {/* Value Proposition */}
-          <div className="mb-12 animate-fade-in delay-400">
-            <p className="text-lg font-lexend text-gray-500 max-w-2xl mx-auto mb-8">
-              Equip every learner, professional, and institution with context-aware, adaptable, 
-              and continuously intelligent systems to grow — meaningfully, ethically, and sustainably.
-            </p>
-            
-            {/* Feature Pills */}
-            <div className="flex flex-wrap justify-center gap-3 mb-8">
-              {['AI-Native', 'Hyper-Personalized', 'Future-Ready', 'Ethical'].map((feature) => (
-                <span 
-                  key={feature}
-                  className="px-4 py-2 bg-blue-500/10 backdrop-blur-sm border border-blue-500/20 rounded-full text-blue-600 text-sm font-lexend font-bold"
-                >
-                  <Sparkles className="inline w-4 h-4 mr-1" />
-                  {feature}
-                </span>
-              ))}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              <div className="bg-white/70 backdrop-blur-sm border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300">
+                <div className="text-3xl font-bold font-lexend mb-2" style={{ color: '#0C7DA7' }}>98%</div>
+                <div className="text-gray-600 font-lexend">Success Rate</div>
+              </div>
+              <div className="bg-white/70 backdrop-blur-sm border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300">
+                <div className="text-3xl font-bold font-lexend mb-2" style={{ color: '#0C7DA7' }}>50K+</div>
+                <div className="text-gray-600 font-lexend">Careers Transformed</div>
+              </div>
+              <div className="bg-white/70 backdrop-blur-sm border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300">
+                <div className="text-3xl font-bold font-lexend mb-2" style={{ color: '#0C7DA7' }}>24/7</div>
+                <div className="text-gray-600 font-lexend">AI Support</div>
+              </div>
             </div>
           </div>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-fade-in delay-600">
-            <Button 
-              size="lg" 
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-lexend font-medium hover-scale"
-              onClick={() => navigate('/coming-soon')}
-            >
-              Start Your Journey
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="border-blue-600/30 bg-transparent text-blue-600 hover:bg-blue-50 font-lexend rounded-full font-semibold px-8 py-4 text-lg backdrop-blur-sm"
-              onClick={() => navigate('/coming-soon')}
-            >
-              Explore Platform
-            </Button>
-          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <AIAssessmentModal 
+        isOpen={isAssessmentOpen} 
+        onClose={() => setIsAssessmentOpen(false)} 
+      />
+    </>
   );
 }
