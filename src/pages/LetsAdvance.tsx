@@ -2,7 +2,7 @@ import React from 'react';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
-import { Rocket, Users, Lightbulb, Target, ArrowRight, CheckCircle, Mic, Video, FileText, TrendingUp, BookOpen, Award } from 'lucide-react';
+import { Rocket, Users, Target, ArrowRight, CheckCircle, Mic, Video, FileText, TrendingUp, BookOpen, Award } from 'lucide-react';
 
 const LetsAdvance = () => {
   const contentPillars = [
@@ -53,11 +53,6 @@ const LetsAdvance = () => {
       description: "Work with diverse teams on real-world challenges and solutions"
     },
     {
-      icon: <Lightbulb className="h-8 w-8" />,
-      title: "Idea Incubation",
-      description: "Transform your innovative ideas into viable business solutions"
-    },
-    {
       icon: <Target className="h-8 w-8" />,
       title: "Goal Achievement",
       description: "Structured approach to reaching your personal and professional milestones"
@@ -77,21 +72,16 @@ const LetsAdvance = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-20 pb-16 bg-gradient-hero relative overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_30%,rgba(245,126,32,0.1),transparent_50%)]"></div>
-          <div className="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(circle_at_70%_70%,rgba(86,199,223,0.1),transparent_50%)]"></div>
-        </div>
-        
-        <div className="container mx-auto px-4 relative z-10">
+      <section className="pt-20 pb-16 bg-white">
+        <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-lexend font-bold text-white mb-6 animate-fade-in">
-              Let's <span className="gradient-text">Advance</span> Together
+            <h1 className="text-4xl md:text-6xl font-lexend font-bold text-brand-dark mb-6 animate-fade-in">
+              Let's <span className="text-brand-orange">Advance</span> Together
             </h1>
-            <p className="text-xl md:text-2xl font-lexend text-gray-300 mb-6 animate-fade-in" style={{ animationDelay: '200ms' }}>
+            <p className="text-xl md:text-2xl font-lexend text-gray-600 mb-6 animate-fade-in" style={{ animationDelay: '200ms' }}>
               Content Creation & Community Network for Career Truth
             </p>
-            <p className="text-lg font-lexend text-gray-400 mb-8 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '300ms' }}>
+            <p className="text-lg font-lexend text-gray-600 mb-8 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '300ms' }}>
               Igniting a cultural shift where career exploration is raw, relatable, and real — empowering every individual to confront their pain points, question their path, and find direction through truth.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: '400ms' }}>
@@ -227,14 +217,14 @@ const LetsAdvance = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             {programs.map((program, index) => (
               <div 
                 key={program.title}
                 className="text-center p-6 rounded-xl bg-white hover:shadow-xl transition-all duration-300 hover-scale animate-fade-in"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="inline-flex p-4 rounded-lg bg-gradient-to-r from-brand-blue to-brand-orange text-white mb-6">
+                <div className="inline-flex p-4 rounded-lg bg-brand-orange text-white mb-6">
                   {program.icon}
                 </div>
                 <h3 className="text-xl font-lexend font-semibold text-brand-dark mb-4">

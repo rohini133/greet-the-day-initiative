@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { TrendingUp, DollarSign, Shield, Brain, ArrowRight, CheckCircle, BookOpen, Users, Bot, Briefcase, PieChart } from 'lucide-react';
@@ -10,35 +9,40 @@ const FinCode = () => {
       title: "EdTech + Employability Suite",
       subtitle: "Become finance-ready, faster",
       description: "AI-curated learning & placement readiness for aspiring finance professionals",
-      features: ["Career-Aligned Curriculum", "CFA-Inspired Bootcamps", "Resume + LinkedIn Optimizer", "Behavioral Interview Coach", "Finance Certification Paths"]
+      features: ["Career-Aligned Curriculum", "CFA-Inspired Bootcamps", "Resume + LinkedIn Optimizer", "Behavioral Interview Coach", "Finance Certification Paths"],
+      agentName: "EduBot"
     },
     {
       icon: <Bot className="h-8 w-8" />,
       title: "Finance AI Agent Suite", 
       subtitle: "Replace manual research with AI co-pilots",
       description: "Autonomous AI agents that reduce hours of financial work into insights in seconds",
-      features: ["AlphaSage Research Analyst", "TrendSeer Forecasting Engine", "FinModel Factory", "DealRoom Automator", "Save 10+ hours/week"]
+      features: ["AlphaSage Research Analyst", "TrendSeer Forecasting Engine", "FinModel Factory", "DealRoom Automator", "Save 10+ hours/week"],
+      agentName: "FinBot"
     },
     {
       icon: <Briefcase className="h-8 w-8" />,
       title: "CFO-as-a-Service",
       subtitle: "Strategic finance for MSMEs", 
       description: "Turn small business finance into a strategic advantage with AI automation",
-      features: ["Cash Flow Automation", "Vendor & Credit Scoring", "Smart Pricing Suggestions", "Alerts & Dashboards", "Financial Health KPIs"]
+      features: ["Cash Flow Automation", "Vendor & Credit Scoring", "Smart Pricing Suggestions", "Alerts & Dashboards", "Financial Health KPIs"],
+      agentName: "CFOBot"
     },
     {
       icon: <PieChart className="h-8 w-8" />,
       title: "Robo-Advisory Engine",
       subtitle: "Democratizing wealth strategy",
       description: "AI-powered personal finance and investment advisory capabilities",
-      features: ["Portfolio Generator", "Behavioral Nudging System", "Tax Optimization Engine", "Goal-Based Planning Bots", "Wealth Growth Tools"]
+      features: ["Portfolio Generator", "Behavioral Nudging System", "Tax Optimization Engine", "Goal-Based Planning Bots", "Wealth Growth Tools"],
+      agentName: "WealthBot"
     },
     {
       icon: <Users className="h-8 w-8" />,
       title: "Custom Solutions",
       subtitle: "For Institutions & Platforms",
       description: "Build your own finance intelligence layer with FinCode's modular stack",
-      features: ["College & EdTech APIs", "Startup & Fintech Integration", "Enterprise L&D Modules", "Government & CSR Programs", "White-labeled Solutions"]
+      features: ["College & EdTech APIs", "Startup & Fintech Integration", "Enterprise L&D Modules", "Government & CSR Programs", "White-labeled Solutions"],
+      agentName: "CustomBot"
     }
   ];
 
@@ -75,21 +79,16 @@ const FinCode = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="pt-20 pb-16 bg-gradient-hero relative overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_30%,rgba(245,126,32,0.1),transparent_50%)]"></div>
-          <div className="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(circle_at_70%_70%,rgba(86,199,223,0.1),transparent_50%)]"></div>
-        </div>
-        
-        <div className="container mx-auto px-4 relative z-10">
+      <section className="pt-20 pb-16 bg-white">
+        <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-lexend font-bold text-white mb-6 animate-fade-in">
-              <span className="gradient-text">FinCode</span> — Finance Intelligence
+            <h1 className="text-4xl md:text-6xl font-lexend font-bold text-brand-dark mb-6 animate-fade-in">
+              <span className="text-brand-orange">FinCode</span> — Finance Intelligence
             </h1>
-            <p className="text-xl md:text-2xl font-lexend text-gray-300 mb-6 animate-fade-in" style={{ animationDelay: '200ms' }}>
+            <p className="text-xl md:text-2xl font-lexend text-gray-600 mb-6 animate-fade-in" style={{ animationDelay: '200ms' }}>
               Redefining Finance Learning, Research, and Execution with AI
             </p>
-            <p className="text-lg font-lexend text-gray-400 mb-8 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '300ms' }}>
+            <p className="text-lg font-lexend text-gray-600 mb-8 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '300ms' }}>
               A next-gen suite of tools that blends financial education, role-specific career development, and intelligent automation into one integrated system.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: '400ms' }}>
@@ -109,9 +108,9 @@ const FinCode = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
+            {["Model Accuracy", "Hours Saved Weekly", "Product Suites", "AI Agent Availability"].map((stat, index) => (
               <div 
-                key={stat.label}
+                key={stat}
                 className="text-center animate-fade-in"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
@@ -119,7 +118,7 @@ const FinCode = () => {
                   Advanced
                 </div>
                 <div className="text-gray-600 font-lexend text-sm md:text-base">
-                  {stat.label}
+                  {stat}
                 </div>
               </div>
             ))}
@@ -147,7 +146,7 @@ const FinCode = () => {
               >
                 <div className={`${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
                   <div className="flex items-center mb-4">
-                    <div className="p-3 bg-gradient-to-r from-brand-orange to-brand-cyan text-white rounded-lg mr-4">
+                    <div className="p-3 bg-brand-orange text-white rounded-lg mr-4">
                       {product.icon}
                     </div>
                     <div>
@@ -167,10 +166,10 @@ const FinCode = () => {
                 </div>
                 <div className={`bg-gray-50 border border-gray-200 p-8 rounded-2xl ${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
                   <div className="text-center">
-                    <div className="text-6xl font-lexend font-bold text-brand-blue mb-2">
-                      {index + 1}
+                    <div className="text-3xl font-lexend font-bold text-brand-orange mb-2">
+                      {product.agentName}
                     </div>
-                    <p className="text-gray-600 font-lexend">Product Suite</p>
+                    <p className="text-gray-600 font-lexend">AI Agent</p>
                   </div>
                 </div>
               </div>
