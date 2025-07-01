@@ -53,7 +53,7 @@ export function CTASection() {
                     <Button
                       type="submit"
                       size="lg"
-                      className="bg-[#F57E20] hover:bg-[#e76c0f] text-white px-8 py-6 rounded-full font-lexend font-medium transition-colors"
+                      className="bg-[#0C7DA7] hover:bg-[#e76c0f] text-white px-8 py-6 rounded-full font-lexend font-medium transition-colors"
                     >
                       Subscribe
                       <Send className="ml-2 h-4 w-4" />

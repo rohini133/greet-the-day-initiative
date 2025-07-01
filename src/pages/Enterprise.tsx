@@ -54,7 +54,7 @@ const Enterprise = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-lexend font-bold mb-6 animate-fade-in" style={{ color: '#0C7DA7' }}>
-              <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">Enterprise AI</span> Solutions
+              Enterprise AI Solutions
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 font-lexend mb-8 animate-fade-in" style={{ animationDelay: '200ms' }}>
               Scale your business with enterprise-grade AI solutions built for security, compliance, and performance
@@ -64,7 +64,7 @@ const Enterprise = () => {
                 Schedule Demo
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button variant="outline" className="px-8 py-3 font-lexend font-medium border-2 hover:text-white transition-all duration-300" style={{ borderColor: '#0C7DA7', color: '#0C7DA7' }} onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#0C7DA7'} onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}>
+              <Button variant="outline" className="px-8 py-3 font-lexend font-medium border-2 hover:text-white transition-all duration-300" style={{ backgroundColor: '#0C7DA7' }} onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#0C7DA7'} onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}>
                 Contact Sales
               </Button>
             </div>

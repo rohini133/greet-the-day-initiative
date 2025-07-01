@@ -145,8 +145,8 @@ const About = () => {
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-montserrat font-bold text-white mb-6 animate-fade-in">
-              Pioneering the <span className="gradient-text">Future of Work</span>
+            <h1>
+              Pioneering the Future of Work
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 animate-fade-in" style={{ animationDelay: '200ms' }}>
               Where artificial intelligence meets human ambition to unlock extraordinary career possibilities

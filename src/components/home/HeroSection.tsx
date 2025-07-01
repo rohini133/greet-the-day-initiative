@@ -27,13 +27,13 @@ export function HeroSection() {
         <div className="container mx-auto px-4 py-20 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-8">
-              <div className="inline-flex items-center px-4 py-2 bg-blue-50 border border-blue-200 rounded-full text-sm font-lexend font-medium mb-6" style={{ color: '#0C7DA7' }}>
+              {/* <div className="inline-flex items-center px-4 py-2 bg-blue-50 border border-blue-200 rounded-full text-sm font-lexend font-medium mb-6" style={{ color: '#0C7DA7' }}>
                 <Brain className="mr-2 h-4 w-4" />
                 AI-Powered Career Intelligence
-              </div>
+              </div> */}
               
               <h1 className="text-4xl md:text-6xl font-bold font-lexend mb-6" style={{ color: '#0C7DA7' }}>
-                Your <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">AI Career</span> Journey Starts Here
+                Your AI Career Journey Starts Here
               </h1>
               <p className="text-xl md:text-2xl text-gray-600 font-lexend mb-8 max-w-3xl mx-auto">
                 Discover your ideal career path with personalized AI guidance, skill assessments, and intelligent mentorship matching
@@ -52,13 +52,13 @@ export function HeroSection() {
               <Button 
                 variant="outline" 
                 className="px-8 py-3 text-lg font-lexend font-medium hover:scale-105 transition-all duration-300 border-2"
-                style={{ borderColor: '#0C7DA7', color: '#0C7DA7' }}
+                style={{ backgroundColor: '#0C7DA7'}}
               >
                 Explore Platform
               </Button>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
               <div className="bg-white/70 backdrop-blur-sm border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300">
                 <div className="text-3xl font-bold font-lexend mb-2" style={{ color: '#0C7DA7' }}>98%</div>
                 <div className="text-gray-600 font-lexend">Success Rate</div>
@@ -71,7 +71,7 @@ export function HeroSection() {
                 <div className="text-3xl font-bold font-lexend mb-2" style={{ color: '#0C7DA7' }}>24/7</div>
                 <div className="text-gray-600 font-lexend">AI Support</div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

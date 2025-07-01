@@ -45,7 +45,7 @@ const VisionSection = () => {
             Three interconnected platforms designed to accelerate your professional journey through intelligent, personalized experiences
           </p>
           <div className="inline-flex items-center px-6 py-3 bg-gray-50 border border-gray-200 rounded-full text-brand-dark font-lexend font-medium shadow-sm">
-            🚀 Purpose-driven growth powered by ethical AI
+            Purpose-driven growth powered by ethical AI
           </div>
         </div>
 
