@@ -73,7 +73,7 @@ const LetsAdvance = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-white">
       <Header />
       
       {/* Hero Section */}
@@ -85,21 +85,21 @@ const LetsAdvance = () => {
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-montserrat font-bold text-white mb-6 animate-fade-in">
+            <h1 className="text-4xl md:text-6xl font-lexend font-bold text-white mb-6 animate-fade-in">
               Let's <span className="gradient-text">Advance</span> Together
             </h1>
-            <p className="text-xl md:text-2xl text-gray-300 mb-6 animate-fade-in" style={{ animationDelay: '200ms' }}>
+            <p className="text-xl md:text-2xl font-lexend text-gray-300 mb-6 animate-fade-in" style={{ animationDelay: '200ms' }}>
               Content Creation & Community Network for Career Truth
             </p>
-            <p className="text-lg text-gray-400 mb-8 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '300ms' }}>
+            <p className="text-lg font-lexend text-gray-400 mb-8 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '300ms' }}>
               Igniting a cultural shift where career exploration is raw, relatable, and real — empowering every individual to confront their pain points, question their path, and find direction through truth.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: '400ms' }}>
-              <Button className="bg-brand-orange hover:bg-brand-orange/90 text-white px-8 py-3 font-montserrat font-medium hover-scale">
+              <Button className="bg-brand-orange hover:bg-brand-orange/90 text-white px-8 py-3 font-lexend font-medium hover-scale">
                 Join the Movement
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button variant="outline" className="border-brand-orange text-brand-orange hover:bg-brand-orange hover:text-white px-8 py-3 font-montserrat font-medium">
+              <Button variant="outline" className="border-brand-orange text-brand-orange hover:bg-brand-orange hover:text-white px-8 py-3 font-lexend font-medium">
                 Explore Content
               </Button>
             </div>
@@ -117,9 +117,9 @@ const LetsAdvance = () => {
                   <div className="p-3 bg-brand-orange text-white rounded-lg mr-4">
                     <Target className="h-6 w-6" />
                   </div>
-                  <h2 className="text-2xl font-montserrat font-bold text-brand-dark">Our Vision</h2>
+                  <h2 className="text-2xl font-lexend font-bold text-brand-dark">Our Vision</h2>
                 </div>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-gray-700 font-lexend leading-relaxed">
                   To surface the untold — the struggles, the switches, the sacrifices — and guide audiences toward actual change through Gurukul Code. In a world of noise, we spark clarity through real stories, street insights, and bold conversations.
                 </p>
               </div>
@@ -129,9 +129,9 @@ const LetsAdvance = () => {
                   <div className="p-3 bg-brand-cyan text-white rounded-lg mr-4">
                     <Rocket className="h-6 w-6" />
                   </div>
-                  <h2 className="text-2xl font-montserrat font-bold text-brand-dark">Our Mission</h2>
+                  <h2 className="text-2xl font-lexend font-bold text-brand-dark">Our Mission</h2>
                 </div>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-gray-700 font-lexend leading-relaxed">
                   To build a content ecosystem that drives career awareness and exploration — capturing raw truths and meaningful insights across formats. Every insight leads toward action, connecting our audience to real mentorship and purpose.
                 </p>
               </div>
@@ -141,13 +141,13 @@ const LetsAdvance = () => {
       </section>
 
       {/* Content Formats Section */}
-      <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-brand-dark mb-6">
+            <h2 className="text-3xl md:text-4xl font-lexend font-bold text-brand-dark mb-6">
               Multi-Channel Content Creation
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl font-lexend text-gray-600 max-w-3xl mx-auto">
               Raw, relatable content across audio, video, and text that bridges career confusion with career clarity
             </p>
           </div>
@@ -162,10 +162,10 @@ const LetsAdvance = () => {
                 <div className="inline-flex p-4 rounded-lg bg-gradient-to-r from-brand-orange to-brand-cyan text-white mb-6">
                   {format.icon}
                 </div>
-                <h3 className="text-xl font-montserrat font-semibold text-brand-dark mb-4">
+                <h3 className="text-xl font-lexend font-semibold text-brand-dark mb-4">
                   {format.title}
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-gray-600 font-lexend">
                   {format.description}
                 </p>
               </div>
@@ -178,10 +178,10 @@ const LetsAdvance = () => {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-brand-dark mb-6">
+            <h2 className="text-3xl md:text-4xl font-lexend font-bold text-brand-dark mb-6">
               Structured Content Pillars
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl font-lexend text-gray-600 max-w-3xl mx-auto">
               Comprehensive content strategy covering industry insights, practical knowledge, and career development
             </p>
           </div>
@@ -197,13 +197,13 @@ const LetsAdvance = () => {
                   <div className="p-2 bg-brand-blue text-white rounded-lg mr-3">
                     {pillar.icon}
                   </div>
-                  <h3 className="text-lg font-montserrat font-semibold text-brand-dark">
+                  <h3 className="text-lg font-lexend font-semibold text-brand-dark">
                     {pillar.title}
                   </h3>
                 </div>
                 <ul className="space-y-2">
                   {pillar.items.map((item, idx) => (
-                    <li key={idx} className="flex items-center text-sm text-gray-600">
+                    <li key={idx} className="flex items-center text-sm text-gray-600 font-lexend">
                       <div className="w-1.5 h-1.5 bg-brand-orange rounded-full mr-2"></div>
                       {item}
                     </li>
@@ -216,13 +216,13 @@ const LetsAdvance = () => {
       </section>
 
       {/* Programs Section */}
-      <section className="py-20 bg-gradient-to-br from-brand-blue/5 to-brand-cyan/5">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-brand-dark mb-6">
+            <h2 className="text-3xl md:text-4xl font-lexend font-bold text-brand-dark mb-6">
               Community Advancement Programs
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl font-lexend text-gray-600 max-w-3xl mx-auto">
               Beyond content creation - collaborative programs designed to accelerate your growth
             </p>
           </div>
@@ -237,10 +237,10 @@ const LetsAdvance = () => {
                 <div className="inline-flex p-4 rounded-lg bg-gradient-to-r from-brand-blue to-brand-orange text-white mb-6">
                   {program.icon}
                 </div>
-                <h3 className="text-xl font-montserrat font-semibold text-brand-dark mb-4">
+                <h3 className="text-xl font-lexend font-semibold text-brand-dark mb-4">
                   {program.title}
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-gray-600 font-lexend">
                   {program.description}
                 </p>
               </div>
@@ -255,7 +255,7 @@ const LetsAdvance = () => {
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-brand-dark mb-8">
+                <h2 className="text-3xl md:text-4xl font-lexend font-bold text-brand-dark mb-8">
                   What You'll Experience
                 </h2>
                 <div className="space-y-6">
@@ -266,23 +266,23 @@ const LetsAdvance = () => {
                       style={{ animationDelay: `${index * 100}ms` }}
                     >
                       <CheckCircle className="h-6 w-6 text-brand-orange flex-shrink-0 mt-1" />
-                      <p className="text-gray-700 text-lg">{outcome}</p>
+                      <p className="text-gray-700 font-lexend text-lg">{outcome}</p>
                     </div>
                   ))}
                 </div>
               </div>
               
               <div className="bg-gradient-to-br from-brand-orange/10 to-brand-cyan/10 p-8 rounded-2xl">
-                <h3 className="text-2xl font-montserrat font-bold text-brand-dark mb-6">
+                <h3 className="text-2xl font-lexend font-bold text-brand-dark mb-6">
                   Ready to Find Your Direction?
                 </h3>
-                <p className="text-gray-600 mb-6">
+                <p className="text-gray-600 font-lexend mb-6">
                   Let's Advance is not just a question — it's the start of your answer. Join our community of truth-seekers and career pioneers.
                 </p>
-                <Button className="bg-gradient-to-r from-brand-orange to-brand-cyan text-white font-montserrat font-medium px-6 py-3 hover-scale w-full mb-4">
+                <Button className="bg-gradient-to-r from-brand-orange to-brand-cyan text-white font-lexend font-medium px-6 py-3 hover-scale w-full mb-4">
                   Join Our Community
                 </Button>
-                <Button variant="outline" className="border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white font-montserrat font-medium px-6 py-3 w-full">
+                <Button variant="outline" className="border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white font-lexend font-medium px-6 py-3 w-full">
                   Explore Gurukul Code
                 </Button>
               </div>

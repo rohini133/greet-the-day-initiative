@@ -70,7 +70,7 @@ export function HeroSection() {
               className="bg-gradient-to-r from-brand-cyan to-brand-blue text-white px-8 py-3 rounded-full font-lexend font-medium hover-scale"
               onClick={() => navigate('/coming-soon')}
             >
-              Start My Journey
+              Start Your Journey
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button 

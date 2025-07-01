@@ -20,7 +20,7 @@ export function TestimonialsSection() {
         "Portfolio building & networking",
       ],
       color: "from-blue-500 to-cyan-400",
-      bgPattern: "bg-white/80 backdrop-blur-sm border border-white/20",
+      bgPattern: "bg-white border border-gray-200",
     },
     {
       icon: <User className="h-6 w-6 text-white" />,
@@ -34,7 +34,7 @@ export function TestimonialsSection() {
         "Performance insights & market intelligence",
       ],
       color: "from-green-500 to-emerald-400",
-      bgPattern: "bg-white/80 backdrop-blur-sm border border-white/20",
+      bgPattern: "bg-white border border-gray-200",
     },
     {
       icon: <Building className="h-6 w-6 text-white" />,
@@ -48,12 +48,12 @@ export function TestimonialsSection() {
         "Investment analysis & talent evaluation",
       ],
       color: "from-purple-500 to-pink-400",
-      bgPattern: "bg-white/80 backdrop-blur-sm border border-white/20",
+      bgPattern: "bg-white border border-gray-200",
     },
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-brand-orange/5 via-brand-cyan/5 to-brand-blue/5">
+    <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
