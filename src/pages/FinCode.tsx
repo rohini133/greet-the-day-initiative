@@ -65,10 +65,10 @@ const FinCode = () => {
   ];
 
   const stats = [
-    { number: "95%", label: "Model Accuracy" },
-    { number: "10+", label: "Hours Saved Weekly" },
-    { number: "5", label: "Product Suites" },
-    { number: "24/7", label: "AI Agent Availability" }
+    {  label: "Model Accuracy" },
+    {  label: "Hours Saved Weekly" },
+    {  label: "Product Suites" },
+    {  label: "AI Agent Availability" }
   ];
 
   return (

@@ -145,7 +145,7 @@ const LetsAdvance = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-brand-dark mb-6">
-              Multi-Format Content Creation
+              Multi-Channel Content Creation
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Raw, relatable content across audio, video, and text that bridges career confusion with career clarity
