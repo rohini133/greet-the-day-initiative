@@ -20,11 +20,11 @@ export function CTASection() {
   };
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gradient-to-r from-[#FFF4ED] via-[#F2FAFC] to-[#E8F3F9]">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
           <motion.div
-            className="rounded-2xl p-6 sm:p-10 md:p-12 bg-white shadow-2xl border border-gray-200"
+            className="rounded-2xl p-6 sm:p-10 md:p-12 bg-gradient-to-r from-[#40C7E8] to-[#0077B6] shadow-2xl border border-gray-200"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
