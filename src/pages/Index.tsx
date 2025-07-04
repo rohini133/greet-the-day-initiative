@@ -8,7 +8,7 @@ import VisionSection from "@/components/home/VisionSection";
 
 const Index = () => {
   return (
-    <div className="bg-gradient-to-r from-[#FFF4ED] via-[#F9FAFB] to-[#EAF6FA] min-h-screen">
+    <div className="bg-gradient-to-r from-[#FFF4ED] via-[#F2FAFC] to-[#E8F3F9] min-h-screen">
       <HeroSection />
       <VisionSection /> 
       <TestimonialsSection />

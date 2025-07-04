@@ -50,7 +50,8 @@ export function Header() {
   };
 
   return (
-    <header className="fixed w-full z-50 shadow-sm py-3 transition-all duration-300 bg-gradient-to-r from-[#FFF4ED] via-[#F9FAFB] to-[#EAF6FA]">
+    <header className="fixed w-full z-50 shadow-sm py-3 transition-all duration-300 bg-gradient-to-r from-[#FFF4ED] via-[#F2FAFC] to-[#E8F3F9]
+">
 
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
