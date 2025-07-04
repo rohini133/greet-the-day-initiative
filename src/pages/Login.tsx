@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -54,7 +53,7 @@ export default function Login() {
   };
 
   return (
-    <div className="flex min-h-[calc(100vh-12rem)] items-center justify-center px-4 pt-32 py-12 bg-white">
+    <div className="bg-gradient-to-r from-[#FFF4ED] via-[#F9FAFB] to-[#EAF6FA] min-h-[calc(100vh-12rem)] flex items-center justify-center px-4 pt-32 py-12">
       <div className="w-full max-w-md">
         <Button 
           variant="ghost" 

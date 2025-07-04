@@ -79,10 +79,10 @@ export function ChatInterface() {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed bottom-6 right-6 w-80 md:w-96 bg-background rounded-lg shadow-xl border z-50 flex flex-col h-[500px] max-h-[80vh]">
-      <div className="p-4 border-b flex justify-between items-center">
-        <h3 className="font-semibold">Gurukul Assistant</h3>
-        <Button variant="ghost" size="icon" onClick={closeChat}>
+    <div className="fixed bottom-6 right-6 w-80 md:w-96 rounded-lg shadow-xl border z-50 flex flex-col h-[500px] max-h-[80vh]" style={{ backgroundColor: '#0C7DA7' }}>
+      <div className="p-4 border-b border-white/20 flex justify-between items-center">
+        <h3 className="font-semibold text-white">Gurukul Assistant</h3>
+        <Button variant="ghost" size="icon" onClick={closeChat} className="text-white hover:bg-white/20">
           <X className="h-4 w-4" />
         </Button>
       </div>
@@ -97,8 +97,8 @@ export function ChatInterface() {
               <div
                 className={`max-w-[80%] px-4 py-2 rounded-lg ${
                   message.isBot
-                    ? "bg-secondary text-secondary-foreground"
-                    : "bg-primary text-primary-foreground"
+                    ? "bg-white/20 text-white"
+                    : "bg-white text-gray-900"
                 }`}
               >
                 {message.content}
@@ -107,7 +107,7 @@ export function ChatInterface() {
           ))}
           {isTyping && (
             <div className="flex justify-start">
-              <div className="max-w-[80%] px-4 py-2 rounded-lg bg-secondary text-secondary-foreground">
+              <div className="max-w-[80%] px-4 py-2 rounded-lg bg-white/20 text-white">
                 <span className="inline-block animate-pulse">...</span>
               </div>
             </div>
@@ -116,16 +116,16 @@ export function ChatInterface() {
         </div>
       </ScrollArea>
 
-      <div className="p-4 border-t">
+      <div className="p-4 border-t border-white/20">
         <div className="flex gap-2">
           <Input
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={handleKeyDown}
             placeholder="Type your message..."
-            className="flex-grow"
+            className="flex-grow bg-white/20 border-white/30 text-white placeholder-white/70"
           />
-          <Button size="icon" onClick={handleSendMessage} disabled={!input.trim()}>
+          <Button size="icon" onClick={handleSendMessage} disabled={!input.trim()} className="bg-white text-blue-600 hover:bg-white/90">
             <Send className="h-4 w-4" />
           </Button>
         </div>

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Building, Shield, Cog, Users, ArrowRight, CheckCircle } from 'lucide-react';
 
@@ -41,11 +40,9 @@ const Enterprise = () => {
   ];
 
   return (
-    <div className="min-h-screen">
-     
-      
+    <div className="bg-gradient-to-r from-[#FFF4ED] via-[#F9FAFB] to-[#EAF6FA] min-h-screen">
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-br from-blue-50 to-white relative overflow-hidden">
+      <section className="pt-32 pb-16 relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_30%,rgba(12,125,167,0.1),transparent_50%)]"></div>
           <div className="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(circle_at_70%_70%,rgba(12,125,167,0.1),transparent_50%)]"></div>
@@ -73,7 +70,7 @@ const Enterprise = () => {
       </section>
 
       {/* Solutions Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-lexend font-bold mb-6" style={{ color: '#0C7DA7' }}>
@@ -107,7 +104,7 @@ const Enterprise = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -144,8 +141,6 @@ const Enterprise = () => {
           </div>
         </div>
       </section>
-
-      
     </div>
   );
 };

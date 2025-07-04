@@ -9,7 +9,8 @@ export function ChatButton() {
   return (
     <Button
       onClick={openChat}
-      className="fixed bottom-6 right-6 rounded-full w-14 h-14 p-0 shadow-lg"
+      className="fixed bottom-6 right-6 rounded-full w-14 h-14 p-0 shadow-lg text-white"
+      style={{ backgroundColor: '#0C7DA7' }}
       size="icon"
     >
       <Bot className="h-6 w-6" />

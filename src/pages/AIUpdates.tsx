@@ -74,7 +74,7 @@ export default function AIUpdates() {
   };
 
   return (
-    <div className="bg-[#0F1026] min-h-screen py-12">
+    <div className="bg-gradient-to-r from-[#FFF4ED] via-[#F9FAFB] to-[#EAF6FA] min-h-screen py-12">
       <div className="container mx-auto px-4">
         {/* <AIUpdatesHeader /> */}
 

@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Clock, ArrowLeft, Sparkles } from "lucide-react";
@@ -8,7 +7,7 @@ const ComingSoon = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#0F1026] via-[#1a1c3d] to-[#2d3185] flex items-center justify-center px-4 relative overflow-hidden">
+    <div className="bg-gradient-to-r from-[#FFF4ED] via-[#F9FAFB] to-[#EAF6FA] min-h-screen bg-gradient-to-br from-[#0F1026] via-[#1a1c3d] to-[#2d3185] flex items-center justify-center px-4 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-brand-cyan/20 rounded-full blur-3xl animate-pulse"></div>

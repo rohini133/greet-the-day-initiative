@@ -47,16 +47,18 @@ export function DesktopNav({
           <>
             <Button 
               variant="outline" 
-              size="sm" 
+              size="lg" 
               onClick={handleLogin}
-              className="bg-white text-blue-600 border-white hover:bg-gray-50 font-lexend"
+              className="bg-white text-white border-white hover:bg-gray-50 font-lexend font-bold text-base px-6 py-3"
+              style={{ color: '#0C7DA7', borderColor: 'white' }}
             >
               Log in
             </Button>
             <Button 
-              size="sm" 
+              size="lg" 
               onClick={handleSignup}
-              className="bg-white text-blue-600 hover:bg-gray-50 font-lexend"
+              className="bg-white hover:bg-gray-50 font-lexend font-bold text-base px-6 py-3"
+              style={{ color: '#0C7DA7' }}
             >
               Sign up
             </Button>

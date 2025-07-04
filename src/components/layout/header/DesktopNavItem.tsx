@@ -19,7 +19,7 @@ export function DesktopNavItem({ item, isActive, toggleSubmenu, openSubmenu }: N
     <div key={item.title} className="relative group">
       {item.submenu ? (
         <button 
-          className="px-3 py-2 rounded-md text-sm font-medium text-foreground/80 hover:text-primary flex items-center transition-colors"
+          className="px-4 py-3 rounded-md text-base font-bold text-white hover:text-gray-200 flex items-center transition-colors font-lexend"
           onClick={() => toggleSubmenu(item.title)}
         >
           {item.title}
@@ -28,10 +28,10 @@ export function DesktopNavItem({ item, isActive, toggleSubmenu, openSubmenu }: N
       ) : (
         <Link 
           to={item.href} 
-          className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+          className={`px-4 py-3 rounded-md text-base font-bold transition-colors font-lexend ${
             isActive(item.href) 
-              ? "text-primary font-semibold" 
-              : "text-foreground/80 hover:text-primary"
+              ? "text-gray-200 font-bold" 
+              : "text-white hover:text-gray-200"
           }`}
         >
           {item.title}
@@ -45,7 +45,7 @@ export function DesktopNavItem({ item, isActive, toggleSubmenu, openSubmenu }: N
               <Link
                 key={subitem.title}
                 to={subitem.href}
-                className="block px-4 py-2 text-sm text-foreground/80 hover:bg-muted transition-colors"
+                className="block px-4 py-2 text-sm text-foreground/80 hover:bg-muted transition-colors font-lexend"
               >
                 {subitem.title}
               </Link>

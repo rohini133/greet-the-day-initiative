@@ -38,7 +38,7 @@ const VisionSection = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-lexend font-bold text-brand-dark mb-6">
+          <h2 className="text-4xl md:text-5xl font-lexend font-bold mb-6" style={{ color: '#F57E20' }}>
             Comprehensive AI-Driven Career Ecosystem
           </h2>
           <p className="text-xl font-lexend text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed">

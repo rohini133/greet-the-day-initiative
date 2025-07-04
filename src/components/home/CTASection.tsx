@@ -31,7 +31,7 @@ export function CTASection() {
             transition={{ duration: 0.5 }}
           >
             <div className="text-center">
-              <h2 className="text-3xl md:text-4xl font-lexend font-bold mb-4 text-brand-dark">
+              <h2 className="text-3xl md:text-4xl font-lexend font-bold mb-4" style={{ color: '#F57E20' }}>
                 Stay Ahead of the Curve
               </h2>
 

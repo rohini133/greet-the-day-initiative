@@ -168,7 +168,6 @@ export function Footer() {
                     <Link
                       to={link.href}
                       className="text-gray-600 hover:text-sm font-lexend transition-colors"
-                      style={{ '&:hover': { color: '#0C7DA7' } }}
                       onMouseEnter={(e) => e.currentTarget.style.color = '#0C7DA7'}
                       onMouseLeave={(e) => e.currentTarget.style.color = '#6b7280'}
                     >

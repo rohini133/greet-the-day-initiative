@@ -24,7 +24,7 @@ export function MobileNavItem({
         <div>
           <button
             onClick={() => toggleSubmenu(item.title)}
-            className="flex items-center justify-between w-full text-left px-3 py-2 rounded-md text-foreground/80 hover:text-primary"
+            className="flex items-center justify-between w-full text-left px-3 py-3 rounded-md text-foreground/80 hover:text-primary font-lexend font-bold text-base"
           >
             <span>{item.title}</span>
             <ChevronDown
@@ -39,7 +39,7 @@ export function MobileNavItem({
                 <Link
                   key={subitem.title}
                   to={subitem.href}
-                  className="block px-3 py-2 rounded-md text-sm text-foreground/80 hover:text-primary"
+                  className="block px-3 py-2 rounded-md text-sm text-foreground/80 hover:text-primary font-lexend"
                   onClick={() => setIsOpen(false)}
                 >
                   {subitem.title}
@@ -51,9 +51,9 @@ export function MobileNavItem({
       ) : (
         <Link
           to={item.href}
-          className={`block px-3 py-2 rounded-md transition-colors ${
+          className={`block px-3 py-3 rounded-md transition-colors font-lexend font-bold text-base ${
             isActive(item.href) 
-              ? "text-primary font-semibold" 
+              ? "text-primary font-bold" 
               : "text-foreground/80 hover:text-primary"
           }`}
           onClick={() => setIsOpen(false)}

@@ -4,7 +4,6 @@ import { ChevronRight, Brain } from "lucide-react";
 import { AIAssessmentModal } from "@/components/assessment/AIAssessmentModal";
 import { useEffect } from "react";
 
-
 const AIAssessment = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -15,9 +14,8 @@ const AIAssessment = () => {
   });
 }, []);
 
-  
   return (
-    <div className="container mx-auto py-32  px-4 md:px-6 space-y-16 bg-[#0F1026]"> {/* ✅ Background color added here */}
+    <div className="bg-gradient-to-r from-[#FFF4ED] via-[#F9FAFB] to-[#EAF6FA] min-h-screen container mx-auto py-32 px-4 md:px-6 space-y-16">
       {/* Hero Section */}
       <section className="text-center space-y-6">
         <div className="inline-block p-2 bg-primary/10 rounded-full mb-4">
@@ -26,7 +24,6 @@ const AIAssessment = () => {
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-primary">
   AI-Powered Career Assessment
 </h1>
-
 
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
           Discover your ideal career path through our interactive AI assessment
@@ -38,8 +35,6 @@ const AIAssessment = () => {
 >
   Start Your Assessment <ChevronRight className="ml-2" />
 </Button>
-
-
       </section>
 
       {/* Information Sections */}
@@ -116,7 +111,6 @@ const AIAssessment = () => {
 >
   Let's Start
 </Button>
-
       </section>
 
       {/* Assessment Modal */}

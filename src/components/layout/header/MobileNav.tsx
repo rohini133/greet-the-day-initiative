@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { MobileNavItem } from "./MobileNavItem";
 import { MenuItem } from "./types";
@@ -84,11 +83,11 @@ export function MobileNav({
             </div>
             {user ? (
               <div className="border-t pt-4">
-                <div className="text-sm font-medium mb-2">
+                <div className="text-sm font-medium mb-2 font-lexend">
                   Signed in as {user.email}
                 </div>
                 <Button 
-                  className="w-full"
+                  className="w-full font-lexend font-bold"
                   variant="outline"
                   onClick={handleSignOut}
                 >
@@ -97,16 +96,16 @@ export function MobileNav({
               </div>
             ) : (
               <>
-                <Button variant="outline" className="w-full" onClick={() => {
+                <Button variant="outline" className="w-full font-lexend font-bold text-base py-3" onClick={() => {
                   handleLogin();
                   setIsOpen(false);
                 }}>
                   Log in
                 </Button>
-                <Button className="w-full" onClick={() => {
+                <Button className="w-full font-lexend font-bold text-base py-3" onClick={() => {
                   handleSignup();
                   setIsOpen(false);
-                }}>
+                }} style={{ backgroundColor: '#0C7DA7' }}>
                   Sign up
                 </Button>
               </>

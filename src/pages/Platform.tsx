@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRight, Users, BookOpen, Briefcase } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -7,7 +6,7 @@ const Platform = () => {
   const platforms = [
     {
       title: "Career Development",
-      subtitle: "AI-Powered Career Operating System",
+      subtitle: "AI-Powered Career Operating System", 
       description: "Transform your career with personalized AI guidance, skill assessments, and intelligent mentorship matching.",
       icon: <Users className="h-8 w-8" />,
       href: "/career-development",
@@ -18,7 +17,7 @@ const Platform = () => {
       subtitle: "Finance Intelligence Platform",
       description: "Complete finance ecosystem with AI agents, education, and automation for professionals and institutions.",
       icon: <BookOpen className="h-8 w-8" />,
-      href: "/fincode",
+      href: "/fincode", 
       features: ["AI Agent Suite", "EdTech Programs", "CFO-as-a-Service", "Robo-Advisory Engine"]
     },
     {
@@ -32,7 +31,7 @@ const Platform = () => {
   ];
 
   return (
-    <section className="py-20 bg-white relative overflow-hidden">
+    <section className="bg-gradient-to-r from-[#FFF4ED] via-[#F9FAFB] to-[#EAF6FA] min-h-screen py-20 relative overflow-hidden">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">

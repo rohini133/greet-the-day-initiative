@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -44,7 +43,7 @@ export default function Community() {
   };
 
   return (
-    <div className="container py-10 max-w-7xl mx-auto">
+    <div className="bg-gradient-to-r from-[#FFF4ED] via-[#F9FAFB] to-[#EAF6FA] min-h-screen container py-10 max-w-7xl mx-auto">
       <h1 className="text-4xl font-bold mb-6">Community</h1>
       <p className="text-xl text-muted-foreground mb-8">
         Connect with fellow learners, ask questions, and share resources.

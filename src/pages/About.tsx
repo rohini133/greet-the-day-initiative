@@ -1,3 +1,4 @@
+
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import {
@@ -19,9 +20,6 @@ import { Card, CardContent } from "@/components/ui/card";
 
 import { Cpu, Server, Database, Monitor, BarChart3, Link } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-
-
-
 
 const About = () => {
   const navigate = useNavigate();
@@ -91,68 +89,61 @@ const About = () => {
       description: "As you grow and the world evolves, our AI adapts your plan to keep you on the path to fulfillment."
     }
   ];
+
   const journeySteps = [
     {
       layer: "LLM Foundation",
       stack: "Self-hosted GPT-4-class models",
       icon: <Cpu className="h-6 w-6" />,
-      color: "from-brand-blue to-brand-cyan"
+      color: "from-[#0C7DA7] to-[#0C7DA7]"
     },
     {
       layer: "AI Agent System",
       stack: "LangChain, LangGraph",
       icon: <Server className="h-6 w-6" />,
-      color: "from-brand-cyan to-brand-blue"
+      color: "from-[#0C7DA7] to-[#0C7DA7]"
     },
     {
       layer: "RAG Engine",
       stack: "Pinecone + memory stores",
       icon: <Database className="h-6 w-6" />,
-      color: "from-brand-blue to-brand-orange"
+      color: "from-[#0C7DA7] to-[#0C7DA7]"
     },
     {
       layer: "UI/Delivery",
       stack: "React-based apps, chatbot UIs",
       icon: <Monitor className="h-6 w-6" />,
-      color: "from-brand-orange to-brand-cyan"
+      color: "from-[#0C7DA7] to-[#0C7DA7]"
     },
     {
       layer: "Monitoring",
       stack: "LangSmith, Grafana, Slack",
       icon: <BarChart3 className="h-6 w-6" />,
-      color: "from-brand-cyan to-brand-orange"
+      color: "from-[#0C7DA7] to-[#0C7DA7]"
     },
     {
       layer: "Integration",
       stack: "LMS, CRM, ERP-ready",
       icon: <Link className="h-6 w-6" />,
-      color: "from-brand-blue to-brand-cyan"
+      color: "from-[#0C7DA7] to-[#0C7DA7]"
     }
   ];
 
-
-
   return (
-    <div className="min-h-screen">
-      
+    <div className="min-h-screen" style={{ backgroundColor: '#FFFFFF' }}>
       
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-hero relative overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_30%,rgba(245,126,32,0.1),transparent_50%)]"></div>
-          <div className="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(circle_at_70%_70%,rgba(3,109,155,0.1),transparent_50%)]"></div>
-        </div>
-        
+      <section className="pt-32 pb-16 relative overflow-hidden" style={{ backgroundColor: '#FFFFFF' }}>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1>
+            <h1 className="text-4xl md:text-6xl font-lexend font-bold mb-6" style={{ color: '#0C7DA7' }}>
               Pioneering the Future of Work
             </h1>
-            <p className="text-xl md:text-2xl text-gray-300 mb-8 animate-fade-in" style={{ animationDelay: '200ms' }}>
+            <p className="text-xl md:text-2xl text-gray-600 font-lexend mb-8 animate-fade-in" style={{ animationDelay: '200ms' }}>
               Where artificial intelligence meets human ambition to unlock extraordinary career possibilities
             </p>
             <div className="animate-fade-in" style={{ animationDelay: '400ms' }}>
-              <Button className="bg-brand-orange hover:bg-brand-orange/90 text-white px-8 py-3 font-montserrat font-medium hover-scale">
+              <Button className="text-white px-8 py-3 font-lexend font-medium hover-scale" style={{ backgroundColor: '#0C7DA7' }}>
                 Discover Our Story
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
@@ -162,35 +153,35 @@ const About = () => {
       </section>
 
       {/* Mission & Vision Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20" style={{ backgroundColor: '#FFFFFF' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-start">
-              <div>
+              <div className="bg-white p-8 rounded-xl border border-gray-100">
                 <div className="flex items-center mb-6">
-                  <div className="p-3 bg-brand-orange text-white rounded-lg mr-4">
+                  <div className="p-3 rounded-lg mr-4 text-white" style={{ backgroundColor: '#0C7DA7' }}>
                     <Target className="h-6 w-6" />
                   </div>
-                  <h2 className="text-3xl font-montserrat font-bold text-brand-dark">Our Mission</h2>
+                  <h2 className="text-3xl font-lexend font-bold" style={{ color: '#0C7DA7' }}>Our Mission</h2>
                 </div>
-                <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                <p className="text-lg text-gray-700 font-lexend mb-6 leading-relaxed">
                   To democratize access to intelligent career guidance that adapts to each individual's unique journey. We believe every person deserves the opportunity to discover, develop, and deploy their talents in ways that create both personal fulfillment and positive impact.
                 </p>
-                <p className="text-lg text-gray-700 leading-relaxed">
+                <p className="text-lg text-gray-700 font-lexend leading-relaxed">
                   Through the power of ethical AI, we're building a world where career decisions are informed by deep self-knowledge, market intelligence, and continuous learning.
                 </p>
               </div>
-              <div>
+              <div className="bg-white p-8 rounded-xl border border-gray-100">
                 <div className="flex items-center mb-6">
-                  <div className="p-3 bg-brand-cyan text-white rounded-lg mr-4">
+                  <div className="p-3 rounded-lg mr-4 text-white" style={{ backgroundColor: '#0C7DA7' }}>
                     <Brain className="h-6 w-6" />
                   </div>
-                  <h2 className="text-3xl font-montserrat font-bold text-brand-dark">Our Vision</h2>
+                  <h2 className="text-3xl font-lexend font-bold" style={{ color: '#0C7DA7' }}>Our Vision</h2>
                 </div>
-                <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                <p className="text-lg text-gray-700 font-lexend mb-6 leading-relaxed">
                   A future where every individual has access to personalized, intelligent career guidance that evolves with them throughout their professional journey. Where career success is defined not just by traditional metrics, but by alignment with personal values and contribution to society.
                 </p>
-                <p className="text-lg text-gray-700 leading-relaxed">
+                <p className="text-lg text-gray-700 font-lexend leading-relaxed">
                   We envision a world where AI amplifies human potential, making career fulfillment accessible to everyone, regardless of background or circumstance.
                 </p>
               </div>
@@ -199,38 +190,14 @@ const About = () => {
         </div>
       </section>
 
-      {/* Impact Stats
-      <section className="py-16 bg-gradient-to-r from-brand-orange/10 via-brand-cyan/10 to-brand-blue/10">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-montserrat font-bold text-brand-dark mb-4">Our Global Impact</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">Transforming careers and lives across the globe through intelligent career guidance</p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {impactStats.map((stat, index) => (
-              <div 
-                key={stat.label}
-                className="text-center animate-fade-in"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <div className="text-4xl md:text-5xl font-montserrat font-bold text-brand-orange mb-2">
-                  {stat.number}
-                </div>
-                <div className="text-gray-600 font-medium">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
-
       {/* Core Values */}
-      <section className="py-20 bg-white">
+      <section className="py-20" style={{ backgroundColor: '#FFFFFF' }}>
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-brand-dark mb-6">
+            <h2 className="text-3xl md:text-4xl font-lexend font-bold mb-6" style={{ color: '#0C7DA7' }}>
               What Drives Us Forward
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 font-lexend max-w-3xl mx-auto">
               Our core values shape every decision, every feature, and every interaction within our platform
             </p>
           </div>
@@ -239,16 +206,16 @@ const About = () => {
             {coreValues.map((value, index) => (
               <div 
                 key={value.title}
-                className="text-center p-6 rounded-xl bg-gradient-to-br from-gray-50 to-white hover:shadow-lg transition-all duration-300 hover-scale animate-fade-in"
+                className="text-center p-6 rounded-xl bg-white border border-gray-100 hover:shadow-lg transition-all duration-300 hover-scale animate-fade-in"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="inline-flex p-4 rounded-lg bg-gradient-to-r from-brand-orange to-brand-cyan text-white mb-6">
+                <div className="inline-flex p-4 rounded-lg text-white mb-6" style={{ backgroundColor: '#0C7DA7' }}>
                   {value.icon}
                 </div>
-                <h3 className="text-xl font-montserrat font-semibold text-brand-dark mb-4">
+                <h3 className="text-xl font-lexend font-semibold mb-4" style={{ color: '#0C7DA7' }}>
                   {value.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 font-lexend leading-relaxed">
                   {value.description}
                 </p>
               </div>
@@ -258,13 +225,13 @@ const About = () => {
       </section>
 
       {/* Our Approach */}
-      <section className="py-20 bg-gradient-to-br from-brand-blue/5 to-brand-cyan/5">
+      <section className="py-20" style={{ backgroundColor: '#FFFFFF' }}>
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-brand-dark mb-6">
+            <h2 className="text-3xl md:text-4xl font-lexend font-bold mb-6" style={{ color: '#0C7DA7' }}>
               How We Transform Careers
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 font-lexend max-w-3xl mx-auto">
               Our systematic approach combines deep personalization with intelligent automation
             </p>
           </div>
@@ -277,17 +244,17 @@ const About = () => {
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="relative mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-r from-brand-orange to-brand-cyan text-white rounded-full flex items-center justify-center font-montserrat font-bold text-xl mx-auto">
+                  <div className="w-16 h-16 text-white rounded-full flex items-center justify-center font-lexend font-bold text-xl mx-auto" style={{ backgroundColor: '#0C7DA7' }}>
                     {step.step}
                   </div>
                   {index < ourApproach.length - 1 && (
-                    <div className="hidden lg:block absolute top-8 left-full w-full h-0.5 bg-gradient-to-r from-brand-orange to-brand-cyan"></div>
+                    <div className="hidden lg:block absolute top-8 left-full w-full h-0.5" style={{ backgroundColor: '#0C7DA7' }}></div>
                   )}
                 </div>
-                <h3 className="text-xl font-montserrat font-semibold text-brand-dark mb-4">
+                <h3 className="text-xl font-lexend font-semibold mb-4" style={{ color: '#0C7DA7' }}>
                   {step.title}
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-gray-600 font-lexend">
                   {step.description}
                 </p>
               </div>
@@ -297,12 +264,12 @@ const About = () => {
       </section>
 
       {/* Founder Story */}
-      <section className="py-20 bg-white">
+      <section className="py-20" style={{ backgroundColor: '#FFFFFF' }}>
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-brand-dark mb-8">
+                <h2 className="text-3xl md:text-4xl font-lexend font-bold mb-8" style={{ color: '#0C7DA7' }}>
                   Why We Started Gurukul Code
                 </h2>
                 <div className="space-y-6">
@@ -312,25 +279,25 @@ const About = () => {
                       className="flex items-start space-x-4 animate-fade-in"
                       style={{ animationDelay: `${index * 100}ms` }}
                     >
-                      <CheckCircle className="h-6 w-6 text-brand-orange flex-shrink-0 mt-1" />
-                      <p className="text-gray-700 text-lg leading-relaxed">{story}</p>
+                      <CheckCircle className="h-6 w-6 flex-shrink-0 mt-1" style={{ color: '#0C7DA7' }} />
+                      <p className="text-gray-700 text-lg font-lexend leading-relaxed">{story}</p>
                     </div>
                   ))}
                 </div>
               </div>
               
-              <div className="bg-gradient-to-br from-brand-orange/10 to-brand-cyan/10 p-8 rounded-2xl">
-                <h3 className="text-2xl font-montserrat font-bold text-brand-dark mb-6">
+              <div className="bg-white p-8 rounded-2xl border border-gray-100">
+                <h3 className="text-2xl font-lexend font-bold mb-6" style={{ color: '#0C7DA7' }}>
                   Join Our Movement
                 </h3>
-                <p className="text-gray-600 mb-6">
+                <p className="text-gray-600 font-lexend mb-6">
                   Be part of the AI-powered career revolution. Whether you're starting your journey or ready to make a change, we're here to guide you toward your most fulfilling path.
                 </p>
                 <div className="space-y-4">
-                  <Button className="bg-gradient-to-r from-brand-orange to-brand-cyan text-white font-montserrat font-medium px-6 py-3 hover-scale w-full">
+                  <Button className="text-white font-lexend font-medium px-6 py-3 hover-scale w-full" style={{ backgroundColor: '#0C7DA7' }}>
                     Start Your Journey
                   </Button>
-                  <Button variant="outline" className="border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white font-montserrat font-medium px-6 py-3 w-full">
+                  <Button variant="outline" className="text-white hover:text-white font-lexend font-medium px-6 py-3 w-full" style={{ borderColor: '#0C7DA7', backgroundColor: '#0C7DA7' }}>
                     Partner With Us
                   </Button>
                 </div>
@@ -341,117 +308,86 @@ const About = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-brand-blue to-brand-cyan">
+      <section className="py-20" style={{ backgroundColor: '#0C7DA7' }}>
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-white mb-6">
+            <h2 className="text-3xl md:text-4xl font-lexend font-bold text-white mb-6">
               Ready to Shape Your Future?
             </h2>
-            <p className="text-xl text-white/90 mb-8">
+            <p className="text-xl text-white/90 font-lexend mb-8">
               Join thousands who've discovered their path through intelligent career guidance. Your extraordinary career starts here.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-brand-orange hover:bg-brand-orange/90 text-white font-montserrat font-medium px-8 py-3 hover-scale">
+              <Button className="bg-white text-white font-lexend font-medium px-8 py-3 hover-scale" style={{ color: '#0C7DA7' }}>
                 Begin Your Journey
               </Button>
-              <Button variant="outline" className="border-white text-white hover:bg-white/10 font-montserrat font-medium px-8 py-3">
+              <Button variant="outline" className="border-white text-white hover:bg-white/10 font-lexend font-medium px-8 py-3">
                 Schedule Consultation
               </Button>
             </div>
           </div>
         </div>        
       </section>
-      <section className="py-20 bg-gradient-hero relative overflow-hidden">
-            {/* Background Elements */}
-            <div className="absolute inset-0">
-              <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_30%,rgba(86,199,223,0.1),transparent_50%)]"></div>
-              <div className="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(circle_at_70%_70%,rgba(245,126,32,0.1),transparent_50%)]"></div>
+
+      {/* Tech Infrastructure Section */}
+      <section className="py-20 relative overflow-hidden" style={{ backgroundColor: '#FFFFFF' }}>
+        <div className="container mx-auto px-4 relative z-10">
+          {/* Section Header */}
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-lexend font-bold mb-6" style={{ color: '#0C7DA7' }}>
+              Built with Future-Focused AI Infrastructure
+            </h2>
+            <p className="text-xl text-gray-600 font-lexend max-w-3xl mx-auto mb-8">
+              Enterprise-grade technology stack designed for scale, security, and performance
+            </p>
+            <div className="inline-flex items-center px-6 py-3 bg-white border rounded-full font-lexend font-medium" style={{ borderColor: '#0C7DA7', color: '#0C7DA7' }}>
+              Your data. Your control. Your custom agents.
             </div>
-      
-            <div className="container mx-auto px-4 relative z-10">
-              {/* Section Header */}
-              <div className="text-center mb-16">
-                <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-white mb-6">
-                  Built with Future-Focused AI Infrastructure
-                </h2>
-                <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
-                  Enterprise-grade technology stack designed for scale, security, and performance
+          </div>
+
+          {/* Tech Stack Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            {journeySteps.map((tech, index) => (
+              <motion.div
+                key={tech.layer}
+                className="group bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1 }}
+                whileHover={{ scale: 1.03 }}
+              >
+                {/* Icon */}
+                <div className="inline-flex p-3 rounded-lg text-white mb-4" style={{ backgroundColor: '#0C7DA7' }}>
+                  {tech.icon}
+                </div>
+
+                {/* Content */}
+                <h3 className="text-lg font-lexend font-semibold mb-2" style={{ color: '#0C7DA7' }}>
+                  {tech.layer}
+                </h3>
+                <p className="text-gray-600 font-lexend text-sm">
+                  {tech.stack}
                 </p>
-                <div className="inline-flex items-center px-6 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-white font-medium">
-                  Your data. Your control. Your custom agents.
-                </div>
-              </div>
-      
-              {/* Tech Stack Grid */}
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-                {journeySteps.map((tech, index) => (
-                  <motion.div
-                    key={tech.layer}
-                    className="group bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: index * 0.1 }}
-                    whileHover={{ scale: 1.03 }}
-                  >
-                    {/* Icon */}
-                    <div className={`inline-flex p-3 rounded-lg bg-gradient-to-r ${tech.color} text-white mb-4`}>
-                      {tech.icon}
-                    </div>
-      
-                    {/* Content */}
-                    <h3 className="text-lg font-montserrat font-semibold text-white mb-2">
-                      {tech.layer}
-                    </h3>
-                    <p className="text-gray-300 text-sm">
-                      {tech.stack}
-                    </p>
-      
-                    {/* Hover Effect */}
-                    <div className={`mt-4 h-1 bg-gradient-to-r ${tech.color} rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left`}></div>
-                  </motion.div>
-                ))}
-              </div>
-      
-              {/* Features Grid */}
-              {/* <div className="grid md:grid-cols-3 gap-8 text-center">
-                <div className="text-white">
-                  <div className="text-3xl font-bold font-montserrat mb-2">99.9%</div>
-                  <div className="text-gray-300">Uptime Guarantee</div>
-                </div>
-                <div className="text-white">
-                  <div className="text-3xl font-bold font-montserrat mb-2">&lt; 200ms</div>
-                  <div className="text-gray-300">Average Response Time</div>
-                </div>
-                <div className="text-white">
-                  <div className="text-3xl font-bold font-montserrat mb-2">SOC 2</div>
-                  <div className="text-gray-300">Security Compliance</div>
-                </div>
-              </div> */}
-      
-              {/* CTA */}
-              <div className="text-center mt-16">
-                <button 
-                  className="bg-gradient-to-r from-brand-cyan to-brand-blue hover:from-brand-blue hover:to-brand-cyan text-white px-8 py-3 rounded-full font-montserrat font-medium hover:scale-105 transition-all duration-300"
-                  onClick={() => navigate('/coming-soon')}
-                >
-                  Partner With Gurukul Code
-                </button>
-              </div>
-            </div>
-          </section>
 
+                {/* Hover Effect */}
+                <div className="mt-4 h-1 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" style={{ backgroundColor: '#0C7DA7' }}></div>
+              </motion.div>
+            ))}
+          </div>
 
-
-
-
+          {/* CTA */}
+          <div className="text-center mt-16">
+            <button 
+              className="text-white px-8 py-3 rounded-full font-lexend font-medium hover:scale-105 transition-all duration-300"
+              style={{ backgroundColor: '#0C7DA7' }}
+              onClick={() => navigate('/coming-soon')}
+            >
+              Partner With Gurukul Code
+            </button>
+          </div>
+        </div>
+      </section>
     </div>
-
-
-
-
-
-
-
   );
 };
 
