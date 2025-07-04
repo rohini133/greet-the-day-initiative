@@ -22,7 +22,7 @@ export function TestimonialsSection() {
         "Job preparation",
         "Mentorship matching",
       ],
-      color: " from-[#FFF4ED] via-[#F2FAFC] to-[#E8F3F9]",
+      color: " bg-gradient-to-r from-[#40C7E8] to-[#0077B6]",
       bgPattern: "bg-white to-[#E8F3F9] border border-gray-200",
     },
     {
@@ -36,7 +36,7 @@ export function TestimonialsSection() {
         "Role simulations",
         "Portfolio building",
       ],
-      color: " from-[#FFF4ED] via-[#F2FAFC] to-[#E8F3F9]",
+      color: " bg-gradient-to-r from-[#40C7E8] to-[#0077B6]",
       bgPattern: "bg-white border border-gray-200",
     },
     {
