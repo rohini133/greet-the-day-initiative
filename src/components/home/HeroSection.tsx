@@ -39,7 +39,7 @@ export function HeroSection() {
               {['AI-Native', 'Personalized', 'Future-Ready', 'Ethical'].map((feature) => (
                 <span 
                   key={feature}
-                  className="px-4 py-2 bg-gradient-to-r from-[#40C7E8] to-[#0077B6] text-white rounded-full text-sm font-medium font-lexend"
+                  className="px-4 py-2 bg-gradient-to-r from-[#FFF4ED] via-[#F2FAFC] to-[#E8F3F9] text-white rounded-full text-sm font-medium font-lexend"
                 >
                   <Sparkles className="inline w-4 h-4 mr-1" />
                   {feature}

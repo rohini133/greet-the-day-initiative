@@ -77,7 +77,7 @@ const FinCode = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-r from-brand-orange/10 via-brand-cyan/10 to-brand-blue min-h-screen">
+    <div className="bg-gradient-to-r from-[#FFF4ED] via-[#F2FAFC] to-[#E8F3F9]/10 via-brand-cyan/10 to-brand-blue min-h-screen">
       {/* Hero Section */}
       <section className="pt-28 pb-16">
         <div className="container mx-auto px-4">

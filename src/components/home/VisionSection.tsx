@@ -34,7 +34,7 @@ const VisionSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-white relative overflow-hidden font-lexend">
+    <section className="py-20 bg-gradient-to-r from-[#FFF4ED] via-[#F2FAFC] to-[#E8F3F9] relative overflow-hidden font-lexend">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">

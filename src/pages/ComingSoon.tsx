@@ -60,7 +60,7 @@ const ComingSoon = () => {
           {['AI-Powered', 'Personalized', 'Innovative'].map((feature, index) => (
             <motion.span 
               key={feature}
-              className="px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-white text-sm font-medium"
+              className="px-4 py-2 bg-gradient-to-r from-[#FFF4ED] via-[#F2FAFC] to-[#E8F3F9]/10 backdrop-blur-sm border border-white/20 rounded-full text-white text-sm font-medium"
               initial={{ opacity: 0, scale: 0 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 1.1 + index * 0.1 }}
@@ -89,7 +89,7 @@ const ComingSoon = () => {
           <Button 
             onClick={() => navigate('/')} 
             variant="outline"
-            className="border-white/30 text-white hover:bg-white/10 font-lexend font-semibold px-8 py-3 backdrop-blur-sm hover:scale-105 transition-all duration-300"
+            className="border-white/30 text-white hover:bg-gradient-to-r from-[#FFF4ED] via-[#F2FAFC] to-[#E8F3F9]/10 font-lexend font-semibold px-8 py-3 backdrop-blur-sm hover:scale-105 transition-all duration-300"
           >
             Back to Home
           </Button>

@@ -157,7 +157,7 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-start">
-              <div className="bg-white p-8 rounded-xl border border-gray-100">
+              <div className="bg-gradient-to-r from-[#FFF4ED] via-[#F2FAFC] to-[#E8F3F9] p-8 rounded-xl border border-gray-100">
                 <div className="flex items-center mb-6">
                   <div className="p-3 rounded-lg mr-4 text-white" style={{ backgroundColor: '#0C7DA7' }}>
                     <Target className="h-6 w-6" />
@@ -171,7 +171,7 @@ const About = () => {
                   Through the power of ethical AI, we're building a world where career decisions are informed by deep self-knowledge, market intelligence, and continuous learning.
                 </p>
               </div>
-              <div className="bg-white p-8 rounded-xl border border-gray-100">
+              <div className="bg-gradient-to-r from-[#FFF4ED] via-[#F2FAFC] to-[#E8F3F9] p-8 rounded-xl border border-gray-100">
                 <div className="flex items-center mb-6">
                   <div className="p-3 rounded-lg mr-4 text-white" style={{ backgroundColor: '#0C7DA7' }}>
                     <Brain className="h-6 w-6" />
@@ -206,7 +206,7 @@ const About = () => {
             {coreValues.map((value, index) => (
               <div 
                 key={value.title}
-                className="text-center p-6 rounded-xl bg-white border border-gray-100 hover:shadow-lg transition-all duration-300 hover-scale animate-fade-in"
+                className="text-center p-6 rounded-xl bg-gradient-to-r from-[#FFF4ED] via-[#F2FAFC] to-[#E8F3F9] border border-gray-100 hover:shadow-lg transition-all duration-300 hover-scale animate-fade-in"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="inline-flex p-4 rounded-lg text-white mb-6" style={{ backgroundColor: '#0C7DA7' }}>
@@ -286,7 +286,7 @@ const About = () => {
                 </div>
               </div>
               
-              <div className="bg-white p-8 rounded-2xl border border-gray-100">
+              <div className="bg-gradient-to-r from-[#FFF4ED] via-[#F2FAFC] to-[#E8F3F9] p-8 rounded-2xl border border-gray-100">
                 <h3 className="text-2xl font-lexend font-bold mb-6" style={{ color: '#0C7DA7' }}>
                   Join Our Movement
                 </h3>
@@ -318,10 +318,10 @@ const About = () => {
               Join thousands who've discovered their path through intelligent career guidance. Your extraordinary career starts here.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-white text-white font-lexend font-medium px-8 py-3 hover-scale" style={{ color: '#0C7DA7' }}>
+              <Button className="bg-gradient-to-r from-[#FFF4ED] via-[#F2FAFC] to-[#E8F3F9] text-white font-lexend font-medium px-8 py-3 hover-scale" style={{ color: '#0C7DA7' }}>
                 Begin Your Journey
               </Button>
-              <Button variant="outline" className="border-white text-white hover:bg-white/10 font-lexend font-medium px-8 py-3">
+              <Button variant="outline" className="border-white text-white hover:bg-gradient-to-r from-[#FFF4ED] via-[#F2FAFC] to-[#E8F3F9]/10 font-lexend font-medium px-8 py-3">
                 Schedule Consultation
               </Button>
             </div>

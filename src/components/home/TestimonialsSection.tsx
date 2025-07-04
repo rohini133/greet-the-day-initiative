@@ -23,7 +23,7 @@ export function TestimonialsSection() {
         "Mentorship matching",
       ],
       color: "from-[#40C7E8] to-[#0077B6]",
-      bgPattern: "bg-white border border-gray-200",
+      bgPattern: "bg-gradient-to-r from-[#FFF4ED] via-[#F2FAFC] to-[#E8F3F9] border border-gray-200",
     },
     {
       icon: <RefreshCw className="h-6 w-6 text-white" />,
