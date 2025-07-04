@@ -38,7 +38,7 @@ const VisionSection = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-lexend font-bold mb-6" style={{ color: '#F57E20' }}>
+          <h2 className="text-4xl md:text-5xl font-lexend font-bold mb-6 bg-gradient-to-r from-[#40C7E8] to-[#0077B6] bg-clip-text text-transparent">
             Comprehensive AI-Driven Career Ecosystem
           </h2>
           <p className="text-xl font-lexend text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed">
@@ -59,7 +59,7 @@ const VisionSection = () => {
             >
               {/* Icon + Title */}
               <div className="flex items-center gap-4 mb-4">
-                <div className="p-2 bg-[#036D9B] rounded-xl text-white">
+                <div className="p-2 bg-gradient-to-r from-[#40C7E8] to-[#0077B6] rounded-xl text-white">
                   {platform.icon}
                 </div>
                 <h3 className="text-2xl font-lexend font-bold text-brand-dark">
@@ -67,7 +67,7 @@ const VisionSection = () => {
                 </h3>
               </div>
                {/* Subtitle */}
-              <p className="text-[#F57E20] font-lexend font-bold mb-4">
+              <p className="bg-gradient-to-r from-[#40C7E8] to-[#0077B6] bg-clip-text text-transparent font-lexend font-bold mb-4">
                 {platform.subtitle}
               </p>
 
@@ -89,7 +89,7 @@ const VisionSection = () => {
               {/* CTA */}
               <button
                 onClick={() => navigate(platform.href)}
-                className="inline-flex items-center text-brand-orange font-lexend font-semibold hover:text-brand-cyan transition-colors group"
+                className="inline-flex items-center bg-gradient-to-r from-[#40C7E8] to-[#0077B6] bg-clip-text text-transparent font-lexend font-semibold hover:opacity-80 transition-opacity group"
               >
                 Explore Platform
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />

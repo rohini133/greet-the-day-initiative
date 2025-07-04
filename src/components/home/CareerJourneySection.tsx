@@ -55,13 +55,13 @@ export function CareerJourneySection() {
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-lexend font-bold mb-6" style={{ color: '#F57E20' }}>
+          <h2 className="text-4xl md:text-5xl font-lexend font-bold mb-6 bg-gradient-to-r from-[#40C7E8] to-[#0077B6] bg-clip-text text-transparent">
             Built with Future-Focused AI Infrastructure
           </h2>
           <p className="text-xl text-gray-600 font-lexend max-w-3xl mx-auto mb-8">
             Enterprise-grade technology stack designed for scale, security, and performance
           </p>
-          <div className="inline-flex items-center px-6 py-3 bg-white/80 backdrop-blur-sm border rounded-full font-lexend font-medium" style={{ borderColor: '#F57E20', color: '#F57E20' }}>
+          <div className="inline-flex items-center px-6 py-3 bg-white/80 backdrop-blur-sm border rounded-full font-lexend font-medium border-transparent bg-gradient-to-r from-[#40C7E8] to-[#0077B6] bg-clip-border text-transparent bg-clip-text">
             Your data. Your control. Your custom agents.
           </div>
         </div>
@@ -78,12 +78,12 @@ export function CareerJourneySection() {
               whileHover={{ scale: 1.03 }}
             >
               {/* Icon */}
-              <div className="inline-flex p-3 rounded-lg text-white mb-4" style={{ backgroundColor: '#F57E20' }}>
+              <div className="inline-flex p-3 rounded-lg text-white mb-4 bg-gradient-to-r from-[#40C7E8] to-[#0077B6]">
                 {tech.icon}
               </div>
 
               {/* Content */}
-              <h3 className="text-lg font-lexend font-semibold mb-2" style={{ color: '#F57E20' }}>
+              <h3 className="text-lg font-lexend font-semibold mb-2 bg-gradient-to-r from-[#40C7E8] to-[#0077B6] bg-clip-text text-transparent">
                 {tech.layer}
               </h3>
               <p className="text-gray-600 font-lexend text-sm">
@@ -91,7 +91,7 @@ export function CareerJourneySection() {
               </p>
 
               {/* Hover Effect */}
-              <div className="mt-4 h-1 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" style={{ backgroundColor: '#F57E20' }}></div>
+              <div className="mt-4 h-1 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left bg-gradient-to-r from-[#40C7E8] to-[#0077B6]"></div>
             </motion.div>
           ))}
         </div>
@@ -99,8 +99,7 @@ export function CareerJourneySection() {
         {/* CTA */}
         <div className="text-center mt-16">
           <button 
-            className="text-white px-8 py-3 rounded-full font-lexend font-medium hover:scale-105 transition-all duration-300"
-            style={{ backgroundColor: '#F57E20' }}
+            className="text-white px-8 py-3 rounded-full font-lexend font-medium hover:opacity-90 transition-all duration-300 bg-gradient-to-r from-[#40C7E8] to-[#0077B6]"
             onClick={() => navigate('/coming-soon')}
           >
             Partner With Gurukul Code

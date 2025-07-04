@@ -31,7 +31,7 @@ export function CTASection() {
             transition={{ duration: 0.5 }}
           >
             <div className="text-center">
-              <h2 className="text-3xl md:text-4xl font-lexend font-bold mb-4" style={{ color: '#F57E20' }}>
+              <h2 className="text-3xl md:text-4xl font-lexend font-bold mb-4 bg-gradient-to-r from-[#40C7E8] to-[#0077B6] bg-clip-text text-transparent">
                 Stay Ahead of the Curve
               </h2>
 
@@ -48,12 +48,12 @@ export function CTASection() {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       required
-                      className="flex-1 px-6 py-4 rounded-full bg-white border border-gray-300 text-gray-700 placeholder-gray-400 font-lexend focus:outline-none focus:ring-2 focus:ring-brand-orange/40"
+                      className="flex-1 px-6 py-4 rounded-full bg-white border border-gray-300 text-gray-700 placeholder-gray-400 font-lexend focus:outline-none focus:ring-2 focus:ring-[#40C7E8]/40"
                     />
                     <Button
                       type="submit"
                       size="lg"
-                      className="bg-[#0C7DA7] hover:bg-[#e76c0f] text-white px-8 py-6 rounded-full font-lexend font-medium transition-colors"
+                      className="bg-gradient-to-r from-[#40C7E8] to-[#0077B6] hover:opacity-90 text-white px-8 py-6 rounded-full font-lexend font-medium transition-opacity"
                     >
                       Subscribe
                       <Send className="ml-2 h-4 w-4" />
@@ -61,7 +61,7 @@ export function CTASection() {
                   </form>
                 ) : (
                   <div className="flex items-center justify-center text-brand-dark py-4">
-                    <CheckCircle className="h-6 w-6 mr-2 text-[#F57E20]" />
+                    <CheckCircle className="h-6 w-6 mr-2 text-[#40C7E8]" />
                     <span className="font-lexend font-semibold text-xl">Thank you for subscribing!</span>
                   </div>
                 )}
@@ -79,7 +79,7 @@ export function CTASection() {
                       whileHover={{ scale: 1.05 }}
                       transition={{ type: "spring", stiffness: 400 }}
                     >
-                      <div className="w-2 h-2 bg-[#F57E20] rounded-full mr-2"></div>
+                      <div className="w-2 h-2 bg-gradient-to-r from-[#40C7E8] to-[#0077B6] rounded-full mr-2"></div>
                       {text}
                     </motion.div>
                   ))}

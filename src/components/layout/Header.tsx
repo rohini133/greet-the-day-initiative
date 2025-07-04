@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { HeaderLogo } from "./header/HeaderLogo";
@@ -51,7 +50,7 @@ export function Header() {
   };
 
   return (
-    <header className="fixed w-full z-50 shadow-sm py-3 transition-all duration-300" style={{ backgroundColor: '#0C7DA7' }}>
+    <header className="fixed w-full z-50 shadow-sm py-3 transition-all duration-300 bg-gradient-to-r from-[#40C7E8] to-[#0077B6]">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
           <HeaderLogo />

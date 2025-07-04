@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { DesktopNavItem } from "./DesktopNavItem";
 import { MenuItem } from "./types";
@@ -15,56 +14,47 @@ interface DesktopNavProps {
   user: any;
 }
 
-export function DesktopNav({ 
-  menuItems, 
-  isActive, 
-  toggleSubmenu, 
+export function DesktopNav({
+  menuItems,
+  isActive,
+  toggleSubmenu,
   openSubmenu,
   handleLogin,
   handleSignup,
-  user
+  user,
 }: DesktopNavProps) {
   return (
-    <>
-      <nav className="hidden lg:flex items-center space-x-1">
-        {menuItems.map((item) => (
-          <DesktopNavItem 
-            key={item.title}
-            item={item} 
-            isActive={isActive}
-            toggleSubmenu={toggleSubmenu}
-            openSubmenu={openSubmenu}
-          />
-        ))}
-      </nav>
-
-      <div className="hidden lg:flex items-center space-x-4">
-        {/* <AIAgentsButton /> */}
-        
-        {user ? (
-          <UserProfileMenu user={user} />
-        ) : (
+    <nav className="hidden lg:flex items-center space-x-8">
+      {menuItems.map((item) => (
+        <DesktopNavItem 
+          key={item.title}
+          item={item} 
+          isActive={isActive}
+          toggleSubmenu={toggleSubmenu}
+          openSubmenu={openSubmenu}
+        />
+      ))}
+      
+      <div className="flex items-center space-x-3">
+        {!user ? (
           <>
-            <Button 
-              variant="outline" 
-              size="lg" 
+            <button
               onClick={handleLogin}
-              className="bg-white text-white border-white hover:bg-gray-50 font-lexend font-bold text-base px-6 py-3"
-              style={{ color: '#0C7DA7', borderColor: 'white' }}
+              className="bg-white text-transparent bg-clip-text bg-gradient-to-r from-[#40C7E8] to-[#0077B6] px-6 py-2 rounded-full font-lexend font-medium hover:bg-gray-50 transition-colors border border-white"
             >
-              Log in
-            </Button>
-            <Button 
-              size="lg" 
+              Log In
+            </button>
+            <button
               onClick={handleSignup}
-              className="bg-white hover:bg-gray-50 font-lexend font-bold text-base px-6 py-3"
-              style={{ color: '#0C7DA7' }}
+              className="bg-gradient-to-r from-[#40C7E8] to-[#0077B6] text-white px-6 py-2 rounded-full font-lexend font-medium hover:opacity-90 transition-opacity"
             >
-              Sign up
-            </Button>
+              Sign Up
+            </button>
           </>
+        ) : (
+          <UserProfileMenu user={user} />
         )}
       </div>
-    </>
+    </nav>
   );
 }

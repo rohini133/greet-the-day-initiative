@@ -57,7 +57,7 @@ export function TestimonialsSection() {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-lexend font-bold mb-6" style={{ color: '#F57E20' }}>
+          <h2 className="text-4xl md:text-5xl font-lexend font-bold mb-6 bg-gradient-to-r from-[#40C7E8] to-[#0077B6] bg-clip-text text-transparent">
             Who Is It For?
           </h2>
           <p className="text-xl font-lexend text-gray-600 max-w-3xl mx-auto">
@@ -83,7 +83,7 @@ export function TestimonialsSection() {
               <div className="relative z-10">
                 {/* Icon + Title in Same Row */}
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="h-12 w-12 flex items-center justify-center rounded-xl bg-[#036D9B]">
+                  <div className="h-12 w-12 flex items-center justify-center rounded-xl bg-gradient-to-r from-[#40C7E8] to-[#0077B6]">
                     {persona.icon}
                   </div>
                   <h3 className="text-xl font-lexend font-bold text-gray-900">
@@ -92,7 +92,7 @@ export function TestimonialsSection() {
                 </div>
 
                 {/* Description */}
-                <p className="mb-6 font-lexend leading-relaxed text-[#F57E20]">
+                <p className="mb-6 font-lexend leading-relaxed bg-gradient-to-r from-[#40C7E8] to-[#0077B6] bg-clip-text text-transparent">
                   {persona.description}
                 </p>
 

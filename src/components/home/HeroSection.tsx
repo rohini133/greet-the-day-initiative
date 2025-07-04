@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronRight, Brain } from "lucide-react";
@@ -18,7 +17,7 @@ export function HeroSection() {
 
   return (
     <>
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-8">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-8 bg-white">
         {/* Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_30%,rgba(12,125,167,0.05),transparent_50%)]"></div>
@@ -28,7 +27,7 @@ export function HeroSection() {
         <div className="container mx-auto px-4 py-20 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-8">
-              <h1 className="text-4xl md:text-6xl font-bold font-lexend mb-6" style={{ color: '#0C7DA7' }}>
+              <h1 className="text-4xl md:text-6xl font-bold font-lexend mb-6 bg-gradient-to-r from-[#40C7E8] to-[#0077B6] bg-clip-text text-transparent">
                 Your AI Career Journey Starts Here
               </h1>
               <p className="text-xl md:text-2xl text-gray-600 font-lexend mb-8 max-w-3xl mx-auto">
@@ -39,7 +38,7 @@ export function HeroSection() {
               {['AI-Native', 'Personalized', 'Future-Ready', 'Ethical'].map((feature) => (
                 <span 
                   key={feature}
-                  className="px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-white text-sm font-medium"
+                  className="px-4 py-2 bg-gradient-to-r from-[#40C7E8] to-[#0077B6] text-white rounded-full text-sm font-medium"
                 >
                   <Sparkles className="inline w-4 h-4 mr-1" />
                   {feature}
@@ -49,8 +48,7 @@ export function HeroSection() {
           </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <Button 
-                className="px-8 py-3 text-lg font-lexend font-medium hover:scale-105 transition-all duration-300 text-white"
-                style={{ backgroundColor: '#0C7DA7' }}
+                className="px-8 py-3 text-lg font-lexend font-medium hover:opacity-90 transition-all duration-300 text-white bg-gradient-to-r from-[#40C7E8] to-[#0077B6] rounded-full"
                 onClick={() => setIsAssessmentOpen(true)}
               >
                 Start Free Assessment
@@ -58,16 +56,7 @@ export function HeroSection() {
               </Button>
               <Button 
                 variant="outline" 
-                className="px-8 py-3 text-lg font-lexend font-medium hover:scale-105 transition-all duration-300 border-2"
-                style={{ borderColor: '#0C7DA7', color: '#0C7DA7' }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = '#0C7DA7';
-                  e.currentTarget.style.color = 'white';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.backgroundColor = 'transparent';
-                  e.currentTarget.style.color = '#0C7DA7';
-                }}
+                className="px-8 py-3 text-lg font-lexend font-medium hover:opacity-90 transition-all duration-300 border-2 border-transparent bg-gradient-to-r from-[#40C7E8] to-[#0077B6] bg-clip-border text-transparent bg-clip-text hover:bg-gradient-to-r hover:from-[#40C7E8] hover:to-[#0077B6] hover:text-white rounded-full"
               >
                 Explore Platform
               </Button>
