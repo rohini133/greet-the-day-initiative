@@ -22,7 +22,7 @@ export function TestimonialsSection() {
         "Job preparation",
         "Mentorship matching",
       ],
-      color: "from-[#40C7E8] to-[#0077B6]",
+      color: " from-[#FFF4ED] via-[#F2FAFC] to-[#E8F3F9]",
       bgPattern: "bg-white to-[#E8F3F9] border border-gray-200",
     },
     {

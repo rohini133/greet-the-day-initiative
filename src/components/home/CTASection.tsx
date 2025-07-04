@@ -24,14 +24,14 @@ export function CTASection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
           <motion.div
-            className="rounded-2xl p-6 sm:p-10 md:p-12 bg-gradient-to-r from-[#40C7E8] to-[#0077B6] shadow-2xl border border-gray-200"
+            className="rounded-2xl p-6 sm:p-10 md:p-12 bg-gradient-to-r from-[#FFF4ED] via-[#F2FAFC] to-[#E8F3F9] shadow-2xl border border-gray-200"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
             <div className="text-center">
-              <h2 className="text-3xl md:text-4xl font-lexend font-bold mb-4 bg-gradient-to-r from-[#40C7E8] to-[#0077B6] bg-clip-text text-transparent">
+              <h2 className="text-3xl md:text-4xl font-lexend font-bold mb-4 bg-gradient-to-r from-[#FFF4ED] via-[#F2FAFC] to-[#E8F3F9] bg-clip-text text-transparent">
                 Stay Ahead of the Curve
               </h2>
 
