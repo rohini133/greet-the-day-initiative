@@ -102,7 +102,7 @@ export function TestimonialsSection() {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-lexend font-bold mb-6 bg-gradient-to-r from-[#40C7E8] to-[#0077B6] bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-lexend font-bold mb-6 bg-gradient-to-r from-[#FFF4ED] via-[#F2FAFC] to-[#E8F3F9] bg-clip-text text-transparent">
             Who Is It For?
           </h2>
           <p className="text-xl font-lexend text-gray-600 max-w-3xl mx-auto">
