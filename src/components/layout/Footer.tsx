@@ -55,7 +55,7 @@ export function Footer() {
   return (
     <footer className="bg-white text-gray-800 border-t border-gray-200">
       {/* CTA Section */}
-      <div className="text-center py-16 border-b border-gray-200">
+      {/* <div className="text-center py-16 border-b border-gray-200">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-lexend font-bold mb-6" style={{ color: '#0C7DA7' }}>
             Ready to Transform Your Future?
@@ -97,7 +97,7 @@ export function Footer() {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Main Footer Content */}
       <div className="container mx-auto px-4 py-16">

@@ -92,7 +92,7 @@ export function CTASection() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5 }}
               >
-                Join thousands of professionals already growing with us.
+               Join a growing community of professionals building their future with us.
               </motion.p>
             </div>
           </motion.div>
