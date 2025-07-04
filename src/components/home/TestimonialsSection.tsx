@@ -2,52 +2,97 @@
 import { motion } from "framer-motion";
 import {
   GraduationCap,
-  User,
-  Building,
+  RefreshCw,
+  Building2,
+  Users,
+  Briefcase,
+  TrendingUp,
 } from "lucide-react";
 
 export function TestimonialsSection() {
   const testimonials = [
     {
       icon: <GraduationCap className="h-6 w-6 text-white" />,
-      title: "Students",
+      title: "Students & Early Professionals",
       description:
-        "Discover your path, build job-ready skills, and launch your career with AI-powered guidance and personalized mentorship.",
+        "Discover your path, build job-ready skills, and launch your career with AI-powered guidance.",
       benefits: [
-        "Career discovery & self-assessment",
-        "Skill acceleration & job preparation",
-        "Mentorship matching & guidance",
-        "Portfolio building & networking",
+        "Career discovery",
+        "Skill acceleration",
+        "Job preparation",
+        "Mentorship matching",
       ],
-      color: "from-blue-500 to-cyan-400",
+      color: "from-[#40C7E8] to-[#0077B6]",
       bgPattern: "bg-white border border-gray-200",
     },
     {
-      icon: <User className="h-6 w-6 text-white" />,
-      title: "Early Career Professionals",
+      icon: <RefreshCw className="h-6 w-6 text-white" />,
+      title: "Mid-Career Switchers",
       description:
-        "Navigate career transitions, advance your expertise, and scale your professional impact with intelligent career tools.",
+        "Navigate career transitions confidently with personalized upskilling and role simulations.",
       benefits: [
-        "Career transition & advancement planning",
-        "Skills gap analysis & upskilling",
-        "Personal branding & client acquisition",
-        "Performance insights & market intelligence",
+        "Transition planning",
+        "Skills gap analysis",
+        "Role simulations",
+        "Portfolio building",
       ],
-      color: "from-green-500 to-emerald-400",
+      color: "from-[#40C7E8] to-[#0077B6]",
       bgPattern: "bg-white border border-gray-200",
     },
     {
-      icon: <Building className="h-6 w-6 text-white" />,
-      title: "Institutions/EdTech & Enterprises",
+      icon: <Building2 className="h-6 w-6 text-white" />,
+      title: "EdTech & HR Institutions",
       description:
-        "Transform workforce development and enhance educational programs with AI-powered career services and talent intelligence.",
+        "Enhance your programs with AI-powered career services and student success tools.",
       benefits: [
-        "White-label platform & student analytics",
-        "Talent pipeline & workforce development",
-        "Employer partnerships & succession planning",
-        "Investment analysis & talent evaluation",
+        "White-label platform",
+        "Student analytics",
+        "Employer partnerships",
+        "Outcome tracking",
       ],
-      color: "from-purple-500 to-pink-400",
+      color: "from-[#40C7E8] to-[#0077B6]",
+      bgPattern: "bg-white border border-gray-200",
+    },
+    {
+      icon: <Users className="h-6 w-6 text-white" />,
+      title: "Enterprise Leaders",
+      description:
+        "Transform workforce development with intelligent L&D and internal mobility solutions.",
+      benefits: [
+        "Talent pipeline",
+        "Skills mapping",
+        "Succession planning",
+        "Performance insights",
+      ],
+      color: "from-[#40C7E8] to-[#0077B6]",
+      bgPattern: "bg-white border border-gray-200",
+    },
+    {
+      icon: <Briefcase className="h-6 w-6 text-white" />,
+      title: "Freelancers & Consultants",
+      description:
+        "Scale your expertise and build authority with AI-powered content and client tools.",
+      benefits: [
+        "Personal branding",
+        "Client acquisition",
+        "Service optimization",
+        "Market intelligence",
+      ],
+      color: "from-[#40C7E8] to-[#0077B6]",
+      bgPattern: "bg-white border border-gray-200",
+    },
+    {
+      icon: <TrendingUp className="h-6 w-6 text-white" />,
+      title: "Founders & VCs",
+      description:
+        "Make smarter investment and hiring decisions with comprehensive talent intelligence.",
+      benefits: [
+        "Talent evaluation",
+        "Market insights",
+        "Investment analysis",
+        "Due diligence",
+      ],
+      color: "from-[#40C7E8] to-[#0077B6]",
       bgPattern: "bg-white border border-gray-200",
     },
   ];
@@ -67,7 +112,7 @@ export function TestimonialsSection() {
         </div>
 
         {/* Personas Grid */}
-        <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((persona, index) => (
             <div
               key={persona.title}
@@ -83,7 +128,7 @@ export function TestimonialsSection() {
               <div className="relative z-10">
                 {/* Icon + Title in Same Row */}
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="h-12 w-12 flex items-center justify-center rounded-xl bg-gradient-to-r from-[#40C7E8] to-[#0077B6]">
+                  <div className={`h-12 w-12 flex items-center justify-center rounded-xl bg-gradient-to-r ${persona.color}`}>
                     {persona.icon}
                   </div>
                   <h3 className="text-xl font-lexend font-bold text-gray-900">
@@ -92,7 +137,7 @@ export function TestimonialsSection() {
                 </div>
 
                 {/* Description */}
-                <p className="mb-6 font-lexend leading-relaxed bg-gradient-to-r from-[#40C7E8] to-[#0077B6] bg-clip-text text-transparent">
+                <p className={`mb-6 font-lexend leading-relaxed bg-gradient-to-r ${persona.color} bg-clip-text text-transparent`}>
                   {persona.description}
                 </p>
 
