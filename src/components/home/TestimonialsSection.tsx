@@ -98,7 +98,7 @@ export function TestimonialsSection() {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-r from-[#40C7E8] to-[#0077B6]">
+    <section className="py-20 bg-gradient-to-r from-[#FFF4ED] via-[#F2FAFC] to-[#E8F3F9]">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
