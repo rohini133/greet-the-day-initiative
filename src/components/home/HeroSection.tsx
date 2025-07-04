@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronRight, Brain } from "lucide-react";
@@ -34,18 +35,17 @@ export function HeroSection() {
                 Discover your ideal career path with personalized AI guidance, skill assessments, and intelligent mentorship matching
               </p>
             </div>
-             <div className="flex flex-wrap justify-center gap-3 mb-8">
+            <div className="flex flex-wrap justify-center gap-3 mb-8">
               {['AI-Native', 'Personalized', 'Future-Ready', 'Ethical'].map((feature) => (
                 <span 
                   key={feature}
-                  className="px-4 py-2 bg-gradient-to-r from-[#40C7E8] to-[#0077B6] text-white rounded-full text-sm font-medium"
+                  className="px-4 py-2 bg-gradient-to-r from-[#40C7E8] to-[#0077B6] text-white rounded-full text-sm font-medium font-lexend"
                 >
                   <Sparkles className="inline w-4 h-4 mr-1" />
                   {feature}
                 </span>
               ))}
             </div>
-          </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <Button 
                 className="px-8 py-3 text-lg font-lexend font-medium hover:opacity-90 transition-all duration-300 text-white bg-gradient-to-r from-[#40C7E8] to-[#0077B6] rounded-full"
