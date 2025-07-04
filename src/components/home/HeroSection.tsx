@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ChevronRight, Brain } from "lucide-react";
 import { AIAssessmentModal } from "@/components/assessment/AIAssessmentModal";
 import { useEffect } from "react";
+import { ArrowRight, Sparkles } from 'lucide-react';
 
 export function HeroSection() {
   const [isAssessmentOpen, setIsAssessmentOpen] = useState(false);
@@ -34,7 +35,18 @@ export function HeroSection() {
                 Discover your ideal career path with personalized AI guidance, skill assessments, and intelligent mentorship matching
               </p>
             </div>
-
+             <div className="flex flex-wrap justify-center gap-3 mb-8">
+              {['AI-Native', 'Personalized', 'Future-Ready', 'Ethical'].map((feature) => (
+                <span 
+                  key={feature}
+                  className="px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-white text-sm font-medium"
+                >
+                  <Sparkles className="inline w-4 h-4 mr-1" />
+                  {feature}
+                </span>
+              ))}
+            </div>
+          </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <Button 
                 className="px-8 py-3 text-lg font-lexend font-medium hover:scale-105 transition-all duration-300 text-white"
