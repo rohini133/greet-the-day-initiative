@@ -5,7 +5,7 @@ export function HeaderLogo() {
   return (
     <Link to="/" className="flex items-center ml-2">
       <img 
-        src="/lovable-uploads/2476bb26-0e27-4636-9c00-c933b231c9c3.png" 
+        src="/lovable-uploads/c5f11254-60e9-415a-9b65-d1a086e6be9d.png" 
         alt="Gurukul Code" 
         className="h-20 w-auto"
       />
