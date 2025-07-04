@@ -83,7 +83,7 @@ const FinCode = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-lexend font-bold text-brand-dark mb-6 animate-fade-in">
-              <span style={{ color: '#0C7DA7' }}>FinCode</span> — Finance Intelligence
+              <span style={{ color: '#0C7DA7' }}>Fin</span><span style={{ color: '#F57E20' }}>Code</span> — Finance Intelligence
             </h1>
             <p className="text-xl md:text-2xl font-lexend text-gray-600 mb-6 animate-fade-in" style={{ animationDelay: '200ms' }}>
               Redefining Finance Learning, Research, and Execution with AI
