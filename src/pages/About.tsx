@@ -93,13 +93,13 @@ const About = () => {
   const journeySteps = [
     {
       layer: "LLM Foundation",
-      stack: "Self-hosted GPT-4-class models",
+      stack: "Self-hosted  LLAMA class models",
       icon: <Cpu className="h-6 w-6" />,
       color: "from-[#0C7DA7] to-[#0C7DA7]"
     },
     {
       layer: "AI Agent System",
-      stack: "LangChain, LangGraph",
+      stack: "LangChain, LangGraph, n8n",
       icon: <Server className="h-6 w-6" />,
       color: "from-[#0C7DA7] to-[#0C7DA7]"
     },
@@ -315,8 +315,7 @@ const About = () => {
               Ready to Shape Your Future?
             </h2>
             <p className="text-xl text-white/90 font-lexend mb-8">
-              Join thousands who've discovered their path through intelligent career guidance. Your extraordinary career starts here.
-            </p>
+              Join aspiring professionals who’ve discovered their path through intelligent career guidance. Your extraordinary career starts here</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button className="bg-gradient-to-r from-[#FFF4ED] via-[#F2FAFC] to-[#E8F3F9] text-white font-lexend font-medium px-8 py-3 hover-scale" style={{ color: '#0C7DA7' }}>
                 Begin Your Journey
