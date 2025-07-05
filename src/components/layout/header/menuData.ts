@@ -4,33 +4,33 @@ import { MenuItem } from "./types";
 export const menuItems: MenuItem[] = [
   {
     title: "Home",
-    href: "/",
+    path: "/",
   },
    {
     title: "Platform",
-    href: "/platform",
+    path: "/platform",
     submenu: [
-      { title: "Career Development", href: "/career-development" },
-      { title: "FinCode", href: "/fincode" },
-      { title: "Let's Advance", href: "/lets-advance" },
+      { title: "Career Development", path: "/career-development" },
+      { title: "FinCode", path: "/fincode" },
+      { title: "Let's Advance", path: "/lets-advance" },
     ],
   },
    {
     title: "Pricing",
-    href: "/pricing-page",
+    path: "/pricing-page",
   } ,
  
   {
     title: "Enterprise Solutions",
-    href: "/enterprise",
+    path: "/enterprise",
   },
   {
     title: "About",
-    href: "/about",
+    path: "/about",
   },
   {
 title: "AI Updates",
-    href: "/ai-updates",
+    path: "/ai-updates",
 
   }, 
 ];
