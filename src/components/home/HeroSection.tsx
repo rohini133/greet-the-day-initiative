@@ -27,7 +27,7 @@ export function HeroSection() {
 
         <div className="container mx-auto px-4 py-20 relative z-10">
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
               {/* Left side - Content */}
               <div className="text-left">
                 <div className="mb-8">
@@ -64,13 +64,13 @@ export function HeroSection() {
                 </div>
               </div>
 
-              {/* Right side - Logo */}
+              {/* Right side - Logo with Animation */}
               <div className="flex justify-center lg:justify-end">
-                <div className="w-80 h-80 md:w-96 md:h-96 flex items-center justify-center">
+                <div className="w-80 h-80 md:w-96 md:h-96 flex items-center justify-center animate-float">
                   <img 
                     src="/lovable-uploads/adb8b02b-4bb9-4ba5-a602-9610c00dd84d.png" 
                     alt="Company Logo" 
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-contain animate-fade-in"
                   />
                 </div>
               </div>
