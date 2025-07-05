@@ -18,7 +18,7 @@ export function HeroSection() {
 
   return (
     <>
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-8 bg-white">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-8 bg-gradient-to-r from-[#FFF4ED] via-[#F2FAFC] to-[#E8F3F9]">
         {/* Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_30%,rgba(12,125,167,0.05),transparent_50%)]"></div>
