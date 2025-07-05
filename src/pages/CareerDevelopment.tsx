@@ -133,22 +133,20 @@ const CareerDevelopment = () => {
             {/* Hero Badge */}
             <div className="inline-flex items-center px-6 py-3 rounded-full bg-blue-50 border border-blue-200 text-blue-800 mb-8 animate-fade-in">
               <Zap className="h-5 w-5 mr-2" style={{ color: '#0C7DA7' }} />
-              <span className="text-sm font-medium">AI-Powered hyper personalized Career Operating System</span>
+              <span className="text-sm font-medium">AI-Powered Career Intelligence</span>
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-5xl md:text-7xl font-lexend font-bold mb-8 animate-fade-in" style={{ color: '#0C7DA7', animationDelay: '200ms' }}>
-              Transform Your
-              <span className="block" style={{ color: '#0C7DA7' }}>
-                Career Journey
-              </span>
-            </h1>
+            <h2 className="text-5xl md:text-7xl font-lexend font-bold mb-8 animate-fade-in" style={{ color: '#0C7DA7', animationDelay: '200ms' }}>
+              Transform Your Career Journey
+              {/* <span className="block" style={{ color: '#0C7DA7' }}> */}
+                
+              {/* </span> */}
+            </h2>
 
             {/* Subheadline */}
             <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '400ms' }}>
-              Discover your ideal career path with AI-powered insights, personalized learning, and expert guidance. Join thousands who've accelerated their professional growth.
-            </p>
-
+              Discover your ideal career path with AI-powered insights, personalized learning, and expert guidance. Join a growing community of ambitious professionals accelerating their career growth </p>
             {/* Hero Features */}
             <div className="flex flex-wrap justify-center gap-6 mb-12 animate-fade-in" style={{ animationDelay: '600ms' }}>
               {heroFeatures.map((feature, index) => (
@@ -161,11 +159,11 @@ const CareerDevelopment = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: '800ms' }}>
-              <Button className="text-white px-8 py-4 text-lg font-lexend font-semibold hover-scale shadow-2xl" style={{ backgroundColor: '#0C7DA7' }}>
+              <Button className="text-white px-8 py-4 text-lg font-lexend font-semibold hover-scale shadow-2xl" style={{ backgroundColor: '#F57E20' }}>
                 Start Your journey
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button variant="outline" className="border-2 px-8 py-4 text-lg font-lexend font-semibold backdrop-blur-sm" style={{ borderColor: '#0C7DA7', color: '#0C7DA7' }}>
+              <Button  className="text-white px-8 py-4 text-lg font-lexend font-semibold hover-scale shadow-2xl" style={{ backgroundColor: '#0C7DA7' }}>
                 Watch Demo
               </Button>
             </div>

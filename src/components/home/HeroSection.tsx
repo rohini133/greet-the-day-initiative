@@ -58,7 +58,7 @@ export function HeroSection() {
             <Button className="bg-brand-orange hover:bg-brand-orange/90 text-white font-montserrat font-medium px-8 py-3 hover-scale">
               Begin Your Assessment
             </Button>
-            <Button variant="outline" className="border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white font-montserrat font-medium px-8 py-3">
+            <Button  className="bg-brand-blue hover:text-white font-montserrat font-medium px-8 py-3 hover-scale">
               Explore platform
             </Button>
             </div>
