@@ -46,7 +46,8 @@ export function CTASection() {
                 />
                 <Button
                   type="submit"
-                  className="bg-brand-orange hover:bg-brand-orange/90 text-white px-8 py-3 rounded-full font-montserrat font-medium transition-colors"
+                  variant="orange"
+                  className="px-8 py-3 rounded-full font-montserrat font-medium transition-colors"
                 >
                   Subscribe
                   <Send className="ml-2 h-4 w-4" />
@@ -62,15 +63,15 @@ export function CTASection() {
             {/* Benefits */}
             <div className="grid sm:grid-cols-3 gap-4 mt-8 text-sm text-white/80">
               <div className="flex items-center justify-center">
-                <div className="w-2 h-2 bg-brand-orange rounded-full mr-2"></div>
+                <div className="w-2 h-2 bg-[#F57E20] rounded-full mr-2"></div>
                 Weekly AI insights
               </div>
               <div className="flex items-center justify-center">
-                <div className="w-2 h-2 bg-brand-orange rounded-full mr-2"></div>
+                <div className="w-2 h-2 bg-[#F57E20] rounded-full mr-2"></div>
                 Career intelligence tips
               </div>
               <div className="flex items-center justify-center">
-                <div className="w-2 h-2 bg-brand-orange rounded-full mr-2"></div>
+                <div className="w-2 h-2 bg-[#F57E20] rounded-full mr-2"></div>
                 Early access features
               </div>
             </div>

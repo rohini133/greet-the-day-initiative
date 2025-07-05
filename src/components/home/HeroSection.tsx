@@ -55,7 +55,7 @@ export function HeroSection() {
               ))}
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-brand-orange hover:bg-brand-orange/90 text-white font-montserrat font-medium px-8 py-3 hover-scale">
+            <Button variant="orange" className="font-montserrat font-medium px-8 py-3 hover-scale">
               Begin Your Assessment
             </Button>
             <Button variant="outline" className="border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white font-montserrat font-medium px-8 py-3">

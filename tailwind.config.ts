@@ -1,3 +1,4 @@
+
 // tailwind.config.ts
 import type { Config } from "tailwindcss";
 
@@ -27,7 +28,7 @@ export default {
         // Brand gradient colors for use in `@apply`
         "brand-cyan": "#22d3ee",
         "brand-blue": "#3b82f6",
-        "brand-orange": "#fb923c",
+        "brand-orange": "#F57E20",
 
         // CSS variable colors
         border: "hsl(var(--border))",

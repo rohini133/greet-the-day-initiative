@@ -19,6 +19,7 @@ const buttonVariants = cva(
           "bg-brand-cyan text-white hover:bg-brand-cyan/90",
         ghost: "hover:bg-brand-blue/10 hover:text-brand-blue",
         link: "text-brand-blue underline-offset-4 hover:underline",
+        orange: "bg-[#F57E20] text-white hover:bg-[#F57E20]/90",
       },
       size: {
         default: "h-10 px-4 py-2",
