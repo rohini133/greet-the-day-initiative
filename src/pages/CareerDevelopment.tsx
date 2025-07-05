@@ -82,7 +82,7 @@ const CareerDevelopment = () => {
     },
     {
       step: "03",
-      title: "preparation",
+      title: "Exploration",
       description: "Follow personalized learning pathways to build required skills",
       icon: <BookOpen className="h-8 w-8" />,
       color: "#0C7DA7"
@@ -119,7 +119,7 @@ const CareerDevelopment = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-r from-brand-orange/10 via-brand-cyan/10 to-brand-blue min-h-screen font-lexend">
+    <div className="bg-gradient-to-r from-[#FFF4ED] via-[#F2FAFC] to-[#E8F3F9] min-h-screen font-lexend">
       {/* Enhanced Hero Section */}
       <section className="pt-24 pb-20 relative overflow-hidden">
         {/* Background Effects */}
@@ -302,7 +302,7 @@ const CareerDevelopment = () => {
               {testimonials.map((testimonial, index) => (
                 <Card 
                   key={testimonial.name}
-                  className="p-8 border shadow-lg bg-white animate-fade-in"
+                  className="p-8 border shadow-lg bg-gradient-to-r from-[#FFF4ED] via-[#F2FAFC] to-[#E8F3F9] animate-fade-in"
                   style={{ animationDelay: `${index * 200}ms` }}
                 >
                   <div className="flex items-center mb-4">

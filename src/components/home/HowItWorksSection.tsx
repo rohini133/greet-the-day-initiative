@@ -35,7 +35,7 @@ export function HowItWorksSection() {
     ];
 
     return (
-        <div className="bg-[#0F1026] text-white py-16 px-4 md:px-8">
+        <div className="bg-gradient-to-r from-[#FFF4ED] via-[#F2FAFC] to-[#E8F3F9] text-white py-16 px-4 md:px-8">
             {/* Section Title */}
             <div className="text-center mb-12 max-w-3xl mx-auto">
                 <motion.h2 

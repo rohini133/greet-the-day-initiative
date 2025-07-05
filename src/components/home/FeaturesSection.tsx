@@ -19,7 +19,7 @@ const features = [
   {
     icon: Users,
     title: "Mentorship Connection",
-    description: "Connect with experienced mentors who provide guidance, feedback, and support throughout your learning journey.",
+    description: "Connect with experienced mentors  provide guidance, feedback, and support throughout your learning journey.",
     colorClass: "bg-green-100 text-green-600 dark:bg-green-900/30 dark:text-green-400"
   },
   {
@@ -72,7 +72,7 @@ export function FeaturesSection() {
           {features.map((feature, index) => (
             <motion.div
               key={feature.title}
-              className="bg-white/70 backdrop-blur-sm border border-white/30 rounded-xl p-6 hover-scale shadow-sm hover:shadow-xl transition-all duration-300"
+              className="bg-gradient-to-r from-[#FFF4ED] via-[#F2FAFC] to-[#E8F3F9] backdrop-blur-sm border border-white/30 rounded-xl p-6 hover-scale shadow-sm hover:shadow-xl transition-all duration-300"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

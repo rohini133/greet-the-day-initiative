@@ -18,7 +18,7 @@ export function HeroSection() {
 
   return (
     <>
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-8 bg-gradient-to-r from-[#FFF4ED] via-[#F2FAFC] to-[#E8F3F9]">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-8 bg-white">
         {/* Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_30%,rgba(12,125,167,0.05),transparent_50%)]"></div>
@@ -29,37 +29,38 @@ export function HeroSection() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-8">
               <h1 className="text-4xl md:text-6xl font-bold font-lexend mb-6 bg-gradient-to-r from-[#40C7E8] to-[#0077B6] bg-clip-text text-transparent">
-                Your AI Career Journey Starts Here
+               Empowering Future-Ready Careers, Finance intelligence, and Creative Growth — with AI insights
               </h1>
-              <p className="text-xl md:text-2xl text-gray-600 font-lexend mb-8 max-w-3xl mx-auto">
+              {/* <p className="text-xl md:text-2xl text-gray-600 font-lexend mb-8 max-w-3xl mx-auto">
                 Discover your ideal career path with personalized AI guidance, skill assessments, and intelligent mentorship matching
-              </p>
+              </p> */}
             </div>
             <div className="flex flex-wrap justify-center gap-3 mb-8">
-              {['AI-Native', 'Personalized', 'Future-Ready', 'Ethical'].map((feature) => (
+              {[ 'Hyper-Personalized', 'Future-Proof', 'FinTech'].map((feature) => (
                 <span 
                   key={feature}
-                  className="px-4 py-2 bg-gradient-to-r from-[#40C7E8] to-[#0077B6] text-white rounded-full text-sm font-medium font-lexend"
+                  className="px-4 py-2 bg-white border-2 border-transparent bg-gradient-to-r from-[#40C7E8] to-[#0077B6] bg-clip-border text-transparent bg-clip-text rounded-full text-sm font-medium font-lexend"
+                  style={{
+                    background: 'white',
+                    borderImage: 'linear-gradient(to right, #40C7E8, #0077B6) 1',
+                    color: 'black',
+                    backgroundClip: 'text',
+                    WebkitBackgroundClip: 'text',
+                    backgroundImage: 'linear-gradient(to right, #40C7E8, #0077B6)'
+                  }}
                 >
-                  <Sparkles className="inline w-4 h-4 mr-1" />
+                  <Sparkles className="inline w-4 h-4 mr-1" style={{ color: '#40C7E8' }} />
                   {feature}
                 </span>
               ))}
             </div>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <Button 
-                className="px-8 py-3 text-lg font-lexend font-medium hover:opacity-90 transition-all duration-300 text-white bg-gradient-to-r from-[#40C7E8] to-[#0077B6] rounded-full"
-                onClick={() => setIsAssessmentOpen(true)}
-              >
-                Start Free Assessment
-                <ChevronRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button 
-                variant="outline" 
-                className="px-8 py-3 text-lg font-lexend font-medium hover:opacity-90 transition-all duration-300 border-2 border-transparent bg-gradient-to-r from-[#40C7E8] to-[#0077B6] bg-clip-border text-transparent bg-clip-text hover:bg-gradient-to-r hover:from-[#40C7E8] hover:to-[#0077B6] hover:text-white rounded-full"
-              >
-                Explore Platform
-              </Button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button className="bg-brand-orange hover:bg-brand-orange/90 text-white font-montserrat font-medium px-8 py-3 hover-scale">
+              Begin Your Assessment
+            </Button>
+            <Button variant="outline" className="border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white font-montserrat font-medium px-8 py-3">
+              Explore platform
+            </Button>
             </div>
           </div>
         </div>

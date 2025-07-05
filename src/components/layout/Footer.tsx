@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useNavigate } from "react-router-dom";
-import { ArrowRight, Mail, MapPin, Phone } from 'lucide-react';
+import { ArrowRight, Mail, MapPin, Phone, Facebook } from 'lucide-react';
 
 export function Footer() {
   const navigate = useNavigate();
@@ -12,10 +12,14 @@ export function Footer() {
       links: [
         { name: "Knowledge Hub", href: "/coming-soon" },
         { name: "Community", href: "/community" },
+        { name: "Pricing", href: "/pricing-page" },
+        { name: "Enterprise Solutions", href: "/enterprise" },
+        { name: "About", href: "/about" },
+        { name: "AI Updates", href: "/ai-updates" },
       ]
     },
     {
-      title: "Resources",
+      title: "Resources", 
       links: [
         { name: "Blog", href: "/coming-soon" },
         { name: "Case Studies", href: "/coming-soon" },
@@ -52,14 +56,14 @@ export function Footer() {
   ];
 
   return (
-    <footer className="bg-white text-gray-800 border-t border-gray-200">
+    <footer className="text-white border-t border-gray-600 bg-gradient-to-br from-black via-gray-900 to-gray-800">
       {/* CTA Section */}
-      {/* <div className="text-center py-16 border-b border-gray-200">
+      {/* <div className="text-center py-16 border-b border-gray-600">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-lexend font-bold mb-6" style={{ color: '#0C7DA7' }}>
             Ready to Transform Your Future?
           </h2>
-          <p className="text-gray-600 font-lexend mb-8 max-w-2xl mx-auto">
+          <p className="text-gray-300 font-lexend mb-8 max-w-2xl mx-auto">
             Choose your path and start your AI-powered growth journey today
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
@@ -110,12 +114,12 @@ export function Footer() {
                 className="h-12 w-auto"
               />
             </Link>
-            <p className="text-gray-600 font-lexend mb-6 max-w-md">
+            <p className="text-gray-300 font-lexend mb-6 max-w-md">
               Blending traditional Gurukul mentorship with AI-driven career development, we empower learners at every stage of their journey.
             </p>
             
             {/* Contact Info */}
-            <div className="space-y-3 text-sm text-gray-600 font-lexend mb-6">
+            <div className="space-y-3 text-sm text-gray-300 font-lexend mb-6">
               <div className="flex items-center">
                 <Mail className="h-4 w-4 mr-2 text-[#40C7E8]" />
                 hello@gurukulcode.com
@@ -124,14 +128,17 @@ export function Footer() {
                 <Phone className="h-4 w-4 mr-2 text-[#40C7E8]" />
                  +919922089689
               </div>
-              <div className="flex items-center">
+              {/* <div className="flex items-center">
                 <MapPin className="h-4 w-4 mr-2 text-[#40C7E8]" />
                 Pune, India
-              </div>
+              </div> */}
             </div>
             
             {/* Social Media */}
             <div className="flex space-x-4">
+              <a href="#" className="hover:opacity-80 transition-colors text-[#40C7E8]" aria-label="Facebook">
+                <Facebook className="h-5 w-5" />
+              </a>
               <a href="#" className="hover:opacity-80 transition-colors text-[#40C7E8]" aria-label="Twitter">
                 <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
@@ -166,9 +173,7 @@ export function Footer() {
                   <li key={link.name}>
                     <Link
                       to={link.href}
-                      className="text-gray-600 hover:text-sm font-lexend transition-colors"
-                      onMouseEnter={(e) => e.currentTarget.style.color = '#40C7E8'}
-                      onMouseLeave={(e) => e.currentTarget.style.color = '#6b7280'}
+                      className="text-gray-300 hover:text-white font-lexend transition-colors"
                     >
                       {link.name}
                     </Link>
@@ -181,9 +186,9 @@ export function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-200">
+      <div className="border-t border-gray-600">
         <div className="container mx-auto px-4 py-6">
-          <div className="flex flex-col md:flex-row items-center justify-center text-sm text-gray-600 font-lexend">
+          <div className="flex flex-col md:flex-row items-center justify-center text-sm text-gray-300 font-lexend">
             <div className="mb-4 md:mb-0">
               © {currentYear} Gurukul Code. All rights reserved.
             </div>

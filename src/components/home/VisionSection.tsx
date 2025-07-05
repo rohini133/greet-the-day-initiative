@@ -34,10 +34,10 @@ const VisionSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-r from-[#FFF4ED] via-[#F2FAFC] to-[#E8F3F9] relative overflow-hidden font-lexend">
+    <section className="py-12 bg-gradient-to-r from-[#FFF4ED] via-[#F2FAFC] to-[#E8F3F9] relative overflow-hidden font-lexend">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-lexend font-bold mb-6 bg-gradient-to-r from-[#40C7E8] to-[#0077B6] bg-clip-text text-transparent">
             Comprehensive AI-Driven Career Ecosystem
           </h2>
@@ -50,50 +50,59 @@ const VisionSection = () => {
         </div>
 
         {/* Platform Cards */}
-        <div className="grid lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid lg:grid-cols-3 gap-8 mb-12">
           {platforms.map((platform, index) => (
             <div 
               key={platform.title}
-              className="group bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover-scale animate-fade-in shadow-sm"
+              className="group relative overflow-hidden rounded-2xl bg-white border border-gray-200 p-8 hover:shadow-xl transition-all duration-500 animate-fade-in shadow-sm"
               style={{ animationDelay: `${index * 200}ms` }}
             >
-              {/* Icon + Title */}
-              <div className="flex items-center gap-4 mb-4">
-                <div className="p-2 bg-gradient-to-r from-[#40C7E8] to-[#0077B6] rounded-xl text-white">
-                  {platform.icon}
-                </div>
-                <h3 className="text-2xl font-lexend font-bold text-brand-dark">
-                  {platform.title}
-                </h3>
-              </div>
-               {/* Subtitle */}
-              <p className="bg-gradient-to-r from-[#40C7E8] to-[#0077B6] bg-clip-text text-transparent font-lexend font-bold mb-4">
-                {platform.subtitle}
-              </p>
+              {/* Background Gradient */}
+              <div className="absolute inset-0 bg-gradient-to-br from-[#40C7E8] to-[#0077B6] opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
 
-              {/* Description */}
-              <p className="text-gray-600 font-lexend mb-6 leading-relaxed">
-                {platform.description}
-              </p>
-
-              {/* Features */}
-              <div className="space-y-2 mb-8">
-                {platform.features.map((feature, idx) => (
-                  <div key={idx} className="flex items-center text-sm font-lexend text-gray-500">
-                    <div className="w-1.5 h-1.5 bg-brand-orange rounded-full mr-3"></div>
-                    {feature}
+              {/* Content */}
+              <div className="relative z-10">
+                {/* Icon + Title */}
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="p-2 bg-gradient-to-r from-[#40C7E8] to-[#0077B6] rounded-xl text-white">
+                    {platform.icon}
                   </div>
-                ))}
-              </div>
+                  <h3 className="text-2xl font-lexend font-bold text-brand-dark">
+                    {platform.title}
+                  </h3>
+                </div>
+                 {/* Subtitle */}
+                <p className="bg-brand-orange bg-clip-text text-transparent font-lexend font-bold mb-4">
+                  {platform.subtitle}
+                </p>
 
-              {/* CTA */}
-              <button
-                onClick={() => navigate(platform.href)}
-                className="inline-flex items-center bg-gradient-to-r from-[#40C7E8] to-[#0077B6] bg-clip-text text-transparent font-lexend font-semibold hover:opacity-80 transition-opacity group"
-              >
-                Explore Platform
-                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </button>
+                {/* Description */}
+                <p className="text-gradient-to-r from-[#40C7E8] to-[#0077B6] font-lexend mb-6 leading-relaxed">
+                  {platform.description}
+                </p>
+
+                {/* Features */}
+                <div className="space-y-2 mb-8">
+                  {platform.features.map((feature, idx) => (
+                    <div key={idx} className="flex items-center text-sm font-lexend text-gradient-to-r from-[#40C7E8] to-[#0077B6]">
+                      <div className="w-1.5 h-1.5 bg-brand-orange rounded-full mr-3"></div>
+                      {feature}
+                    </div>
+                  ))}
+                </div>
+
+                {/* CTA */}
+                <button
+                  onClick={() => navigate(platform.href)}
+                  className="inline-flex items-center bg-gradient-to-r from-[#40C7E8] to-[#0077B6] bg-clip-text text-transparent font-lexend font-semibold hover:opacity-80 transition-opacity group"
+                >
+                  Explore Platform
+                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                </button>
+
+                {/* Hover Line */}
+                <div className="mt-6 h-1 bg-gradient-to-r from-[#40C7E8] to-[#0077B6] rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+              </div>
             </div>
           ))}
         </div>

@@ -22,8 +22,8 @@ export function TestimonialsSection() {
         "Job preparation",
         "Mentorship matching",
       ],
-      color: " bg-gradient-to-r from-[#40C7E8] to-[#0077B6]",
-      bgPattern: "bg-white to-[#E8F3F9] border border-gray-200",
+      color: "from-[#40C7E8] to-[#0077B6]",
+      bgPattern: "bg-white border border-gray-200",
     },
     {
       icon: <RefreshCw className="h-6 w-6 text-white" />,
@@ -36,7 +36,7 @@ export function TestimonialsSection() {
         "Role simulations",
         "Portfolio building",
       ],
-      color: " bg-gradient-to-r from-[#40C7E8] to-[#0077B6]",
+      color: "from-[#40C7E8] to-[#0077B6]",
       bgPattern: "bg-white border border-gray-200",
     },
     {
@@ -98,11 +98,11 @@ export function TestimonialsSection() {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-r from-[#FFF4ED] via-[#F2FAFC] to-[#E8F3F9]">
+    <section className="py-12 bg-gradient-to-r from-[#FFF4ED] via-[#F2FAFC] to-[#E8F3F9]">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-lexend font-bold mb-6 bg-gradient-to-r from-[#FFF4ED] via-[#F2FAFC] to-[#E8F3F9] bg-clip-text text-transparent">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-gray-900 mb-6">
             Who Is It For?
           </h2>
           <p className="text-xl font-lexend text-gray-600 max-w-3xl mx-auto">
@@ -137,7 +137,7 @@ export function TestimonialsSection() {
                 </div>
 
                 {/* Description */}
-                <p className={`mb-6 font-lexend leading-relaxed bg-gradient-to-r ${persona.color} bg-clip-text text-transparent`}>
+                <p className="mb-6 font-lexend leading-relaxed text-brand-orange">
                   {persona.description}
                 </p>
 
@@ -146,11 +146,9 @@ export function TestimonialsSection() {
                   {persona.benefits.map((benefit, benefitIndex) => (
                     <div
                       key={benefitIndex}
-                      className="flex items-center text-sm font-lexend text-gray-700"
+                      className="flex items-center text-sm font-lexend text-gradient-to-r from-[#40C7E8] to-[#0077B6]"
                     >
-                      <div
-                        className={`w-2 h-2 rounded-full bg-gradient-to-r ${persona.color} mr-3`}
-                      ></div>
+                      <div className="w-2 h-2 rounded-full bg-brand-orange mr-3"></div>
                       {benefit}
                     </div>
                   ))}

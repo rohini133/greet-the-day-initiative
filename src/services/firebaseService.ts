@@ -13,7 +13,7 @@ const rtdb = getRtdb(app);
  */
 export const fetchNewsFromFirebase = async (): Promise<NewsItem[]> => {
   try {
-    console.log("Fetching news from Firebase RTDB path: summaries/latest");
+    console.log("Fetching news RTDB path: summaries/latest");
     const dbRef = ref(rtdb);
     const snapshot = await get(child(dbRef, 'summaries/latest'));
     
@@ -35,7 +35,7 @@ export const fetchNewsFromFirebase = async (): Promise<NewsItem[]> => {
     
     return [newsItem]; // Return as array for compatibility with existing components
   } catch (error) {
-    console.error("Error fetching summary from Firebase:", error);
-    throw new Error(`Failed to fetch summary from Firebase: ${error instanceof Error ? error.message : String(error)}`);
+    console.error("Error fetching summary :", error);
+    throw new Error(`Failed to fetch summary : ${error instanceof Error ? error.message : String(error)}`);
   }
 };
