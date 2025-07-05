@@ -1,58 +1,66 @@
 
 import { Link } from "react-router-dom";
 import { ChevronDown } from "lucide-react";
-import { useState } from "react";
+import { MenuItem } from "./types";
 
-interface NavItemProps {
-  item: {
-    title: string;
-    href: string;
-    submenu?: { title: string; href: string }[];
-  };
+interface DesktopNavItemProps {
+  item: MenuItem;
   isActive: (path: string) => boolean;
   toggleSubmenu: (title: string) => void;
   openSubmenu: string | null;
 }
 
-export function DesktopNavItem({ item, isActive, toggleSubmenu, openSubmenu }: NavItemProps) {
-  return (
-    <div key={item.title} className="relative group">
-      {item.submenu ? (
-        <button 
-          className="px-4 py-3 rounded-md text-base font-bold text-black hover:text-gray-600 flex items-center transition-colors font-lexend"
+export function DesktopNavItem({
+  item,
+  isActive,
+  toggleSubmenu,
+  openSubmenu,
+}: DesktopNavItemProps) {
+  if (item.submenu) {
+    return (
+      <div className="relative group">
+        <button
           onClick={() => toggleSubmenu(item.title)}
+          className="flex items-center space-x-1 text-gray-700 hover:text-[#0C7DA7] transition-colors font-lexend font-medium"
         >
-          {item.title}
-          <ChevronDown className="ml-1 h-4 w-4" />
+          <span>{item.title}</span>
+          <ChevronDown className="h-4 w-4" />
         </button>
-      ) : (
-        <Link 
-          to={item.href} 
-          className={`px-4 py-3 rounded-md text-base font-bold transition-colors font-lexend ${
-            isActive(item.href) 
-              ? "text-gray-600 font-bold" 
-              : "text-black hover:text-gray-600"
-          }`}
-        >
-          {item.title}
-        </Link>
-      )}
-
-      {item.submenu && (
-        <div className="absolute left-0 mt-1 w-48 origin-top-left rounded-md bg-white dark:bg-secondary shadow-lg ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-          <div className="py-1">
-            {item.submenu.map((subitem) => (
-              <Link
-                key={subitem.title}
-                to={subitem.href}
-                className="block px-4 py-2 text-sm text-foreground/80 hover:bg-muted transition-colors font-lexend"
-              >
-                {subitem.title}
-              </Link>
-            ))}
+        
+        {openSubmenu === item.title && (
+          <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border z-50">
+            <div className="py-2">
+              {item.submenu.map((subItem) => (
+                <Link
+                  key={subItem.title}
+                  to={subItem.path}
+                  className="block px-4 py-3 text-gray-700 hover:text-white hover:bg-[#F57E20] transition-colors font-lexend"
+                >
+                  <div className="font-medium">{subItem.title}</div>
+                  {subItem.description && (
+                    <div className="text-xs text-gray-500 mt-1">
+                      {subItem.description}
+                    </div>
+                  )}
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>
-      )}
-    </div>
+        )}
+      </div>
+    );
+  }
+
+  return (
+    <Link
+      to={item.path}
+      className={`font-lexend font-medium transition-colors ${
+        isActive(item.path)
+          ? "text-[#0C7DA7]"
+          : "text-gray-700 hover:text-[#0C7DA7]"
+      }`}
+    >
+      {item.title}
+    </Link>
   );
 }

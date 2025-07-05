@@ -38,7 +38,7 @@ export function MobileNavItem({
               {item.submenu.map((subitem) => (
                 <Link
                   key={subitem.title}
-                  to={subitem.href}
+                  to={subitem.path}
                   className="block px-3 py-2 rounded-md text-sm text-foreground/80 hover:text-primary font-lexend"
                   onClick={() => setIsOpen(false)}
                 >
@@ -50,9 +50,9 @@ export function MobileNavItem({
         </div>
       ) : (
         <Link
-          to={item.href}
+          to={item.path}
           className={`block px-3 py-3 rounded-md transition-colors font-lexend font-bold text-base ${
-            isActive(item.href) 
+            isActive(item.path) 
               ? "text-primary font-bold" 
               : "text-foreground/80 hover:text-primary"
           }`}

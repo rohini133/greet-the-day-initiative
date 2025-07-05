@@ -163,7 +163,7 @@ const CareerDevelopment = () => {
                 Start Your journey
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button  className="text-white px-8 py-4 text-lg font-lexend font-semibold hover-scale shadow-2xl" style={{ backgroundColor: '#0C7DA7' }}>
+              <Button className="border-2 px-8 py-4 text-lg font-lexend font-semibold backdrop-blur-sm bg-transparent hover:text-white" style={{ borderColor: '#0C7DA7', color: '#0C7DA7' }} onMouseEnter={(e) => (e.target as HTMLElement).style.backgroundColor = '#0C7DA7'} onMouseLeave={(e) => (e.target as HTMLElement).style.backgroundColor = 'transparent'}>
                 Watch Demo
               </Button>
             </div>
@@ -188,8 +188,11 @@ const CareerDevelopment = () => {
             {coreFeatures.map((feature, index) => (
               <Card 
                 key={feature.title}
-                className="group relative overflow-hidden border shadow-xl hover:shadow-2xl transition-all duration-500 hover-scale animate-fade-in bg-white"
-                style={{ animationDelay: `${index * 200}ms` }}
+                className="group relative overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover-scale animate-fade-in bg-white"
+                style={{ 
+                  animationDelay: `${index * 200}ms`,
+                  border: `2px solid #F57E20`
+                }}
               >
                 <CardHeader className="relative">
                   <div className="inline-flex p-3 rounded-xl text-white mb-4 group-hover:scale-110 transition-transform" style={{ backgroundColor: feature.color }}>

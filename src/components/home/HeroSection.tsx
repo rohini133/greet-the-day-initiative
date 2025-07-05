@@ -55,10 +55,10 @@ export function HeroSection() {
               ))}
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-brand-orange hover:bg-brand-orange/90 text-white font-montserrat font-medium px-8 py-3 hover-scale">
+            <Button variant="orange" className="font-montserrat font-medium px-8 py-3 hover-scale">
               Begin Your Assessment
             </Button>
-            <Button  className="bg-brand-blue hover:text-white font-montserrat font-medium px-8 py-3 hover-scale">
+            <Button className="border-2 font-montserrat font-medium px-8 py-3 bg-transparent hover:text-white" style={{ borderColor: '#0C7DA7', color: '#0C7DA7', '--hover-bg': '#0C7DA7' } as any} onMouseEnter={(e) => (e.target as HTMLElement).style.backgroundColor = '#0C7DA7'} onMouseLeave={(e) => (e.target as HTMLElement).style.backgroundColor = 'transparent'}>
               Explore platform
             </Button>
             </div>

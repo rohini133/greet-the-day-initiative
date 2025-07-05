@@ -45,6 +45,10 @@
     --sidebar-accent-foreground: 15 23 42;
     --sidebar-border: 226 232 240;
     --sidebar-ring: 59 130 246;
+
+    /* Brand orange color variables */
+    --brand-orange: 245 126 32;
+    --brand-orange-foreground: 255 255 255;
   }
 
   .dark {
@@ -84,6 +88,10 @@
     --sidebar-accent-foreground: 241 245 249;
     --sidebar-border: 30 41 59;
     --sidebar-ring: 59 130 246;
+
+    /* Brand orange remains the same in dark mode */
+    --brand-orange: 245 126 32;
+    --brand-orange-foreground: 255 255 255;
   }
 
   * {
