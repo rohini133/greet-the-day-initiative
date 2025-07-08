@@ -57,9 +57,9 @@ export function Header() {
         : 'bg-white/80 backdrop-blur-md shadow-sm h-16'
     }`}>
       <div className="container mx-auto px-4">
-        <div className={`flex items-center justify-between transition-all duration-500 ${
-          scrolled ? 'h-14' : 'h-16'
-        }`}>
+          <div className={`hidden lg:flex items-center justify-between w-full max-w-6xl rounded-full transition-all duration-500 ${
+  scrolled ? 'px-6 py-2' : 'px-8 py-3'
+}`}>
           {/* Logo with rounded container */}
           <div className="bg-white/95 backdrop-blur-md rounded-full shadow-sm border border-white/20 p-2">
             <HeaderLogo scrolled={scrolled} />
