@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { ChevronDown, Home, BookOpen, Users, Briefcase, Mail } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import { MenuItem } from "./types";
 import { useEffect, useRef } from "react";
 
@@ -11,24 +11,6 @@ interface DesktopNavItemProps {
   openSubmenu: string | null;
 }
 
-const getMenuIcon = (title: string) => {
-  switch (title.toLowerCase()) {
-    case 'home':
-      return Home;
-    case 'courses':
-    case 'learning center':
-      return BookOpen;
-    case 'community':
-      return Users;
-    case 'career center':
-      return Briefcase;
-    case 'contact':
-      return Mail;
-    default:
-      return null;
-  }
-};
-
 export function DesktopNavItem({
   item,
   isActive,
@@ -36,7 +18,6 @@ export function DesktopNavItem({
   openSubmenu,
 }: DesktopNavItemProps) {
   const dropdownRef = useRef<HTMLDivElement>(null);
-  const IconComponent = getMenuIcon(item.title);
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -69,14 +50,10 @@ export function DesktopNavItem({
       <div className="relative group" ref={dropdownRef}>
         <button
           onClick={() => toggleSubmenu(item.title)}
-          className="flex items-center space-x-2 text-gray-700 hover:text-[#017ea6] transition-all duration-300 font-inter font-medium relative group py-2"
+          className="flex items-center space-x-1 text-gray-700 hover:text-[#017ea6] transition-all duration-300 font-inter font-medium py-2 px-3 rounded-full hover:bg-gray-50"
         >
-          {IconComponent && <IconComponent className="h-4 w-4" />}
-          <span className="relative">
-            {item.title}
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#017ea6] transition-all duration-300 group-hover:w-full"></span>
-          </span>
-          <ChevronDown className="h-4 w-4 transition-transform duration-300 group-hover:rotate-180" />
+          <span>{item.title}</span>
+          <ChevronDown className="h-4 w-4 transition-transform duration-300" />
         </button>
         
         {openSubmenu === item.title && (
@@ -87,7 +64,7 @@ export function DesktopNavItem({
                   key={subItem.title}
                   to={subItem.path}
                   onClick={handleLinkClick}
-                  className="block px-4 py-3 text-gray-700 hover:text-[#f37c20] transition-all duration-300 font-inter"
+                  className="block px-4 py-3 text-gray-700 hover:text-[#f37c20] transition-all duration-300 font-inter hover:bg-gray-50"
                 >
                   <div className="font-medium">{subItem.title}</div>
                   {subItem.description && (
@@ -105,19 +82,13 @@ export function DesktopNavItem({
   return (
     <Link
       to={item.path}
-      className={`font-inter font-medium transition-all duration-300 relative group py-2 flex items-center space-x-2 ${
+      className={`font-inter font-medium transition-all duration-300 py-2 px-3 rounded-full ${
         isActive(item.path)
-          ? "text-[#017ea6]"
-          : "text-gray-700 hover:text-[#017ea6]"
+          ? "text-[#017ea6] bg-gray-50"
+          : "text-gray-700 hover:text-[#017ea6] hover:bg-gray-50"
       }`}
     >
-      {IconComponent && <IconComponent className="h-4 w-4" />}
-      <span className="relative">
-        {item.title}
-        <span className={`absolute bottom-0 left-0 h-0.5 bg-[#017ea6] transition-all duration-300 ${
-          isActive(item.path) ? 'w-full' : 'w-0 group-hover:w-full'
-        }`}></span>
-      </span>
+      {item.title}
     </Link>
   );
 }
