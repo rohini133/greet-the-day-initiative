@@ -2,10 +2,6 @@
 import { MenuItem } from "./types";
 
 export const menuItems: MenuItem[] = [
-  {
-    title: "Home",
-    path: "/",
-  },
    {
     title: "Platform",
     path: "/platform",

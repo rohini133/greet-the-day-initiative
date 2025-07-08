@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { createUserWithEmailAndPassword } from "firebase/auth";
@@ -115,20 +116,20 @@ export default function Signup() {
   };
 
   return (
-    <div className="bg-gradient-to-r from-[#FFF4ED] via-[#F9FAFB] to-[#EAF6FA] min-h-[calc(100vh-12rem)] flex items-center justify-center px-4 py-12">
+    <div className="bg-gradient-to-br from-[#eaf6fb] to-[#ffffff] min-h-[calc(100vh-12rem)] flex items-center justify-center px-4 py-12">
       <div className="w-full max-w-md">
         <Button 
           variant="ghost" 
-          className="mb-6 font-lexend text-blue-600 hover:text-blue-700 hover:bg-blue-50" 
+          className="mb-6 font-inter text-[#017ea6] hover:text-[#0496c7] hover:bg-blue-50/80 transition-all duration-300" 
           onClick={() => navigate("/")}
         >
           <ArrowLeft className="mr-2 h-4 w-4" /> Back to home
         </Button>
         
-        <Card className="border-border/40 shadow-lg bg-white">
+        <Card className="border-white/40 shadow-xl bg-white/90 backdrop-blur-sm hover:shadow-2xl transition-all duration-300">
           <CardHeader className="space-y-1">
-            <CardTitle className="text-2xl font-bold font-lexend text-gray-900">Create an account</CardTitle>
-            <CardDescription className="font-lexend text-gray-600">
+            <CardTitle className="text-2xl font-bold font-inter text-gray-900">Create an account</CardTitle>
+            <CardDescription className="font-inter text-gray-600">
               Enter your information to create your Gurukul Code account
             </CardDescription>
           </CardHeader>
@@ -136,25 +137,25 @@ export default function Signup() {
           <form onSubmit={handleSubmit}>
             <CardContent className="space-y-4">
               {isOffline && (
-                <div className="bg-destructive/15 text-destructive p-3 rounded-md text-sm mb-4 font-lexend">
+                <div className="bg-destructive/15 text-destructive p-3 rounded-xl text-sm mb-4 font-inter border border-destructive/20">
                   You appear to be offline. Please check your internet connection to create an account.
                 </div>
               )}
               
               <div className="space-y-2">
-                <Label htmlFor="name" className="font-lexend text-gray-700">Full Name</Label>
+                <Label htmlFor="name" className="font-inter text-gray-700 font-medium">Full Name</Label>
                 <Input
                   id="name"
                   placeholder="Your Name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   required
-                  className="font-lexend"
+                  className="font-inter bg-white/80 border-gray-200 text-gray-800 rounded-xl h-12 focus:ring-2 focus:ring-[#f37c20]/20 focus:border-[#f37c20] transition-all duration-300 hover:shadow-md"
                 />
               </div>
               
               <div className="space-y-2">
-                <Label htmlFor="email" className="font-lexend text-gray-700">Email</Label>
+                <Label htmlFor="email" className="font-inter text-gray-700 font-medium">Email</Label>
                 <Input
                   id="email"
                   type="email"
@@ -162,12 +163,12 @@ export default function Signup() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  className="font-lexend"
+                  className="font-inter bg-white/80 border-gray-200 text-gray-800 rounded-xl h-12 focus:ring-2 focus:ring-[#f37c20]/20 focus:border-[#f37c20] transition-all duration-300 hover:shadow-md"
                 />
               </div>
               
               <div className="space-y-2">
-                <Label htmlFor="password" className="font-lexend text-gray-700">Password</Label>
+                <Label htmlFor="password" className="font-inter text-gray-700 font-medium">Password</Label>
                 <Input
                   id="password"
                   type="password"
@@ -175,7 +176,7 @@ export default function Signup() {
                   onChange={(e) => setPassword(e.target.value)}
                   required
                   minLength={6}
-                  className="font-lexend"
+                  className="font-inter bg-white/80 border-gray-200 text-gray-800 rounded-xl h-12 focus:ring-2 focus:ring-[#f37c20]/20 focus:border-[#f37c20] transition-all duration-300 hover:shadow-md"
                 />
               </div>
             </CardContent>
@@ -183,17 +184,17 @@ export default function Signup() {
             <CardFooter className="flex flex-col space-y-4">
               <Button 
                 type="submit" 
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-lexend" 
+                className="w-full bg-gradient-to-r from-[#f37c20] to-[#ff8c42] hover:from-[#ff8c42] hover:to-[#f37c20] text-white font-inter font-medium h-12 rounded-xl hover:shadow-lg hover:shadow-[#f37c20]/30 transition-all duration-300 hover:scale-[1.02]" 
                 disabled={isLoading || isOffline}
               >
                 {isLoading ? "Creating account..." : "Create account"}
               </Button>
               
-              <div className="text-center text-sm font-lexend text-gray-600">
+              <div className="text-center text-sm font-inter text-gray-600">
                 Already have an account?{" "}
                 <a
                   onClick={() => navigate("/login")}
-                  className="font-medium text-blue-600 underline-offset-4 hover:underline cursor-pointer font-lexend"
+                  className="font-medium text-[#017ea6] underline-offset-4 hover:underline cursor-pointer font-inter hover:text-[#0496c7] transition-colors duration-300"
                 >
                   Sign in
                 </a>

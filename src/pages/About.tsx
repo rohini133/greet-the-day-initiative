@@ -294,10 +294,20 @@ const About = () => {
                   Be part of the AI-powered career revolution. Whether you're starting your journey or ready to make a change, we're here to guide you toward your most fulfilling path.
                 </p>
                 <div className="space-y-4">
-                  <Button className="text-white font-lexend font-medium px-6 py-3 hover-scale w-full" style={{ backgroundColor: '#0C7DA7' }}>
+                  <Button 
+                    className="text-white font-lexend font-bold px-6 py-3 hover:shadow-lg transition-all duration-300 w-full" 
+                    style={{ backgroundColor: '#F68C1F', borderRadius: '0.5rem' }}
+                    onMouseEnter={(e) => (e.target as HTMLButtonElement).style.backgroundColor = '#E07B1A'}
+                    onMouseLeave={(e) => (e.target as HTMLButtonElement).style.backgroundColor = '#F68C1F'}
+                  >
                     Start Your Journey
                   </Button>
-                  <Button variant="outline" className="text-white hover:text-white font-lexend font-medium px-6 py-3 w-full" style={{ borderColor: '#0C7DA7', backgroundColor: '#0C7DA7' }}>
+                  <Button 
+                    className="font-lexend font-bold px-8 py-3 border border-[#0077B6] text-[#0077B6] bg-white hover:bg-[#0077B6] hover:text-white hover:shadow-lg transition-all duration-300 rounded-lg"
+                    style={{ backgroundColor: '#0C7DA7', borderRadius: '0.5rem' }}
+                    onMouseEnter={(e) => (e.target as HTMLButtonElement).style.backgroundColor = '#0A6B91'}
+                    onMouseLeave={(e) => (e.target as HTMLButtonElement).style.backgroundColor = 'white'}
+                  >
                     Partner With Us
                   </Button>
                 </div>
@@ -315,12 +325,21 @@ const About = () => {
               Ready to Shape Your Future?
             </h2>
             <p className="text-xl text-white/90 font-lexend mb-8">
-              Join aspiring professionals who’ve discovered their path through intelligent career guidance. Your extraordinary career starts here</p>
+              Join aspiring professionals who've discovered their path through intelligent career guidance. Your extraordinary career starts here</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-gradient-to-r from-[#FFF4ED] via-[#F2FAFC] to-[#E8F3F9] text-white font-lexend font-medium px-8 py-3 hover-scale" style={{ color: '#0C7DA7' }}>
+              <Button 
+                className="text-white font-lexend font-bold px-8 py-3 hover:shadow-lg transition-all duration-300" 
+                style={{ backgroundColor: '#F68C1F', borderRadius: '0.5rem' }}
+                onMouseEnter={(e) => (e.target as HTMLButtonElement).style.backgroundColor = '#E07B1A'}
+                onMouseLeave={(e) => (e.target as HTMLButtonElement).style.backgroundColor = '#F68C1F'}
+              >
                 Begin Your Journey
               </Button>
-              <Button variant="outline" className="border-white text-white hover:bg-gradient-to-r from-[#FFF4ED] via-[#F2FAFC] to-[#E8F3F9]/10 font-lexend font-medium px-8 py-3">
+              <Button 
+                className="font-lexend font-bold px-8 py-3 border border-[#0077B6] text-[#0077B6] bg-white hover:bg-[#0077B6] hover:text-white hover:shadow-lg transition-all duration-300 rounded-lg"
+                variant="outline"
+                style={{ borderRadius: '0.5rem' }}
+              >
                 Schedule Consultation
               </Button>
             </div>

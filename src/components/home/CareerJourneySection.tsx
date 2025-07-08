@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const journeySteps = [
   {
     layer: "LLM Foundation",
-    stack: "Self-hosted LLama  models",
+    stack: "Self-hosted Llama  models",
     icon: <Cpu className="h-6 w-6" />,
     color: "from-blue-600 to-blue-800"
   },

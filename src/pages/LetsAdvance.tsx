@@ -1,8 +1,9 @@
+
 import React from 'react';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { Button } from '@/components/ui/button';
-import { Rocket, Users, Target, ArrowRight, CheckCircle, Mic, Video, FileText, TrendingUp, BookOpen, Award } from 'lucide-react';
+import { Rocket, Users, Target, ArrowRight, CheckCircle, TrendingUp, BookOpen, Award } from 'lucide-react';
 
 const LetsAdvance = () => {
   const contentPillars = [
@@ -20,24 +21,6 @@ const LetsAdvance = () => {
       icon: <Award className="h-6 w-6" />,
       title: "Career Development",
       items: ["Certification Courses", "Micro-Masters", "Advanced Programs", "Skill Assessments", "Mentorship Programs"]
-    }
-  ];
-
-  const contentFormats = [
-    {
-      icon: <Mic className="h-8 w-8" />,
-      title: "Audio Content",
-      description: "Raw conversations, career stories, and industry insights through podcasts and audio series"
-    },
-    {
-      icon: <Video className="h-8 w-8" />,
-      title: "Video Content",
-      description: "Visual storytelling, expert interviews, and behind-the-scenes career journeys"
-    },
-    {
-      icon: <FileText className="h-8 w-8" />,
-      title: "Written Content",
-      description: "In-depth articles, case studies, and thought leadership pieces that drive awareness"
     }
   ];
 
@@ -68,15 +51,14 @@ const LetsAdvance = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-r from-brand-orange/10 via-brand-cyan/10 to-brand-blue min-h-screen">
-      <Header />
+    <div className="bg-white/10 to-brand-blue min-h-screen">
       
       {/* Hero Section */}
       <section className="pt-28 pb-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-lexend font-bold text-brand-dark mb-6 animate-fade-in">
-              Let's <span style={{ color: '#0C7DA7' }}>Advance</span> Together
+              Let's <span style={{ color: '#0C7DA7' }}>Advance</span>
             </h1>
             <p className="text-xl md:text-2xl font-lexend text-gray-600 mb-6 animate-fade-in" style={{ animationDelay: '200ms' }}>
               Content Creation & Community Network for Career Truth
@@ -85,11 +67,21 @@ const LetsAdvance = () => {
               Igniting a cultural shift where career exploration is raw, relatable, and real — empowering every individual to confront their pain points, question their path, and find direction through truth.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: '400ms' }}>
-              <Button className="text-white px-8 py-3 font-lexend font-medium hover-scale" style={{ backgroundColor: '#0C7DA7' }}>
+              <Button 
+                className="text-white px-8 py-3 font-lexend font-bold hover:shadow-lg transition-all duration-300" 
+                style={{ backgroundColor: 'white', borderRadius: '0.5rem' }}
+                onMouseEnter={(e) => (e.target as HTMLButtonElement).style.backgroundColor = '#E07B1A'}
+                onMouseLeave={(e) => (e.target as HTMLButtonElement).style.backgroundColor = '#F68C1F'}
+              >
                 Join the Movement
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button variant="outline" className="px-8 py-3 font-lexend font-medium" style={{ borderColor: '#0C7DA7', color: '#0C7DA7' }}>
+              <Button 
+                className="font-lexend font-bold px-8 py-3 border border-[#0077B6] text-[#0077B6] bg-white hover:bg-[#0077B6] hover:text-white hover:shadow-lg transition-all duration-300"
+                style={{ backgroundColor: '#0C7DA7', borderRadius: '0.5rem' }}
+                onMouseEnter={(e) => (e.target as HTMLButtonElement).style.backgroundColor = '#0A6B91'}
+                onMouseLeave={(e) => (e.target as HTMLButtonElement).style.backgroundColor = 'white'}
+              >
                 Explore Content
               </Button>
             </div>
@@ -126,40 +118,6 @@ const LetsAdvance = () => {
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Content Formats Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-lexend font-bold mb-6" style={{ color: '#F57E20' }}>
-              Multi-Channel Content Creation
-            </h2>
-            <p className="text-xl font-lexend text-gray-600 max-w-3xl mx-auto">
-              Raw, relatable content across audio, video, and text that bridges career confusion with career clarity
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {contentFormats.map((format, index) => (
-              <div 
-                key={format.title}
-                className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover-scale animate-fade-in"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <div className="inline-flex p-4 rounded-lg text-white mb-6" style={{ backgroundColor: '#0C7DA7' }}>
-                  {format.icon}
-                </div>
-                <h3 className="text-xl font-lexend font-semibold text-brand-dark mb-4">
-                  {format.title}
-                </h3>
-                <p className="text-gray-600 font-lexend">
-                  {format.description}
-                </p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
@@ -269,10 +227,20 @@ const LetsAdvance = () => {
                 <p className="text-gray-600 font-lexend mb-6">
                   Let's Advance is not just a question — it's the start of your answer. Join our community of truth-seekers and career pioneers.
                 </p>
-                <Button className="text-white font-lexend font-medium px-6 py-3 hover-scale w-full mb-4" style={{ backgroundColor: '#0C7DA7' }}>
+                <Button 
+                  className="text-white font-lexend font-bold px-6 py-3 hover:shadow-lg transition-all duration-300 w-full mb-4" 
+                  style={{ backgroundColor: '#F68C1F', borderRadius: '0.5rem' }}
+                  onMouseEnter={(e) => (e.target as HTMLButtonElement).style.backgroundColor = '#E07B1A'}
+                  onMouseLeave={(e) => (e.target as HTMLButtonElement).style.backgroundColor = '#F68C1F'}
+                >
                   Join Our Community
                 </Button>
-                <Button variant="outline" className="font-lexend font-medium px-6 py-3 w-full" style={{ borderColor: '#0C7DA7', color: '#0C7DA7' }}>
+                <Button 
+                  className="font-lexend font-bold px-8 py-3 border border-[#0077B6] text-[#0077B6] bg-white hover:bg-[#0077B6] hover:text-white hover:shadow-lg transition-all duration-300 rounded-lg" 
+                  style={{ backgroundColor: '#0C7DA7', borderRadius: '0.5rem' }}
+                  onMouseEnter={(e) => (e.target as HTMLButtonElement).style.backgroundColor = '#0A6B91'}
+                  onMouseLeave={(e) => (e.target as HTMLButtonElement).style.backgroundColor = 'white'}
+                >
                   Explore Gurukul Code
                 </Button>
               </div>
@@ -281,7 +249,7 @@ const LetsAdvance = () => {
         </div>
       </section>
 
-      <Footer />
+      
     </div>
   );
 };

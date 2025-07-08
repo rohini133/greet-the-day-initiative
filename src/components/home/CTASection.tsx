@@ -20,7 +20,7 @@ export function CTASection() {
   };
 
   return (
-    <section className="py-12 bg-gradient-to-r from-brand-blue to-brand-cyan">
+    <section className="py-12 bg-gradient-to-r from-[#0077B6] to-[#40C7E8]">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           {/* Header */}

@@ -1,24 +1,28 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { TrendingUp, DollarSign, Shield, Brain, ArrowRight, CheckCircle, BookOpen, Users, Bot, Briefcase, PieChart } from 'lucide-react';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { TrendingUp, DollarSign, Shield, Brain, ArrowRight, CheckCircle, BookOpen, Users, Bot, Briefcase, PieChart, GraduationCap, TrendingDown, Calculator, Target, Settings } from 'lucide-react';
 
 const FinCode = () => {
   const products = [
-    {
-      icon: <BookOpen className="h-8 w-8" />,
-      title: "EdTech + Employability Suite",
-      subtitle: "Become finance-ready, faster",
-      description: "AI-curated learning & placement readiness for aspiring finance professionals",
-      features: ["Career-Aligned Curriculum", "CFA-Inspired Bootcamps", "Resume + LinkedIn Optimizer", "Behavioral Interview Coach", "Finance Certification Paths"],
-      agentName: "EduBot"
-    },
+    // {
+    //   icon: <GraduationCap className="h-8 w-8" />,
+    //   title: "EdTech + Employability Suite",
+    //   subtitle: "Become finance-ready, faster",
+    //   description: "AI-curated learning & placement readiness for aspiring finance professionals",
+    //   features: ["Career-Aligned Curriculum", "CFA-Inspired Bootcamps", "Resume + LinkedIn Optimizer", "Behavioral Interview Coach", "Finance Certification Paths"],
+    //   agentName: "EduBot",
+    //   gradient: "from-blue-500 to-purple-600"
+    // },
     {
       icon: <Bot className="h-8 w-8" />,
       title: "Finance AI Agent Suite", 
       subtitle: "Replace manual research with AI co-pilots",
       description: "Autonomous AI agents that reduce hours of financial work into insights in seconds",
       features: ["AlphaSage Research Analyst", "TrendSeer Forecasting Engine", "FinModel Factory", "DealRoom Automator", "Save 10+ hours/week"],
-      agentName: "FinBot"
+      agentName: "FinBot",
+      gradient: "from-green-500 to-teal-600"
     },
     {
       icon: <Briefcase className="h-8 w-8" />,
@@ -26,7 +30,8 @@ const FinCode = () => {
       subtitle: "Strategic finance for MSMEs", 
       description: "Turn small business finance into a strategic advantage with AI automation",
       features: ["Cash Flow Automation", "Vendor & Credit Scoring", "Smart Pricing Suggestions", "Alerts & Dashboards", "Financial Health KPIs"],
-      agentName: "CFOBot"
+      agentName: "CFOBot",
+      gradient: "from-orange-500 to-red-600"
     },
     {
       icon: <PieChart className="h-8 w-8" />,
@@ -34,15 +39,17 @@ const FinCode = () => {
       subtitle: "Democratizing wealth strategy",
       description: "AI-powered personal finance and investment advisory capabilities",
       features: ["Portfolio Generator", "Behavioral Nudging System", "Tax Optimization Engine", "Goal-Based Planning Bots", "Wealth Growth Tools"],
-      agentName: "WealthBot"
+      agentName: "WealthBot",
+      gradient: "from-purple-500 to-pink-600"
     },
     {
-      icon: <Users className="h-8 w-8" />,
+      icon: <Settings className="h-8 w-8" />,
       title: "Custom Solutions",
       subtitle: "For Institutions & Platforms",
       description: "Build your own finance intelligence layer with FinCode's modular stack",
       features: ["College & EdTech APIs", "Startup & Fintech Integration", "Enterprise L&D Modules", "Government & CSR Programs", "White-labeled Solutions"],
-      agentName: "CustomBot"
+      agentName: "CustomBot",
+      gradient: "from-indigo-500 to-blue-600"
     }
   ];
 
@@ -70,20 +77,32 @@ const FinCode = () => {
   ];
 
   const stats = [
-    { label: "Model Accuracy" },
-    { label: "Hours Saved Weekly" },
-    { label: "Product Suites" },
-    { label: "AI Agent Availability" }
+    {
+      heading: "AI-Powered Accuracy",
+      subtext: "Built using machine learning & financial models"
+    },
+    {
+      heading: "Time-Saving Automation", 
+      subtext: "Designed to reduce manual analysis workload"
+    },
+    {
+      heading: "Modular Product Suite",
+      subtext: "Finance tools that scale as you grow"
+    },
+    {
+      heading: "AI Agent Coming Soon",
+      subtext: "Automated AI assistants in upcoming release"
+    }
   ];
 
   return (
-    <div className="bg-gradient-to-r from-[#FFF4ED] via-[#F2FAFC] to-[#E8F3F9]/10 via-brand-cyan/10 to-brand-blue min-h-screen">
+    <div className="bg-white/10 via-brand-cyan/10 to-brand-blue min-h-screen">
       {/* Hero Section */}
-      <section className="pt-28 pb-16">
+      <section className="pt-20 pb-8">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-lexend font-bold text-brand-dark mb-6 animate-fade-in">
-              <span style={{ color: '#0C7DA7' }}>Fin</span><span style={{ color: '#F57E20' }}>Code</span> — Finance Intelligence
+              <span style={{ color: '#0C7DA7' }}>Fin</span><span style={{ color: '#F57E20' }}>Code</span>
             </h1>
             <p className="text-xl md:text-2xl font-lexend text-gray-600 mb-6 animate-fade-in" style={{ animationDelay: '200ms' }}>
               Redefining Finance Learning, Research, and Execution with AI
@@ -92,11 +111,21 @@ const FinCode = () => {
               A next-gen suite of tools that blends financial education, role-specific career development, and intelligent automation into one integrated system.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: '400ms' }}>
-              <Button className="text-white px-8 py-3 font-lexend font-medium hover-scale" style={{ backgroundColor: '#0C7DA7' }}>
+              <Button 
+                className="text-white px-8 py-3 font-lexend font-bold hover:shadow-lg transition-all duration-300" 
+                style={{ backgroundColor: '#F68C1F', borderRadius: '0.5rem' }}
+                onMouseEnter={(e) => (e.target as HTMLButtonElement).style.backgroundColor = '#E07B1A'}
+                onMouseLeave={(e) => (e.target as HTMLButtonElement).style.backgroundColor = '#F68C1F'}
+              >
                 Explore FinCode Demo
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button variant="outline" className="px-8 py-3 font-lexend font-medium" style={{ borderColor: '#0C7DA7', color: '#0C7DA7' }}>
+              <Button 
+                className="font-lexend font-bold px-8 py-3 border border-[#0077B6] text-[#0077B6] bg-white hover:bg-[#0077B6] hover:text-white hover:shadow-lg transition-all duration-300 rounded-lg"
+                style={{ backgroundColor: 'white', borderRadius: '0.5rem' }}
+                onMouseEnter={(e) => (e.target as HTMLButtonElement).style.backgroundColor = '#0A6B91'}
+                onMouseLeave={(e) => (e.target as HTMLButtonElement).style.backgroundColor = 'white'}
+              >
                 Build AI Valuation Model
               </Button>
             </div>
@@ -105,20 +134,20 @@ const FinCode = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16">
+      <section className="py-8">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {["Model Accuracy", "Hours Saved Weekly", "Product Suites", "AI Agent Availability"].map((stat, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {stats.map((stat, index) => (
               <div 
-                key={stat}
+                key={stat.heading}
                 className="text-center animate-fade-in"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="text-3xl md:text-4xl font-lexend font-bold mb-2" style={{ color: '#0C7DA7' }}>
-                  Advanced
+                <div className="text-2xl md:text-3xl font-lexend font-bold mb-2" style={{ color: '#0C7DA7' }}>
+                  {stat.heading}
                 </div>
                 <div className="text-gray-600 font-lexend text-sm md:text-base">
-                  {stat}
+                  {stat.subtext}
                 </div>
               </div>
             ))}
@@ -127,59 +156,72 @@ const FinCode = () => {
       </section>
 
       {/* Products Section */}
-      <section className="py-20">
+      <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-lexend font-bold mb-6" style={{ color: '#F57E20' }}>
-              Five Comprehensive Product Suites
+              Comprehensive Product Suites
             </h2>
             <p className="text-xl font-lexend text-gray-600 max-w-3xl mx-auto">
               From education to execution - complete finance intelligence ecosystem powered by AI
             </p>
           </div>
 
-          <div className="space-y-12">
+          <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {products.map((product, index) => (
-              <div 
+              <Card 
                 key={product.title}
-                className={`grid lg:grid-cols-2 gap-8 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}
+                className="group hover:shadow-2xl transition-all duration-500 border-0 bg-white/80 backdrop-blur-sm hover:scale-105 animate-fade-in overflow-hidden relative"
+                style={{ animationDelay: `${index * 150}ms` }}
               >
-                <div className={`${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
-                  <div className="flex items-center mb-4">
-                    <div className="p-3 text-white rounded-lg mr-4" style={{ backgroundColor: '#0C7DA7' }}>
-                      {product.icon}
+                <CardHeader className="pb-4">
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="flex items-start space-x-4">
+                      <div className={`p-4 rounded-xl bg-gradient-to-br ${product.gradient} text-white shadow-lg group-hover:scale-110 transition-transform duration-300`}>
+                        {product.icon}
+                      </div>
+                      <div className="flex-1">
+                        <CardTitle className="text-xl font-lexend font-bold text-gray-900 mb-2">
+                          {product.title}
+                        </CardTitle>
+                        <p className="font-lexend font-semibold text-lg" style={{ color: '#F57E20' }}>
+                          {product.subtitle}
+                        </p>
+                      </div>
                     </div>
-                    <div>
-                      <h3 className="text-2xl font-lexend font-bold text-brand-dark">{product.title}</h3>
-                      <p className="font-lexend font-medium" style={{ color: '#0C7DA7' }}>{product.subtitle}</p>
-                    </div>
+                    <Badge className="bg-[#f9f9f9] border-0 rounded-xl px-3 py-1 text-xs font-medium" style={{ color: '#0C7DA7' }}>
+                      AI Agent: {product.agentName}
+                    </Badge>
                   </div>
-                  <p className="text-gray-700 font-lexend text-lg mb-6">{product.description}</p>
+                </CardHeader>
+                
+                <CardContent className="pt-0">
+                  <p className="text-gray-700 font-lexend mb-6 leading-relaxed">
+                    {product.description}
+                  </p>
+                  
                   <div className="space-y-3">
                     {product.features.map((feature, idx) => (
-                      <div key={idx} className="flex items-center">
-                        <CheckCircle className="h-5 w-5 mr-3 flex-shrink-0" style={{ color: '#0C7DA7' }} />
-                        <span className="text-gray-600 font-lexend">{feature}</span>
+                      <div key={idx} className="flex items-start group/feature">
+                        <CheckCircle 
+                          className="h-5 w-5 mr-3 flex-shrink-0 mt-0.5 group-hover/feature:scale-110 transition-transform duration-200" 
+                          style={{ color: '#F57E20' }} 
+                        />
+                        <span className="text-gray-600 font-lexend text-sm leading-relaxed">
+                          {feature}
+                        </span>
                       </div>
                     ))}
                   </div>
-                </div>
-                <div className={`bg-gray-50 border border-gray-200 p-8 rounded-2xl ${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
-                  <div className="text-center">
-                    <div className="text-3xl font-lexend font-bold mb-2" style={{ color: '#0C7DA7' }}>
-                      {product.agentName}
-                    </div>
-                    <p className="text-gray-600 font-lexend">AI Agent</p>
-                  </div>
-                </div>
-              </div>
+                </CardContent>
+              </Card>
             ))}
           </div>
         </div>
       </section>
 
       {/* AI Agents Spotlight */}
-      <section className="py-20">
+      <section className="py-12">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-lexend font-bold mb-6" style={{ color: '#F57E20' }}>
@@ -214,7 +256,7 @@ const FinCode = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20">
+      <section className="py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-lexend font-bold mb-6" style={{ color: '#F57E20' }}>
@@ -224,10 +266,20 @@ const FinCode = () => {
               Transform your financial workflow with FinCode's comprehensive suite of AI tools and educational programs
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="text-white font-lexend font-medium px-8 py-3 hover-scale" style={{ backgroundColor: '#0C7DA7' }}>
+              <Button 
+                className="text-white font-lexend font-bold px-8 py-3 hover:shadow-lg transition-all duration-300" 
+                style={{ backgroundColor: '#F68C1F', borderRadius: '0.5rem' }}
+                onMouseEnter={(e) => (e.target as HTMLButtonElement).style.backgroundColor = '#E07B1A'}
+                onMouseLeave={(e) => (e.target as HTMLButtonElement).style.backgroundColor = '#F68C1F'}
+              >
                 Start Free Trial
               </Button>
-              <Button variant="outline" className="font-lexend font-medium px-8 py-3" style={{ borderColor: '#0C7DA7', color: '#0C7DA7' }}>
+              <Button 
+               className="font-lexend font-bold px-8 py-3 border border-[#0077B6] text-[#0077B6] bg-white hover:bg-[#0077B6] hover:text-white hover:shadow-lg transition-all duration-300 rounded-lg"
+                style={{ backgroundColor: '#0C7DA7', borderRadius: '0.5rem' }}
+                onMouseEnter={(e) => (e.target as HTMLButtonElement).style.backgroundColor = '#0A6B91'}
+                onMouseLeave={(e) => (e.target as HTMLButtonElement).style.backgroundColor = 'white'}
+              >
                 Partner With Us
               </Button>
             </div>

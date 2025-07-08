@@ -1,4 +1,3 @@
-
 // tailwind.config.ts
 import type { Config } from "tailwindcss";
 
@@ -22,7 +21,8 @@ export default {
     extend: {
       fontFamily: {
         'montserrat': ['Montserrat', 'sans-serif'],
-				'lexend': ['Lexend', 'sans-serif'],
+        'lexend': ['Lexend', 'sans-serif'],
+        'inter': ['Inter', 'sans-serif'],
       },
       colors: {
         // Brand gradient colors for use in `@apply`
@@ -87,19 +87,19 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
-	    backgroundImage: {
-				'gradient-brand': 'linear-gradient(135deg, #56C7DF 0%, #036D9B 50%, #F57E20 100%)',
-				'gradient-hero': 'linear-gradient(135deg, #0F1026 0%, #1a1b3a 50%, #2d2e4a 100%)',
-			},
+      backgroundImage: {
+        'gradient-brand': 'linear-gradient(135deg, #56C7DF 0%, #036D9B 50%, #F57E20 100%)',
+        'gradient-hero': 'linear-gradient(135deg, #0F1026 0%, #1a1b3a 50%, #2d2e4a 100%)',
+      },
       keyframes: {
-		"gradient-shift": {
-      "0%, 100%": {
-        backgroundPosition: "0% 50%",
-      },
-      "50%": {
-        backgroundPosition: "100% 50%",
-      },
-    },
+        "gradient-shift": {
+          "0%, 100%": {
+            backgroundPosition: "0% 50%",
+          },
+          "50%": {
+            backgroundPosition: "100% 50%",
+          },
+        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -136,6 +136,10 @@ export default {
           "0%, 100%": { opacity: "1" },
           "50%": { opacity: "0.5" },
         },
+        spin: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -147,9 +151,9 @@ export default {
         "slide-in-right": "slide-in-right 0.6s ease-out",
         float: "float 4s ease-in-out infinite",
         pulse: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
-		'gradient-shift': 'gradient-shift 3s ease-in-out infinite',
-
-	},
+        'gradient-shift': 'gradient-shift 3s ease-in-out infinite',
+        'spin-slow': 'spin 20s linear infinite',
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

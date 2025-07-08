@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Building, Shield, Cog, Users, ArrowRight, CheckCircle } from 'lucide-react';
 
@@ -57,11 +58,21 @@ const Enterprise = () => {
               Scale your business with enterprise-grade AI solutions built for security, compliance, and performance
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: '400ms' }}>
-              <Button className="text-white px-8 py-3 font-lexend font-medium hover:scale-105 transition-all duration-300" style={{ backgroundColor: '#0C7DA7' }}>
+              <Button 
+                className="text-white px-8 py-3 font-lexend font-bold hover:shadow-lg transition-all duration-300" 
+                style={{ backgroundColor: '#F68C1F', borderRadius: '0.5rem' }}
+                onMouseEnter={(e) => (e.target as HTMLButtonElement).style.backgroundColor = '#E07B1A'}
+                onMouseLeave={(e) => (e.target as HTMLButtonElement).style.backgroundColor = '#F68C1F'}
+              >
                 Schedule Demo
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button variant="outline" className="px-8 py-3 font-lexend font-medium border-2 hover:text-white transition-all duration-300" style={{ backgroundColor: '#0C7DA7' }} onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#0C7DA7'} onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}>
+              <Button 
+                className="font-lexend font-bold px-8 py-3 border border-[#0077B6] text-[#0077B6] bg-white hover:bg-[#0077B6] hover:text-white hover:shadow-lg transition-all duration-300 rounded-lg" 
+                style={{ backgroundColor: '#0C7DA7', borderRadius: '0.5rem' }}
+                onMouseEnter={(e) => (e.target as HTMLButtonElement).style.backgroundColor = '#0A6B91'}
+                onMouseLeave={(e) => (e.target as HTMLButtonElement).style.backgroundColor = 'white'}
+              >
                 Contact Sales
               </Button>
             </div>
@@ -133,7 +144,7 @@ const Enterprise = () => {
                 <p className="text-lg font-lexend mb-6 opacity-90">
                   Let's discuss how our AI solutions can revolutionize your business operations and drive growth.
                 </p>
-                <Button className="bg-white text-white font-lexend font-medium px-6 py-3 hover:scale-105 transition-all duration-300 hover:bg-gray-100" style={{ color: '#0C7DA7' }}>
+                <Button className="bg-white text-white font-lexend font-bold px-6 py-3 hover:scale-105 transition-all duration-300 hover:bg-gray-100" style={{ color: '#0C7DA7' }}>
                   Get Enterprise Quote
                 </Button>
               </div>

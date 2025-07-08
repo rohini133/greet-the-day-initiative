@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { FileText, Calendar, ExternalLink } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
@@ -25,7 +24,7 @@ export function SummaryContent({ newsItems = [] }: SummaryContentProps) {
   };
 
   return (
-    <div className="space-y-8 font-sans mt-32 ">
+    <div className="space-y-8 font-sans mt-32 bg-white">
       <div className="text-center mb-8">
         <h1 className="text-3xl font-bold mb-2 text-primary
          " >
@@ -42,12 +41,12 @@ export function SummaryContent({ newsItems = [] }: SummaryContentProps) {
         )}
       </div>
       
-      <div className="grid grid-cols-1 gap-10">
+      <div className="grid grid-cols-1 gap-10 bg-white p-6 rounded-lg">
         {newsItems.map((item, index) => {
           const formattedSummary = formatSummary(item.summary);
           
           return (
-            <Card key={index} className="bg-card shadow-md border-t-4 border-t-primary hover:shadow-lg transition-shadow">
+            <Card key={index} className="bg-white shadow-md border-t-4 border-t-primary hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start gap-2">
                   <CardTitle className="text-xl leading-tight">

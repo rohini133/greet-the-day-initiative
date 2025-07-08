@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { DesktopNavItem } from "./DesktopNavItem";
 import { MenuItem } from "./types";
@@ -24,37 +25,39 @@ export function DesktopNav({
   user,
 }: DesktopNavProps) {
   return (
-    <nav className="hidden lg:flex items-center space-x-8">
-      {menuItems.map((item) => (
-        <DesktopNavItem 
-          key={item.title}
-          item={item} 
-          isActive={isActive}
-          toggleSubmenu={toggleSubmenu}
-          openSubmenu={openSubmenu}
-        />
-      ))}
+    <div className="hidden lg:flex items-center justify-between flex-1">
+      <nav className="flex items-center justify-center flex-1 space-x-8">
+        {menuItems.map((item) => (
+          <DesktopNavItem 
+            key={item.title}
+            item={item} 
+            isActive={isActive}
+            toggleSubmenu={toggleSubmenu}
+            openSubmenu={openSubmenu}
+          />
+        ))}
+      </nav>
       
       <div className="flex items-center space-x-3">
         {!user ? (
           <>
             <button
               onClick={handleLogin}
-              className="bg-white text-transparent bg-clip-text bg-gradient-to-r from-[#40C7E8] to-[#0077B6] px-6 py-2 rounded-full font-lexend font-medium hover:bg-gray-50 transition-colors border border-white"
+              className="bg-white/80 backdrop-blur-sm text-[#017ea6] px-6 py-2 rounded-full font-inter font-medium hover:bg-[#017ea6] hover:text-white transition-all duration-300 border border-[#017ea6]/30 hover:shadow-lg hover:shadow-[#017ea6]/20"
             >
               Log In
             </button>
             <button
               onClick={handleSignup}
-              className="bg-gradient-to-r from-[#40C7E8] to-[#0077B6] text-white px-6 py-2 rounded-full font-lexend font-medium hover:opacity-90 transition-opacity"
+              className="bg-gradient-to-r from-[#f37c20] to-[#ff8c42] text-white px-6 py-2 rounded-full font-inter font-medium hover:shadow-lg hover:shadow-[#f37c20]/30 transition-all duration-300 hover:scale-105"
             >
-              Sign Up
+              Start Your Journey
             </button>
           </>
         ) : (
           <UserProfileMenu user={user} />
         )}
       </div>
-    </nav>
+    </div>
   );
 }

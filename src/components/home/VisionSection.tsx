@@ -9,7 +9,7 @@ const VisionSection = () => {
   const platforms = [
     {
       title: "Career Development",
-      subtitle: "AI-Powered Career Operating System",
+      subtitle: "AI-Powered Career Intelligence",
       description: "Transform your career with personalized AI guidance, skill assessments, and intelligent mentorship matching.",
       icon: <Users className="h-8 w-8" />,
       href: "/coming-soon",
@@ -38,14 +38,11 @@ const VisionSection = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-lexend font-bold mb-6 bg-gradient-to-r from-[#40C7E8] to-[#0077B6] bg-clip-text text-transparent">
-            Comprehensive AI-Driven Career Ecosystem
-          </h2>
-          <p className="text-xl font-lexend text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed">
-            Three interconnected platforms designed to accelerate your professional journey through intelligent, personalized experiences
-          </p>
-          <div className="inline-flex items-center px-6 py-3 bg-gray-50 border border-gray-200 rounded-full text-brand-dark font-lexend font-medium shadow-sm">
-            Purpose-driven growth powered by ethical AI
+          <h4 className="text-4xl md:text-5xl font-lexend mb-6 text-black">
+            Smart AI tools to guide and fast-track your career journey
+          </h4>
+          <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-brand-orange/10 to-brand-cyan/10 rounded-full text-brand-dark font-medium">
+            🚀 Purpose-driven growth powered by ethical AI
           </div>
         </div>
 
@@ -77,14 +74,14 @@ const VisionSection = () => {
                 </p>
 
                 {/* Description */}
-                <p className="text-gradient-to-r from-[#40C7E8] to-[#0077B6] font-lexend mb-6 leading-relaxed">
+                <p className="text-black font-lexend mb-6 leading-relaxed">
                   {platform.description}
                 </p>
 
                 {/* Features */}
                 <div className="space-y-2 mb-8">
                   {platform.features.map((feature, idx) => (
-                    <div key={idx} className="flex items-center text-sm font-lexend text-gradient-to-r from-[#40C7E8] to-[#0077B6]">
+                     <div key={idx} className="flex items-center text-sm font-lexend text-black">
                       <div className="w-1.5 h-1.5 bg-brand-orange rounded-full mr-3"></div>
                       {feature}
                     </div>

@@ -51,12 +51,16 @@ export function Header() {
   };
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled ? 'bg-white/95 backdrop-blur-sm shadow-sm' : 'bg-transparent'
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out ${
+      scrolled 
+        ? 'bg-white/80 backdrop-blur-md shadow-lg border-b border-white/20 h-14' 
+        : 'bg-white/70 backdrop-blur-md shadow-sm border-b border-white/10 h-16'
     }`}>
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
-          <HeaderLogo />
+        <div className={`flex items-center justify-between transition-all duration-500 ${
+          scrolled ? 'h-14' : 'h-16'
+        }`}>
+          <HeaderLogo scrolled={scrolled} />
           
           <DesktopNav 
             menuItems={menuItems}

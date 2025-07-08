@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { MobileNavItem } from "./MobileNavItem";
 import { MenuItem } from "./types";
@@ -57,8 +58,8 @@ export function MobileNav({
 
   return (
     <Sheet open={isOpen} onOpenChange={setIsOpen}>
-      <SheetContent side="right" className="w-[300px] sm:w-[350px] p-0">
-        <SheetHeader className="border-b p-4">
+      <SheetContent side="right" className="w-[300px] sm:w-[350px] p-0 bg-white">
+        <SheetHeader className="border-b p-4 bg-white">
           <div className="flex items-center justify-end">
             <Button variant="ghost" size="icon" className="h-8 w-8" onClick={() => setIsOpen(false)}>
               <X size={18} />
@@ -66,7 +67,7 @@ export function MobileNav({
             </Button>
           </div>
         </SheetHeader>
-        <div className="px-4 py-5 space-y-3 subtle-scroll max-h-[calc(100vh-4rem)] overflow-y-auto">
+        <div className="px-4 py-5 space-y-3 subtle-scroll max-h-[calc(100vh-4rem)] overflow-y-auto bg-white">
           {menuItems.map((item) => (
             <MobileNavItem
               key={item.title}
@@ -106,7 +107,7 @@ export function MobileNav({
                   handleSignup();
                   setIsOpen(false);
                 }} style={{ backgroundColor: '#0C7DA7' }}>
-                  Sign up
+                  Start Your Journey
                 </Button>
               </>
             )}

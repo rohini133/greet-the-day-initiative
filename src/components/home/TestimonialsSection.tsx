@@ -20,7 +20,7 @@ export function TestimonialsSection() {
         "Career discovery",
         "Skill acceleration",
         "Job preparation",
-        "Mentorship matching",
+        "Expert Mentorship",
       ],
       color: "from-[#40C7E8] to-[#0077B6]",
       bgPattern: "bg-white border border-gray-200",
@@ -146,7 +146,7 @@ export function TestimonialsSection() {
                   {persona.benefits.map((benefit, benefitIndex) => (
                     <div
                       key={benefitIndex}
-                      className="flex items-center text-sm font-lexend text-gradient-to-r from-[#40C7E8] to-[#0077B6]"
+                      className="flex items-center text-sm font-lexend text-black"
                     >
                       <div className="w-2 h-2 rounded-full bg-brand-orange mr-3"></div>
                       {benefit}
