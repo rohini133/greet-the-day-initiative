@@ -68,34 +68,38 @@ const VisionSection = () => {
                     {platform.title}
                   </h3>
                 </div>
-                 {/* Subtitle */}
-                <p className="bg-brand-orange bg-clip-text text-transparent font-lexend font-bold mb-4">
-                  {platform.subtitle}
-                </p>
 
-                {/* Description */}
-                <p className="text-black font-lexend mb-6 leading-relaxed">
-                  {platform.description}
-                </p>
+                {/* Content aligned with title */}
+                <div className="ml-16">
+                  {/* Subtitle */}
+                  <p className="bg-brand-orange bg-clip-text text-transparent font-lexend font-bold mb-4">
+                    {platform.subtitle}
+                  </p>
 
-                {/* Features */}
-                <div className="space-y-2 mb-8">
-                  {platform.features.map((feature, idx) => (
-                     <div key={idx} className="flex items-center text-sm font-lexend text-black">
-                      <div className="w-1.5 h-1.5 bg-brand-orange rounded-full mr-3"></div>
-                      {feature}
-                    </div>
-                  ))}
+                  {/* Description */}
+                  <p className="text-black font-lexend mb-6 leading-relaxed">
+                    {platform.description}
+                  </p>
+
+                  {/* Features */}
+                  <div className="space-y-2 mb-8">
+                    {platform.features.map((feature, idx) => (
+                       <div key={idx} className="flex items-center text-sm font-lexend text-black">
+                        <div className="w-1.5 h-1.5 bg-brand-orange rounded-full mr-3"></div>
+                        {feature}
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* CTA */}
+                  <button
+                    onClick={() => navigate(platform.href)}
+                    className="inline-flex items-center bg-gradient-to-r from-[#40C7E8] to-[#0077B6] bg-clip-text text-transparent font-lexend font-semibold hover:opacity-80 transition-opacity group"
+                  >
+                    Explore Platform
+                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </button>
                 </div>
-
-                {/* CTA */}
-                <button
-                  onClick={() => navigate(platform.href)}
-                  className="inline-flex items-center bg-gradient-to-r from-[#40C7E8] to-[#0077B6] bg-clip-text text-transparent font-lexend font-semibold hover:opacity-80 transition-opacity group"
-                >
-                  Explore Platform
-                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </button>
 
                 {/* Hover Line */}
                 <div className="mt-6 h-1 bg-gradient-to-r from-[#40C7E8] to-[#0077B6] rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>

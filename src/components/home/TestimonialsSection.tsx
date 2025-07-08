@@ -136,22 +136,25 @@ export function TestimonialsSection() {
                   </h3>
                 </div>
 
-                {/* Description */}
-                <p className="mb-6 font-lexend leading-relaxed text-brand-orange">
-                  {persona.description}
-                </p>
+                {/* Content aligned with title */}
+                <div className="ml-16">
+                  {/* Description */}
+                  <p className="mb-6 font-lexend leading-relaxed text-brand-orange">
+                    {persona.description}
+                  </p>
 
-                {/* Benefits */}
-                <div className="space-y-2">
-                  {persona.benefits.map((benefit, benefitIndex) => (
-                    <div
-                      key={benefitIndex}
-                      className="flex items-center text-sm font-lexend text-black"
-                    >
-                      <div className="w-2 h-2 rounded-full bg-brand-orange mr-3"></div>
-                      {benefit}
-                    </div>
-                  ))}
+                  {/* Benefits */}
+                  <div className="space-y-2">
+                    {persona.benefits.map((benefit, benefitIndex) => (
+                      <div
+                        key={benefitIndex}
+                        className="flex items-center text-sm font-lexend text-black"
+                      >
+                        <div className="w-2 h-2 rounded-full bg-brand-orange mr-3"></div>
+                        {benefit}
+                      </div>
+                    ))}
+                  </div>
                 </div>
 
                 {/* Hover Line */}
