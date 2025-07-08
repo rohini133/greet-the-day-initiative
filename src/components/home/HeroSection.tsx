@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronRight, Brain } from "lucide-react";
@@ -27,7 +26,7 @@ export function HeroSection() {
 
         <div className="container mx-auto px-4 py-20 relative z-10">
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               {/* Left side - Content */}
               <div className="text-left max-w-2xl">
                 <div className="mb-12">
@@ -70,9 +69,9 @@ export function HeroSection() {
                   <img 
                     src="/lovable-uploads/adb8b02b-4bb9-4ba5-a602-9610c00dd84d.png" 
                     alt="Company Logo" 
-                    className="w-full h-full object-contain animate-fade-in animate-spin-slow"
+                    className="w-full h-full object-contain animate-fade-in"
                     style={{
-                      animation: 'spin 20s linear infinite, fade-in 0.6s ease-out'
+                      animation: 'fade-in 0.6s ease-out'
                     }}
                   />
                 </div>
