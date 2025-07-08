@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { HeaderLogo } from "./header/HeaderLogo";
@@ -59,11 +60,14 @@ export function Header() {
         <div className={`flex items-center justify-between transition-all duration-500 ${
           scrolled ? 'h-14' : 'h-16'
         }`}>
-          <HeaderLogo scrolled={scrolled} />
+          {/* Logo with rounded container */}
+          <div className="bg-white/95 backdrop-blur-md rounded-full shadow-sm border border-white/20 p-2">
+            <HeaderLogo scrolled={scrolled} />
+          </div>
           
           {/* LangChain-style rounded navigation container */}
-          <div className="hidden lg:flex items-center justify-center flex-1">
-            <div className="bg-white/95 backdrop-blur-md rounded-full shadow-lg border border-white/20 px-6 py-2">
+          <div className="hidden lg:flex items-center justify-center flex-1 mx-8">
+            <div className="bg-white/95 backdrop-blur-md rounded-full shadow-lg border border-white/20 px-8 py-3">
               <nav className="flex items-center space-x-8">
                 {menuItems.map((item) => (
                   <DesktopNavItem 
@@ -78,26 +82,28 @@ export function Header() {
             </div>
           </div>
 
-          {/* Right side buttons */}
+          {/* Right side buttons with rounded container */}
           <div className="hidden lg:flex items-center space-x-3">
-            {!user ? (
-              <>
-                <button
-                  onClick={handleLogin}
-                  className="bg-white/80 backdrop-blur-sm text-[#017ea6] px-6 py-2 rounded-full font-inter font-medium hover:bg-[#017ea6] hover:text-white transition-all duration-300 border border-[#017ea6]/30 hover:shadow-lg hover:shadow-[#017ea6]/20"
-                >
-                  Log In
-                </button>
-                <button
-                  onClick={handleSignup}
-                  className="bg-gradient-to-r from-[#f37c20] to-[#ff8c42] text-white px-6 py-2 rounded-full font-inter font-medium hover:shadow-lg hover:shadow-[#f37c20]/30 transition-all duration-300 hover:scale-105"
-                >
-                  Start Your Journey
-                </button>
-              </>
-            ) : (
-              <UserProfileMenu user={user} />
-            )}
+            <div className="bg-white/95 backdrop-blur-md rounded-full shadow-sm border border-white/20 px-4 py-2">
+              {!user ? (
+                <div className="flex items-center space-x-3">
+                  <button
+                    onClick={handleLogin}
+                    className="bg-white/80 backdrop-blur-sm text-[#017ea6] px-6 py-2 rounded-full font-inter font-medium hover:bg-[#017ea6] hover:text-white transition-all duration-300 border border-[#017ea6]/30 hover:shadow-lg hover:shadow-[#017ea6]/20"
+                  >
+                    Log In
+                  </button>
+                  <button
+                    onClick={handleSignup}
+                    className="bg-gradient-to-r from-[#f37c20] to-[#ff8c42] text-white px-6 py-2 rounded-full font-inter font-medium hover:shadow-lg hover:shadow-[#f37c20]/30 transition-all duration-300 hover:scale-105"
+                  >
+                    Start Your Journey
+                  </button>
+                </div>
+              ) : (
+                <UserProfileMenu user={user} />
+              )}
+            </div>
           </div>
 
           <div className="lg:hidden flex items-center space-x-2">
