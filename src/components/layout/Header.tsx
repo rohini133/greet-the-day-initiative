@@ -52,10 +52,10 @@ export function Header() {
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out ${
-      scrolled 
-        ? 'bg-white/90 backdrop-blur-md shadow-lg h-14' 
-        : 'bg-white/80 backdrop-blur-md shadow-sm h-16'
-    }`}>
+  scrolled 
+    ? 'backdrop-blur-md shadow-lg h-14' 
+    : 'backdrop-blur-md shadow-sm h-16'
+}`}>
       <div className="container mx-auto px-4">
           <div className={`hidden lg:flex items-center justify-between w-full max-w-6xl rounded-full transition-all duration-500 ${
   scrolled ? 'px-6 py-2' : 'px-8 py-3'
