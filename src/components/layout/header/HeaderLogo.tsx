@@ -10,11 +10,11 @@ export function HeaderLogo({ scrolled = false }: HeaderLogoProps) {
   const isHomePage = location.pathname === '/';
 
   if (isHomePage) {
-    // Use the attached logo image for homepage navigation
+    // Use the new logo image for homepage navigation
     return (
       <Link to="/" className="flex items-center ml-2 group">
         <img 
-          src="/lovable-uploads/adb8b02b-4bb9-4ba5-a602-9610c00dd84d.png" 
+          src="/lovable-uploads/736ebe79-2808-4654-b721-d4a030dcb4a0.png" 
           alt="Gurukul Code" 
           className={`w-auto transition-all duration-500 ease-in-out group-hover:scale-105 ${
             scrolled ? 'h-12' : 'h-16'
