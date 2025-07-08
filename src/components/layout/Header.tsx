@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { HeaderLogo } from "./header/HeaderLogo";
@@ -43,34 +42,37 @@ export function Header() {
   };
 
   const handleLogin = () => {
-    navigate('/login');
+    navigate("/login");
   };
 
   const handleSignup = () => {
-    navigate('/signup');
+    navigate("/signup");
   };
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out ${
-      scrolled 
-        ? 'h-14' 
-        : 'h-16'
-    }`}>
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out ${
+        scrolled ? "h-14" : "h-16"
+      }`}
+    >
       <div className="container mx-auto px-4 h-full flex items-center justify-center">
-        <div className={`hidden lg:flex items-center justify-between w-full max-w-6xl bg-white/95 backdrop-blur-md rounded-full shadow-lg border border-white/20 transition-all duration-500 ${
-          scrolled ? 'px-6 py-2' : 'px-8 py-3'
-        }`}>
-          {/* Logo */}
-          <div className="flex-shrink-0">
+        {/* Desktop Layout */}
+        <div
+          className={`hidden lg:flex items-center justify-between w-full max-w-6xl bg-white/95 backdrop-blur-md rounded-full shadow-lg border border-white/20 transition-all duration-500 ${
+            scrolled ? "px-6 py-2" : "px-8 py-3"
+          }`}
+        >
+          {/* Left - Logo */}
+          <div className="flex-shrink-0 w-1/3 flex items-center">
             <HeaderLogo scrolled={scrolled} />
           </div>
-          
-          {/* Navigation Menu - Centered */}
-          <nav className="flex items-center space-x-8 flex-1 justify-center">
+
+          {/* Center - Navigation */}
+          <nav className="w-1/3 flex justify-center space-x-8">
             {menuItems.map((item) => (
-              <DesktopNavItem 
+              <DesktopNavItem
                 key={item.title}
-                item={item} 
+                item={item}
                 isActive={isActive}
                 toggleSubmenu={toggleSubmenu}
                 openSubmenu={openSubmenu}
@@ -78,8 +80,8 @@ export function Header() {
             ))}
           </nav>
 
-          {/* Auth Buttons - Right */}
-          <div className="flex items-center space-x-3 flex-shrink-0">
+          {/* Right - Auth Buttons or User Menu */}
+          <div className="flex justify-end items-center space-x-3 w-1/3">
             {!user ? (
               <>
                 <button
@@ -106,19 +108,16 @@ export function Header() {
           <div className="bg-white/95 backdrop-blur-md rounded-full shadow-sm border border-white/20 p-2">
             <HeaderLogo scrolled={scrolled} />
           </div>
-          
+
           <div className="flex items-center space-x-2">
-            {user && (
-              <UserProfileMenu user={user} />
-            )}
-            <MobileMenuButton 
-              toggleMenu={toggleMenu} 
-            />
+            {user && <UserProfileMenu user={user} />}
+            <MobileMenuButton toggleMenu={toggleMenu} />
           </div>
         </div>
       </div>
 
-      <MobileNav 
+      {/* Mobile Navigation Menu */}
+      <MobileNav
         isOpen={isOpen}
         menuItems={menuItems}
         isActive={isActive}
